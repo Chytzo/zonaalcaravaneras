@@ -109,6 +109,8 @@ const jsonLdPortada = [
           autocomplete="off"
         />
       </div>
+
+      <p class="conteo" id="conteo" hidden></p>
     </div>
     <span class="credito-foto">
       Foto: Bengt Nyman, <a href="/creditos/">CC BY-SA 4.0</a>
@@ -122,7 +124,7 @@ const jsonLdPortada = [
       <MapaBarrio />
     </section>
 
-    <section class="seccion">
+    <section class="seccion" id="lista">
       <h2>{comercios.length} comercios en el barrio</h2>
       <p class="sub">Filtra por tipo de negocio o busca arriba.</p>
 
@@ -170,6 +172,10 @@ const jsonLdPortada = [
     tarjeta.dataset.buscar = normalizar(tarjeta.dataset.buscar);
   }
 
+  const conteo = document.getElementById('conteo');
+  const seccionMapa = document.getElementById('mapa');
+  const seccionLista = document.getElementById('lista');
+
   function filtrar() {
     const texto = normalizar(entrada.value.trim());
     let visibles = 0;
@@ -183,9 +189,30 @@ const jsonLdPortada = [
     }
 
     vacio.hidden = visibles > 0;
+
+    // La lista queda muy por debajo del buscador. Sin esto parece que no pasa nada:
+    // mostramos el recuento al lado del campo y apartamos el plano mientras se busca.
+    const buscando = texto.length > 0;
+    conteo.hidden = !buscando;
+    if (buscando) {
+      conteo.textContent =
+        visibles === 0
+          ? 'Ningún comercio coincide'
+          : visibles === 1
+            ? '1 comercio · desliza para verlo'
+            : `${visibles} comercios · desliza para verlos`;
+    }
+    seccionMapa.hidden = buscando;
   }
 
   entrada.addEventListener('input', filtrar);
+
+  entrada.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      seccionLista.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
 
   for (const boton of botones) {
     boton.addEventListener('click', () => {

@@ -227,6 +227,15 @@ img { max-width: 100%; display: block; }
 }
 .buscador::placeholder { color: #97a3a9; }
 
+/* Recuento de resultados, junto al buscador de la portada */
+.conteo {
+  margin: 0.7rem 0 0;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 0 1px 10px rgba(4, 34, 46, 0.7);
+}
+
 /* ---------- Filtros ---------- */
 .filtros {
   display: flex;
