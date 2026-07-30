@@ -1,10 +1,13 @@
 ---
 import Base from '../layouts/Base.astro';
+import { contacto, enlaceWhatsapp } from '../config.js';
+
+const waBaja = enlaceWhatsapp('Hola, quiero que retiréis la ficha de mi negocio de la guía.');
 ---
 
 <Base
   titulo="Aviso legal — Zona Alcaravaneras"
-  descripcion="Aviso legal e información del titular del sitio zonaalcaravaneras.com."
+  descripcion="Información del titular de zonaalcaravaneras.com y condiciones de uso de la guía."
 >
   <section class="cinta" slot="portada">
     <div class="contenedor">
@@ -15,45 +18,58 @@ import Base from '../layouts/Base.astro';
 
   <div class="contenedor"><div class="prosa">
 
-  <h2>Titular del sitio</h2>
-  <ul>
-    <li><strong>Responsable:</strong> Salvador Rodríguez</li>
-    <li><strong>Ámbito:</strong> Las Palmas de Gran Canaria, Canarias (España)</li>
-    <li><strong>Correo de contacto:</strong> <a href="mailto:hola@zonaalcaravaneras.com">hola@zonaalcaravaneras.com</a></li>
-    <li><strong>WhatsApp:</strong> +34 633 50 51 53</li>
-  </ul>
+    <h2>Titular del sitio</h2>
+    <ul>
+      <li><strong>Responsable:</strong> Salvador Rodríguez</li>
+      <li><strong>Proyecto:</strong> Zona Alcaravaneras, guía de comercios del barrio</li>
+      <li><strong>Mantenido por:</strong> Impulcan (nombre comercial), <a href="https://impulcan.com" rel="noopener">impulcan.com</a></li>
+      <li><strong>Correo:</strong> <a href={`mailto:${contacto.email}`}>{contacto.email}</a></li>
+      <li><strong>WhatsApp:</strong> {contacto.whatsappVisible}</li>
+    </ul>
+    <p>
+      Esta guía es gratuita: no cobra a los comercios, no vende publicidad y no realiza
+      transacciones. Los datos fiscales completos se publicarán cuando se formalice el
+      alta de la actividad de Impulcan.
+    </p>
 
-  <p>
-    Zona Alcaravaneras es una guía gratuita. No cobra por aparecer, no vende publicidad
-    y no realiza transacciones. La mantiene <a href="https://impulcan.com" rel="noopener">Impulcan</a>,
-    nombre comercial bajo el que trabaja el titular.
-  </p>
+    <h2>Qué es y qué no es</h2>
+    <p>
+      zonaalcaravaneras.com es una guía informativa y gratuita de los comercios del
+      barrio de Las Alcaravaneras, en Las Palmas de Gran Canaria. <strong>No es la web
+      de ninguna asociación de comerciantes ni de ninguna administración pública</strong>,
+      y no está afiliada a ninguna de ellas ni a ningún partido político.
+    </p>
 
-  <h2>Objeto</h2>
-  <p>
-    zonaalcaravaneras.com es una guía informativa y gratuita de los comercios del barrio de
-    Las Alcaravaneras (Las Palmas de Gran Canaria). No es la web de ninguna asociación de
-    comerciantes ni de ninguna administración pública, y no está afiliada a ninguna de ellas.
-  </p>
+    <h2>Datos publicados y cómo retirar una ficha</h2>
+    <p>
+      Las fichas recogen datos comerciales de establecimientos abiertos al público
+      —nombre comercial, actividad, dirección, teléfono público y horario— procedentes de
+      <a href="https://www.openstreetmap.org/copyright" rel="noopener">OpenStreetMap</a>
+      (licencia ODbL) o facilitados por los propios negocios.
+    </p>
+    <p>
+      <strong>Cualquier responsable de un negocio puede pedir la corrección o la retirada
+      de su ficha</strong>, sin coste y sin tener que justificarlo:
+    </p>
+    <ul>
+      <li><a href={waBaja} rel="noopener">Por WhatsApp</a>, que es lo más rápido</li>
+      <li>Por correo a <a href={`mailto:${contacto.email}`}>{contacto.email}</a></li>
+    </ul>
+    <p>Se atiende el mismo día en que se recibe.</p>
 
-  <h2>Datos publicados</h2>
-  <p>
-    Las fichas recogen datos comerciales de establecimientos abiertos al público (nombre
-    comercial, actividad, dirección, teléfono público y horario), obtenidos de fuentes de
-    acceso público o facilitados por los propios negocios.
-  </p>
-  <p>
-    Cualquier responsable de un negocio puede pedir la corrección o la retirada de su ficha
-    escribiendo a <a href="mailto:hola@zonaalcaravaneras.com">hola@zonaalcaravaneras.com</a>.
-    Se atiende sin coste y sin necesidad de justificación.
-  </p>
+    <h2>Responsabilidad</h2>
+    <p>
+      Los datos se publican de buena fe y pueden estar desactualizados, porque proceden
+      de fuentes abiertas. Recomendamos confirmar horarios por teléfono antes de
+      desplazarse. No respondemos del contenido de sitios externos enlazados desde las
+      fichas.
+    </p>
 
-  <h2>Responsabilidad</h2>
-  <p>
-    Los datos se publican de buena fe y pueden quedar desactualizados. Recomendamos confirmar
-    horarios por teléfono antes de desplazarse. No respondemos del contenido de webs externas
-    enlazadas desde las fichas.
-  </p>
+    <h2>Legislación aplicable</h2>
+    <p>
+      Legislación española, en particular la Ley 34/2002 de Servicios de la Sociedad de
+      la Información y el Reglamento (UE) 2016/679 de Protección de Datos.
+    </p>
 
   </div></div>
 </Base>

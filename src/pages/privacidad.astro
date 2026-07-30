@@ -1,10 +1,13 @@
 ---
 import Base from '../layouts/Base.astro';
+import { contacto, enlaceWhatsapp } from '../config.js';
+
+const waBaja = enlaceWhatsapp('Hola, quiero que retiréis la ficha de mi negocio de la guía.');
 ---
 
 <Base
   titulo="Privacidad — Zona Alcaravaneras"
-  descripcion="Política de privacidad y tratamiento de datos de zonaalcaravaneras.com."
+  descripcion="Política de privacidad de zonaalcaravaneras.com. Sin cookies, sin analítica y con retirada de ficha inmediata."
 >
   <section class="cinta" slot="portada">
     <div class="contenedor">
@@ -15,50 +18,71 @@ import Base from '../layouts/Base.astro';
 
   <div class="contenedor"><div class="prosa">
 
-  <h2>Responsable del tratamiento</h2>
-  <p>
-    Salvador Rodríguez, Las Palmas de Gran Canaria (España). Contacto:
-    <a href="mailto:hola@zonaalcaravaneras.com">hola@zonaalcaravaneras.com</a>
-    o WhatsApp +34 633 50 51 53.
-  </p>
+    <h2>Responsable del tratamiento</h2>
+    <p>
+      Salvador Rodríguez, que mantiene esta guía bajo el nombre comercial Impulcan, en
+      Las Palmas de Gran Canaria (España).
+      Contacto: <a href={`mailto:${contacto.email}`}>{contacto.email}</a> ·
+      WhatsApp {contacto.whatsappVisible}.
+    </p>
 
-  <h2>Qué datos tratamos</h2>
-  <p>
-    Datos de contacto profesional de establecimientos comerciales: nombre comercial,
-    actividad, dirección, teléfono público, horario y, cuando el negocio los facilita,
-    fotografías del local y dirección de correo o WhatsApp.
-  </p>
-  <p>
-    No publicamos datos personales de particulares, ni imágenes en las que aparezcan personas
-    identificables, salvo consentimiento expreso.
-  </p>
+    <h2>Este sitio no te rastrea</h2>
+    <p>
+      No hay cookies, ni analítica, ni píxeles de seguimiento, ni formularios. No
+      registramos quién entra, ni desde dónde, ni qué mira.
+    </p>
 
-  <h2>Base jurídica</h2>
-  <p>
-    Interés legítimo en la difusión de la actividad comercial del barrio, conforme al
-    artículo 19 de la LOPDGDD para datos de contacto de profesionales y empresarios
-    individuales referidos a su actividad. Cuando el negocio nos envía sus datos
-    voluntariamente, la base es su consentimiento.
-  </p>
+    <h2>Qué datos publicamos</h2>
+    <p>
+      Datos de contacto profesional de establecimientos comerciales: nombre comercial,
+      actividad, dirección, teléfono público, horario y, cuando el negocio los facilita,
+      fotografías del local, correo o WhatsApp.
+    </p>
+    <p>
+      No publicamos datos personales de particulares, ni imágenes en las que aparezcan
+      personas identificables, salvo consentimiento expreso.
+    </p>
 
-  <h2>Conservación</h2>
-  <p>Los datos se mantienen mientras la ficha siga publicada.</p>
+    <h2>De dónde salen</h2>
+    <p>
+      El listado inicial procede de
+      <a href="https://www.openstreetmap.org/copyright" rel="noopener">OpenStreetMap</a>,
+      una base de datos pública con licencia ODbL, y se completa con lo que nos facilitan
+      los propios comercios.
+    </p>
 
-  <h2>Cesiones</h2>
-  <p>No cedemos datos a terceros ni los usamos para enviar comunicaciones comerciales.</p>
+    <h2>Base jurídica</h2>
+    <p>
+      Interés legítimo en la difusión de la actividad comercial del barrio, conforme al
+      artículo 19 de la LOPDGDD para datos de contacto de profesionales y empresarios
+      individuales referidos a su actividad. Cuando es el propio negocio quien nos envía
+      sus datos, la base es su consentimiento.
+    </p>
 
-  <h2>Tus derechos</h2>
-  <p>
-    Puedes pedir acceso, rectificación, supresión, oposición o limitación escribiendo a
-    <a href="mailto:hola@zonaalcaravaneras.com">hola@zonaalcaravaneras.com</a>. Atendemos la
-    retirada de fichas de forma inmediata y sin pedir explicaciones. También puedes reclamar
-    ante la Agencia Española de Protección de Datos (www.aepd.es).
-  </p>
+    <h2>Cómo quitar tu ficha</h2>
+    <p>
+      Es lo más importante de esta página. <strong>Si no quieres aparecer, lo retiramos
+      el mismo día, sin coste y sin pedirte explicaciones.</strong>
+    </p>
+    <ul>
+      <li><a href={waBaja} rel="noopener">Escríbenos por WhatsApp</a></li>
+      <li>O a <a href={`mailto:${contacto.email}`}>{contacto.email}</a></li>
+    </ul>
 
-  <h2>Cookies y analítica</h2>
-  <p>
-    Este sitio no usa cookies ni rastrea a los visitantes. No hay analítica de terceros.
-  </p>
+    <h2>Conservación y cesiones</h2>
+    <p>
+      Los datos se mantienen mientras la ficha siga publicada. No los cedemos a terceros
+      ni los usamos para enviar comunicaciones comerciales. El alojamiento es de
+      Cloudflare.
+    </p>
+
+    <h2>Tus derechos</h2>
+    <p>
+      Acceso, rectificación, supresión, oposición y limitación, escribiendo a
+      <a href={`mailto:${contacto.email}`}>{contacto.email}</a>. También puedes reclamar
+      ante la Agencia Española de Protección de Datos
+      (<a href="https://www.aepd.es" rel="noopener">www.aepd.es</a>).
+    </p>
 
   </div></div>
 </Base>
