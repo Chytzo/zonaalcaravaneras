@@ -1,0 +1,227 @@
+---
+// Plano de la zona. El fondo (manzanas, calles, parques, playa) es un SVG estático
+// generado desde OpenStreetMap; encima va solo la capa pulsable.
+import mapa from '../data/mapa.json';
+
+const { ancho, alto, contornos, locales, infantiles } = mapa;
+
+const paleta = {
+  Restaurantes: '#e2683f',
+  'Bares y cafés': '#efa03f',
+  Alimentación: '#4c9f63',
+  Belleza: '#b5559b',
+  Salud: '#3e8fd0',
+  Moda: '#8a63c7',
+  'Hogar y reformas': '#8a7b5c',
+  Electrónica: '#2a9d9a',
+  Servicios: '#5f7183',
+  Motor: '#4b5f6e',
+  Bazares: '#c9a227',
+  'Deporte y ocio': '#3f9e86',
+  Mascotas: '#c76a6a',
+};
+const color = (cat) => paleta[cat] ?? '#5f7183';
+
+const categorias = [...new Set(locales.map((l) => l.categoria))].sort((a, b) =>
+  a.localeCompare(b, 'es')
+);
+---
+
+<div class="mapa" data-mapa>
+  <div class="mapa-barra">
+    <button class="filtro-mapa" data-filtro="" aria-pressed="true">Todo</button>
+    {categorias.map((cat) => (
+      <button class="filtro-mapa" data-filtro={cat} aria-pressed="false">
+        <span class="punto" style={`background:${color(cat)}`}></span>{cat}
+      </button>
+    ))}
+    <button class="filtro-mapa infantil" data-filtro="__infantiles" aria-pressed="false">
+      <span class="punto" style="background:#2f8f4e"></span>Parques infantiles
+    </button>
+  </div>
+
+  <div class="mapa-lienzo">
+    <img src="/mapa-fondo.svg" alt="" width={ancho} height={alto} loading="lazy" />
+
+    <svg
+      class="mapa-capa"
+      viewBox={`0 0 ${ancho} ${alto}`}
+      role="group"
+      aria-label="Comercios de la zona"
+    >
+      <path d={contornos} fill="#d5c9b4" stroke="#bcae95" stroke-width="0.5" />
+
+      <g class="locales">
+        {locales.map((l) => (
+          <a href={`/${l.slug}/`} data-cat={l.categoria} data-nombre={l.nombre}>
+            <rect
+              x={l.x}
+              y={l.y}
+              width={l.w}
+              height={l.h}
+              rx="1"
+              fill={color(l.categoria)}
+            />
+          </a>
+        ))}
+      </g>
+
+      <g class="infantiles">
+        {infantiles.map((p) => (
+          <g data-nombre={p.nombre} data-cat="__infantiles">
+            <circle cx={p.x} cy={p.y} r="9" fill="#2f8f4e" stroke="#fff" stroke-width="2.5" />
+            <path
+              d={`M${p.x - 3.4} ${p.y + 2.6}h6.8M${p.x} ${p.y - 3.6}v6.2M${p.x - 3.4} ${p.y + 2.6}l3.4 -6.2 3.4 6.2`}
+              stroke="#fff"
+              stroke-width="1.5"
+              fill="none"
+              stroke-linecap="round"
+            />
+          </g>
+        ))}
+      </g>
+    </svg>
+
+    <div class="globo" hidden></div>
+  </div>
+
+  <p class="nota-mapa">
+    Manzanas, calles, parques y playa de
+    <a href="https://www.openstreetmap.org/copyright" rel="noopener">OpenStreetMap</a> (ODbL).
+    Cada edificio se reparte entre los locales que tiene dentro. Toca uno para abrir su ficha.
+  </p>
+</div>
+
+<script>
+  for (const raiz of document.querySelectorAll('[data-mapa]')) {
+    const enlaces = [...raiz.querySelectorAll('.locales a')];
+    const capaInfantil = raiz.querySelector('.infantiles');
+    const marcasInfantiles = [...raiz.querySelectorAll('.infantiles > g')];
+    const botones = [...raiz.querySelectorAll('.filtro-mapa')];
+    const globo = raiz.querySelector('.globo');
+    const lienzo = raiz.querySelector('.mapa-lienzo');
+
+    function filtrar(valor) {
+      const soloInfantiles = valor === '__infantiles';
+      // En SVG el atributo `hidden` no oculta nada: hay que tocar display
+      capaInfantil.style.display = !soloInfantiles && valor !== '' ? 'none' : '';
+      for (const a of enlaces) {
+        const activo = !valor || (!soloInfantiles && a.dataset.cat === valor);
+        const apagado = Boolean(valor) && !activo;
+        a.classList.toggle('apagado', apagado);
+        // El opacity va directo al rect: en SVG el selector heredado no es fiable
+        a.firstElementChild.style.opacity = apagado ? '0.12' : '1';
+      }
+      for (const b of botones) {
+        b.setAttribute('aria-pressed', String(b.dataset.filtro === valor));
+      }
+    }
+
+    for (const b of botones) {
+      b.addEventListener('click', () => filtrar(b.dataset.filtro));
+    }
+
+    // Globo con el nombre, al pasar el ratón o al tocar
+    function mostrar(elemento, evento) {
+      const nombre = elemento.dataset.nombre;
+      if (!nombre) return;
+      const cat = elemento.dataset.cat;
+      globo.textContent = cat === '__infantiles' ? nombre : `${nombre} · ${cat}`;
+      globo.hidden = false;
+      const caja = lienzo.getBoundingClientRect();
+      globo.style.left = `${evento.clientX - caja.left}px`;
+      globo.style.top = `${evento.clientY - caja.top}px`;
+    }
+
+    for (const elemento of [...enlaces, ...marcasInfantiles]) {
+      elemento.addEventListener('mousemove', (e) => mostrar(elemento, e));
+      elemento.addEventListener('mouseleave', () => { globo.hidden = true; });
+      elemento.addEventListener('focus', (e) => mostrar(elemento, { clientX: 0, clientY: 0 }));
+    }
+    lienzo.addEventListener('mouseleave', () => { globo.hidden = true; });
+
+    capaInfantil.removeAttribute('hidden');
+  }
+</script>
+
+<style>
+  .mapa-barra {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-bottom: 0.9rem;
+  }
+  .filtro-mapa {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    border: 1px solid var(--borde);
+    background: #fff;
+    border-radius: 999px;
+    padding: 0.3rem 0.75rem;
+    font: inherit;
+    font-size: 0.82rem;
+    color: var(--tinta);
+    cursor: pointer;
+  }
+  .filtro-mapa:hover { border-color: var(--agua); }
+  .filtro-mapa[aria-pressed='true'] {
+    background: var(--oceano);
+    border-color: var(--oceano);
+    color: #fff;
+  }
+  .punto { width: 10px; height: 10px; border-radius: 3px; flex: none; }
+
+  .mapa-lienzo {
+    position: relative;
+    border: 1px solid var(--borde);
+    border-radius: var(--radio);
+    overflow: hidden;
+    box-shadow: var(--sombra);
+    background: #f2ece1;
+    line-height: 0;
+  }
+  .mapa-lienzo img { width: 100%; height: auto; display: block; }
+
+  .mapa-capa {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .locales a rect {
+    transition: opacity 0.15s ease;
+    cursor: pointer;
+  }
+  .locales a:hover rect,
+  .locales a:focus rect {
+    stroke: #12232c;
+    stroke-width: 1.6;
+  }
+  .locales a.apagado { pointer-events: none; }
+  .locales a:focus { outline: none; }
+
+  .globo {
+    position: absolute;
+    z-index: 3;
+    transform: translate(-50%, -140%);
+    background: #12232c;
+    color: #fff;
+    font-size: 0.78rem;
+    line-height: 1.3;
+    padding: 0.3rem 0.6rem;
+    border-radius: 6px;
+    pointer-events: none;
+    white-space: nowrap;
+    max-width: 240px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .nota-mapa {
+    font-size: 0.8rem;
+    color: var(--tinta-suave);
+    margin: 0.7rem 0 0;
+  }
+</style>

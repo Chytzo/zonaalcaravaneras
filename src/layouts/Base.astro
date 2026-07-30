@@ -1,0 +1,122 @@
+---
+import '../styles/global.css';
+import { contacto, enlaceWhatsapp } from '../config.js';
+
+const waPie = enlaceWhatsapp('Hola, os escribo por la guía Zona Alcaravaneras.');
+const {
+  titulo,
+  descripcion,
+  canonical,
+  barraSolida = true,
+  noindex = false,
+  imagen,
+} = Astro.props;
+const urlCanonica = new URL(canonical ?? Astro.url.pathname, Astro.site);
+const urlImagen = imagen ? new URL(imagen, Astro.site).toString() : undefined;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{titulo}</title>
+    <meta name="description" content={descripcion} />
+    <meta name="theme-color" content="#073b4f" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
+    <link rel="canonical" href={urlCanonica} />
+    <meta property="og:title" content={titulo} />
+    <meta property="og:description" content={descripcion} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:url" content={urlCanonica} />
+    <meta property="og:site_name" content="Zona Alcaravaneras" />
+    {urlImagen && (
+      <>
+        <meta property="og:image" content={urlImagen} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content={urlImagen} />
+      </>
+    )}
+    {!urlImagen && <meta name="twitter:card" content="summary" />}
+    <slot name="head" />
+  </head>
+  <body>
+    <header class={barraSolida ? 'barra solida' : 'barra'}>
+      <div class="contenedor">
+        <a class="marca" href="/">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M2 17c2.5 0 2.5 1.6 5 1.6s2.5-1.6 5-1.6 2.5 1.6 5 1.6 2.5-1.6 5-1.6"
+              stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+            <path d="M2 21c2.5 0 2.5 1.6 5 1.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" opacity="0.5" />
+            <path d="M6 14V6.5A2.5 2.5 0 0 1 8.5 4h7A2.5 2.5 0 0 1 18 6.5V14" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
+            <path d="M9.5 14V9.5h5V14" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" opacity="0.75" />
+          </svg>
+          <strong>Zona Alcaravaneras</strong>
+        </a>
+        <nav>
+          <a href="/">Comercios</a>
+          <a href={waPie} rel="noopener">WhatsApp</a>
+          <a class="cta" href="/alta/">
+            <span class="etiqueta-larga">Añade tu comercio</span>
+            <span class="etiqueta-corta">Añádete</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <slot name="portada" />
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="pie">
+      <div class="contenedor">
+        <div class="cols">
+          <div>
+            <h4>Qué es esto</h4>
+            <p style="margin-top:0">
+              Guía independiente de los comercios del barrio de Las Alcaravaneras,
+              en Las Palmas de Gran Canaria. Aparecer aquí es <strong>gratis</strong> y
+              siempre lo será: no hay cuota, ni exclusividad, ni permanencia.
+            </p>
+            <p>
+              No estamos afiliados a ninguna asociación de comerciantes ni a ningún
+              partido político. La mantiene
+              <a href="https://impulcan.com" rel="noopener">Impulcan</a> — marketing y
+              automatizaciones — y es nuestra forma de darnos a conocer en el barrio.
+              Ningún comercio paga por estar aquí.
+            </p>
+          </div>
+          <div>
+            <h4>Contacto directo</h4>
+            <ul>
+              <li>
+                <a href={waPie} rel="noopener">WhatsApp {contacto.whatsappVisible}</a>
+              </li>
+              <li><a href={`mailto:${contacto.email}`}>{contacto.email}</a></li>
+            </ul>
+            <h4 style="margin-top:1.4rem">Enlaces</h4>
+            <ul>
+              <li><a href="/">Todos los comercios</a></li>
+              <li><a href="/alta/">Añadir o corregir mi ficha</a></li>
+              <li><a href="/aviso-legal/">Aviso legal</a></li>
+              <li><a href="/privacidad/">Privacidad</a></li>
+              <li><a href="/creditos/">Créditos de las fotos</a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="legal">
+          Fotografía de portada: «Playa de Las Alcaravaneras», de Bengt Nyman,
+          <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license noopener">CC BY-SA 4.0</a>,
+          vía <a href="https://commons.wikimedia.org/wiki/File:Playa_de_Las_Alcaravaneras.jpg" rel="noopener">Wikimedia Commons</a>.
+          Datos de los comercios y del plano:
+          <a href="https://www.openstreetmap.org/copyright" rel="noopener">© colaboradores de OpenStreetMap</a>, ODbL.
+          Sitio sin cookies ni analítica.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

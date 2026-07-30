@@ -1,0 +1,175 @@
+---
+import Base from '../layouts/Base.astro';
+import comercios from '../data/comercios.json';
+import { slugificar } from '../utils/slug.js';
+import { enlaceWhatsapp } from '../config.js';
+
+export function getStaticPaths() {
+  return comercios.map((comercio) => ({
+    params: { slug: comercio.slug },
+    props: { comercio },
+  }));
+}
+
+const { comercio } = Astro.props;
+const url = new URL(`/${comercio.slug}/`, Astro.site).toString();
+
+// JSON-LD: es lo que hace que Google entienda cada ficha como un negocio real
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  name: comercio.nombre,
+  description: comercio.descripcion || undefined,
+  url,
+  telephone: comercio.telefono || undefined,
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: comercio.calle,
+    addressLocality: 'Las Palmas de Gran Canaria',
+    postalCode: comercio.cp,
+    addressRegion: 'Las Palmas',
+    addressCountry: 'ES',
+  },
+  openingHours: comercio.horarioSchema?.length ? comercio.horarioSchema : undefined,
+  sameAs: comercio.web ? [comercio.web] : undefined,
+  image: comercio.fotos?.length
+    ? comercio.fotos.map((f) => new URL(f, Astro.site).toString())
+    : undefined,
+};
+
+const telHref = comercio.telefono?.replace(/\s/g, '');
+const waHref = comercio.whatsapp?.replace(/[^\d]/g, '');
+
+// Contacto con la guía, con el nombre del negocio ya escrito en el mensaje
+const waGuia = enlaceWhatsapp(
+  `Hola, soy de ${comercio.nombre}. Quiero cambiar algo de mi ficha en la guía.`
+);
+
+// Migas de pan: ayudan a buscadores y asistentes a situar la página
+// dentro de la jerarquía del sitio.
+const migas = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Comercios de Alcaravaneras',
+      item: 'https://zonaalcaravaneras.com/',
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: comercio.categoria,
+      item: `https://zonaalcaravaneras.com/categoria/${slugificar(comercio.categoria)}/`,
+    },
+    { '@type': 'ListItem', position: 3, name: comercio.nombre },
+  ],
+};
+---
+
+<Base
+  titulo={`${comercio.nombre} — ${comercio.categoria} en Alcaravaneras`}
+  descripcion={`${comercio.nombre}, ${comercio.categoria.toLowerCase()} en ${comercio.calle}, barrio de Las Alcaravaneras (Las Palmas de Gran Canaria). Teléfono y horario.`}
+>
+  <script
+    slot="head"
+    type="application/ld+json"
+    set:html={JSON.stringify([jsonLd, migas])}
+  />
+
+  <section class="cinta" slot="portada">
+    <div class="contenedor">
+      <span class="etiqueta-cat">{comercio.categoria}</span>
+      <h1>{comercio.nombre}</h1>
+      {comercio.descripcion && <p>{comercio.descripcion}</p>}
+      <div class="acciones">
+        {comercio.telefono && (
+          <a class="boton" href={`tel:${telHref}`}>
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M6.5 3h3l1.5 4-2 1.5a12 12 0 0 0 6.5 6.5L17 13l4 1.5v3a2 2 0 0 1-2.2 2A17 17 0 0 1 3 5.2 2 2 0 0 1 5 3h1.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            </svg>
+            Llamar
+          </a>
+        )}
+        {comercio.whatsapp && (
+          <a class="boton fantasma" href={`https://wa.me/${waHref}`} rel="noopener">WhatsApp</a>
+        )}
+        {comercio.maps && (
+          <a class="boton fantasma" href={comercio.maps} rel="noopener">Cómo llegar</a>
+        )}
+      </div>
+    </div>
+  </section>
+
+  <div class="contenedor">
+    {comercio.fotos?.length > 0 && (
+      <div class="galeria">
+        {comercio.fotos.map((foto) => (
+          <img src={foto} alt={`Local de ${comercio.nombre}`} loading="lazy" />
+        ))}
+      </div>
+    )}
+
+    <div class="ficha-cols">
+      <div class="tarjeta-datos">
+        <ul class="datos">
+          <li>
+            <span class="clave">Dirección</span>
+            <span>{comercio.calle}<br />{comercio.cp} Las Palmas de Gran Canaria</span>
+          </li>
+          {comercio.horario && (
+            <li><span class="clave">Horario</span><span>{comercio.horario}</span></li>
+          )}
+          {comercio.telefono && (
+            <li>
+              <span class="clave">Teléfono</span>
+              <span><a href={`tel:${telHref}`}>{comercio.telefono}</a></span>
+            </li>
+          )}
+          {comercio.web && (
+            <li>
+              <span class="clave">Web</span>
+              <span><a href={comercio.web} rel="noopener">{comercio.web}</a></span>
+            </li>
+          )}
+          {comercio.email && (
+            <li>
+              <span class="clave">Correo</span>
+              <span><a href={`mailto:${comercio.email}`}>{comercio.email}</a></span>
+            </li>
+          )}
+          {comercio.rasgos?.length > 0 && (
+            <li>
+              <span class="clave">Detalles</span>
+              <span class="rasgos">
+                {comercio.rasgos.map((r) => <span class="rasgo">{r}</span>)}
+              </span>
+            </li>
+          )}
+        </ul>
+
+        {!comercio.telefono && !comercio.horario && (
+          <p class="incompleta">
+            Aún no tenemos teléfono ni horario de este negocio. Si es el tuyo,
+            mándanos los datos y los ponemos hoy mismo.
+          </p>
+        )}
+      </div>
+
+      <div>
+        <div class="aviso calma">
+          ¿Eres el responsable de este negocio? Si hay algún dato mal, o prefieres que
+          quitemos la ficha, <a href={waGuia} rel="noopener">escríbenos por WhatsApp</a>.
+          Lo cambiamos el mismo día, sin coste y sin preguntas.
+        </div>
+        <p>
+          <a href={`/categoria/${slugificar(comercio.categoria)}/`}>
+            Ver más comercios de {comercio.categoria.toLowerCase()}
+          </a><br />
+          <a href="/">&larr; Todos los comercios del barrio</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</Base>

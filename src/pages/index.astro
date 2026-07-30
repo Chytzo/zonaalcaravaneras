@@ -1,0 +1,199 @@
+---
+import { Image } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import TarjetaComercio from '../components/TarjetaComercio.astro';
+import MapaBarrio from '../components/MapaBarrio.astro';
+import comercios from '../data/comercios.json';
+import portada from '../assets/playa-alcaravaneras.jpg';
+import { enlaceWhatsapp } from '../config.js';
+
+const waIndex = enlaceWhatsapp(
+  'Hola, tengo un negocio en Alcaravaneras y quiero salir en la guía.'
+);
+
+const ordenados = [...comercios].sort((a, b) => a.nombre.localeCompare(b.nombre, 'es'));
+const categorias = [...new Set(comercios.map((c) => c.categoria))].sort((a, b) =>
+  a.localeCompare(b, 'es')
+);
+
+// Datos estructurados de la portada: qué es el sitio, quién lo mantiene y
+// qué colección de negocios contiene. Es lo que leen buscadores y asistentes.
+const jsonLdPortada = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Zona Alcaravaneras',
+    alternateName: 'Guía de comercios de Las Alcaravaneras',
+    url: 'https://zonaalcaravaneras.com/',
+    inLanguage: 'es-ES',
+    description:
+      `Guía gratuita e independiente de los ${comercios.length} comercios del barrio de ` +
+      'Las Alcaravaneras, en Las Palmas de Gran Canaria.',
+    isAccessibleForFree: true,
+    publisher: {
+      '@type': 'Organization',
+      name: 'Impulcan',
+      url: 'https://impulcan.com/',
+    },
+    about: {
+      '@type': 'Place',
+      name: 'Las Alcaravaneras',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Las Palmas de Gran Canaria',
+        addressRegion: 'Las Palmas',
+        addressCountry: 'ES',
+      },
+    },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: 'Comercios de Las Alcaravaneras',
+    url: 'https://zonaalcaravaneras.com/',
+    mainEntity: {
+      '@type': 'ItemList',
+      numberOfItems: comercios.length,
+      itemListElement: ordenados.slice(0, 100).map((c, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        url: `https://zonaalcaravaneras.com/${c.slug}/`,
+        name: c.nombre,
+      })),
+    },
+  },
+];
+---
+
+<Base
+  titulo="Zona Alcaravaneras — guía de comercios del barrio"
+  descripcion="Directorio gratuito e independiente de los comercios del barrio de Las Alcaravaneras, Las Palmas de Gran Canaria. Teléfonos, horarios y direcciones."
+  barraSolida={false}
+  imagen={portada.src}
+>
+  <script
+    slot="head"
+    type="application/ld+json"
+    set:html={JSON.stringify(jsonLdPortada)}
+  />
+
+  <section class="portada" slot="portada">
+    <Image
+      class="fondo"
+      src={portada}
+      alt="Playa de Las Alcaravaneras con el puerto de Las Palmas al fondo"
+      widths={[800, 1400, 2000]}
+      sizes="100vw"
+      loading="eager"
+      fetchpriority="high"
+    />
+    <div class="contenedor">
+      <span class="sello">Gratis · Independiente · Del barrio</span>
+      <h1>Los comercios de<br />Las Alcaravaneras</h1>
+      <p class="entradilla">
+        Todo lo que abre en el barrio, en un sitio. Teléfono, horario y cómo llegar.
+        Sin cuotas, sin socios y sin colores políticos.
+      </p>
+
+      <div class="panel-busqueda">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="1.9"/>
+          <path d="m16 16 4.5 4.5" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/>
+        </svg>
+        <label class="visually-hidden" for="q">Buscar comercio</label>
+        <input
+          id="q"
+          class="buscador"
+          type="search"
+          placeholder="Buscar por nombre, calle o tipo de negocio…"
+          autocomplete="off"
+        />
+      </div>
+    </div>
+    <span class="credito-foto">
+      Foto: Bengt Nyman, <a href="/creditos/">CC BY-SA 4.0</a>
+    </span>
+  </section>
+
+  <div class="contenedor">
+    <section class="seccion" id="mapa">
+      <h2>El barrio, de un vistazo</h2>
+      <p class="sub">Cada cuadrado es un comercio. Pulsa el que quieras para ver su ficha.</p>
+      <MapaBarrio />
+    </section>
+
+    <section class="seccion">
+      <h2>{comercios.length} comercios en el barrio</h2>
+      <p class="sub">Filtra por tipo de negocio o busca arriba.</p>
+
+      <div class="filtros" id="filtros">
+        <button class="filtro" data-cat="" aria-pressed="true">Todos</button>
+        {categorias.map((cat) => (
+          <button class="filtro" data-cat={cat} aria-pressed="false">{cat}</button>
+        ))}
+      </div>
+
+      <ul class="rejilla" id="rejilla">
+        {ordenados.map((c) => <TarjetaComercio comercio={c} />)}
+      </ul>
+
+      <p class="vacio" id="vacio" hidden>
+        No hay comercios que coincidan. Prueba con otra palabra.
+      </p>
+    </section>
+
+    <div class="aviso">
+      <strong>¿Tienes un negocio aquí y no apareces?</strong>
+      <a href={waIndex} rel="noopener">Mándanos un WhatsApp</a> y te añadimos. Es gratis,
+      no hay que asociarse a nada y puedes pedir que quitemos tu ficha cuando quieras.
+      <div class="acciones" style="margin-top:0.9rem">
+        <a class="boton" href={waIndex} rel="noopener">Añadir mi comercio</a>
+        <a class="boton secundario" href="/alta/">Cómo funciona</a>
+      </div>
+    </div>
+  </div>
+</Base>
+
+<script>
+  const entrada = document.getElementById('q');
+  const rejilla = document.getElementById('rejilla');
+  const vacio = document.getElementById('vacio');
+  const tarjetas = [...rejilla.querySelectorAll('.tarjeta')];
+  const botones = [...document.querySelectorAll('#filtros .filtro')];
+  let categoria = '';
+
+  // Sin tildes: buscar "peluqueria" encuentra "Peluquería"
+  const normalizar = (t) =>
+    t.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+
+  for (const tarjeta of tarjetas) {
+    tarjeta.dataset.buscar = normalizar(tarjeta.dataset.buscar);
+  }
+
+  function filtrar() {
+    const texto = normalizar(entrada.value.trim());
+    let visibles = 0;
+
+    for (const tarjeta of tarjetas) {
+      const coincideTexto = !texto || tarjeta.dataset.buscar.includes(texto);
+      const coincideCat = !categoria || tarjeta.dataset.cat === categoria;
+      const mostrar = coincideTexto && coincideCat;
+      tarjeta.hidden = !mostrar;
+      if (mostrar) visibles++;
+    }
+
+    vacio.hidden = visibles > 0;
+  }
+
+  entrada.addEventListener('input', filtrar);
+
+  for (const boton of botones) {
+    boton.addEventListener('click', () => {
+      categoria = boton.dataset.cat;
+      for (const otro of botones) {
+        otro.setAttribute('aria-pressed', String(otro === boton));
+      }
+      filtrar();
+    });
+  }
+</script>

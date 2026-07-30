@@ -1,0 +1,111 @@
+---
+// Página de trabajo interno: la lista de comercios ordenada para recorrer el barrio
+// a pie e ir rellenando lo que falta. No indexable y fuera del sitemap.
+import Base from '../layouts/Base.astro';
+import comercios from '../data/comercios.json';
+
+const falta = (c) => [
+  !c.telefono && 'teléfono',
+  !c.horario && 'horario',
+  !c.fotos?.length && 'fotos',
+  !c.calle.includes(',') && 'número',
+].filter(Boolean);
+
+const porCalle = new Map();
+for (const c of comercios) {
+  const calle = c.calle.split(',')[0].trim();
+  if (!porCalle.has(calle)) porCalle.set(calle, []);
+  porCalle.get(calle).push(c);
+}
+
+// Calles con más comercios primero: así se rentabiliza cada tarde
+const calles = [...porCalle.entries()]
+  .map(([calle, lista]) => ({
+    calle,
+    lista: lista.sort((a, b) => a.nombre.localeCompare(b.nombre, 'es')),
+    pendientes: lista.filter((c) => falta(c).length).length,
+  }))
+  .sort((a, b) => b.lista.length - a.lista.length);
+
+const total = comercios.length;
+const conTel = comercios.filter((c) => c.telefono).length;
+const conHorario = comercios.filter((c) => c.horario).length;
+const conFoto = comercios.filter((c) => c.fotos?.length).length;
+---
+
+<Base
+  titulo="Hoja de ruta — trabajo de campo"
+  descripcion="Lista interna de comercios pendientes de completar."
+  noindex={true}
+>
+  <section class="cinta" slot="portada">
+    <div class="contenedor">
+      <span class="etiqueta-cat">Interno</span>
+      <h1>Hoja de ruta</h1>
+      <p>
+        {total} comercios. Faltan {total - conTel} teléfonos, {total - conHorario} horarios
+        y {total - conFoto} fotos. Página no indexable.
+      </p>
+    </div>
+  </section>
+
+  <div class="contenedor">
+    <div class="aviso calma">
+      Ordenado por calle, de más comercios a menos. Empieza por las primeras: son las
+      que más rellenas por tarde caminada. Pásame lo que recojas y lo meto al JSON.
+    </div>
+
+    {calles.map((g) => (
+      <section class="seccion" style="padding:1.5rem 0 0">
+        <h2 style="font-size:1.3rem;margin-bottom:0.2rem">{g.calle}</h2>
+        <p class="sub" style="margin:0 0 0.8rem">
+          {g.lista.length} comercios · {g.pendientes} por completar
+        </p>
+        <table class="ruta">
+          <thead>
+            <tr><th>Comercio</th><th>Categoría</th><th>Falta</th></tr>
+          </thead>
+          <tbody>
+            {g.lista.map((c) => (
+              <tr>
+                <td><a href={`/${c.slug}/`}>{c.nombre}</a></td>
+                <td class="cat-celda">{c.categoria}</td>
+                <td class="falta">
+                  {falta(c).length ? falta(c).join(', ') : 'completo'}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </section>
+    ))}
+  </div>
+</Base>
+
+<style>
+  .ruta {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border: 1px solid var(--borde);
+    border-radius: var(--radio);
+    overflow: hidden;
+    font-size: 0.9rem;
+  }
+  .ruta th {
+    text-align: left;
+    background: var(--arena-honda);
+    padding: 0.5rem 0.8rem;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--tinta-suave);
+  }
+  .ruta td {
+    padding: 0.5rem 0.8rem;
+    border-top: 1px solid var(--arena-honda);
+    vertical-align: top;
+  }
+  .cat-celda { color: var(--tinta-suave); white-space: nowrap; }
+  .falta { color: #b4562f; }
+</style>

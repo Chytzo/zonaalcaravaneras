@@ -1,0 +1,30 @@
+---
+const { comercio } = Astro.props;
+const inicial = comercio.nombre.trim().charAt(0).toUpperCase();
+const portada = comercio.fotos?.[0];
+---
+
+<li
+  class="tarjeta"
+  data-cat={comercio.categoria}
+  data-buscar={`${comercio.nombre} ${comercio.categoria} ${comercio.calle}`.toLowerCase()}
+>
+  <div class="medio">
+    {portada ? (
+      <img src={portada} alt={`Local de ${comercio.nombre}`} loading="lazy" />
+    ) : (
+      <div class="monograma" aria-hidden="true">{inicial}</div>
+    )}
+    <span class="etiqueta">{comercio.categoria}</span>
+  </div>
+  <div class="cuerpo">
+    <h3><a href={`/${comercio.slug}/`}>{comercio.nombre}</a></h3>
+    <p class="dir">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true" style="margin-top:3px;flex:none">
+        <path d="M12 21s7-5.7 7-11a7 7 0 1 0-14 0c0 5.3 7 11 7 11Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+        <circle cx="12" cy="10" r="2.4" stroke="currentColor" stroke-width="1.7"/>
+      </svg>
+      {comercio.calle}
+    </p>
+  </div>
+</li>

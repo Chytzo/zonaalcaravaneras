@@ -1,0 +1,42 @@
+# Zona Alcaravaneras
+
+> Guía digital gratuita e independiente de los 327 comercios del barrio de Las Alcaravaneras, en Las Palmas de Gran Canaria (Canarias, España). Una página por comercio con dirección, teléfono, horario y cómo llegar, además de un plano del barrio donde cada local es pulsable. Aparecer es gratuito: no hay cuotas, exclusividad ni permanencia. No está vinculada a ninguna asociación de comerciantes ni a ningún partido político.
+
+La guía la mantiene [Impulcan](https://impulcan.com) — marketing y automatizaciones — y ningún comercio paga por estar en ella. El sitio no usa cookies, ni analítica, ni rastreadores. Los datos de partida y la geometría del plano provienen de OpenStreetMap (licencia ODbL) y se completan con lo que facilitan los propios comercios.
+
+## Qué zona cubre
+
+Barrio de Las Alcaravaneras, Las Palmas de Gran Canaria. Delimitado al oeste por Calle Olof Palme y Paseo de Chil, al norte por encima de Calle Barcelona, al sur por el Parque del Antiguo Estadio Insular y al este por la Playa de Las Alcaravaneras y el puerto. Códigos postales 35006 y 35007.
+
+Calles con más comercios: Calle Néstor de la Torre (39), Avenida José Mesa y López (32), Calle General Mas de Gaminde (27), Calle Barcelona (25), Calle Pi y Margall (17), Calle Galicia (16), Calle Manuel González Martín (14), Calle Alemania (14), Calle León y Castillo (12), Calle Alfredo Calderón (12).
+
+## Categorías de comercio
+
+- [Restaurantes](https://zonaalcaravaneras.com/categoria/restaurantes/) — 46 comercios. Ejemplos: 20conmigo, Asadero El Puente, Asahi, Bacoterapia, Bar Restaurante Alemania, Bar Sam.
+- [Belleza](https://zonaalcaravaneras.com/categoria/belleza/) — 44 comercios. Ejemplos: Alelí Perfumería Mesa y López, Atmaram, Veena, Beauty Shop S A U, Biondi Elite Peluquería, Carroussel, Centro De Bienestar Nestor de la Torre.
+- [Alimentación](https://zonaalcaravaneras.com/categoria/alimentacion/) — 39 comercios. Ejemplos: 24 Horas Vip noche y día, B A M Alfaship, Baza - Minimercado, Bazar - Minimercado, Bazar Ainomar, Bazar Alcaravaneras.
+- [Moda](https://zonaalcaravaneras.com/categoria/moda/) — 36 comercios. Ejemplos: Albert Joyeros, Bata, Central Uniformes, Colorín Tienda de Costura, Creativa Mercería y Labores, Dimikelo Milano.
+- [Servicios](https://zonaalcaravaneras.com/categoria/servicios/) — 33 comercios. Ejemplos: 2000 Autoescuelas, Acfi Press Agencia de Fotografía, Autoescuela Eco, Autoescuela Los Alisios, B The Travel Brand, Banco Santander.
+- [Bares y cafés](https://zonaalcaravaneras.com/categoria/bares-y-cafes/) — 32 comercios. Ejemplos: Bahía Playa, Bar Cafetería Churrería Mercado Central, Bar Cafetería La Parada, Bar El Cubi, Bar La Sacristía, Bar Restaurante Villa de Madrid.
+- [Hogar y reformas](https://zonaalcaravaneras.com/categoria/hogar-y-reformas/) — 26 comercios. Ejemplos: Banak Importa Gran Canaria, Benítez Menaje, Bike Gran Canaria, CASA, Cegrisa, Central de Representaciones Canarias.
+- [Salud](https://zonaalcaravaneras.com/categoria/salud/) — 23 comercios. Ejemplos: Animal Lab Laboratorio, CareDent, Clínica Dental Infantil Inmaculada Viñuela, Clínica Veterinaria Atlántico, Farmacia Alicia Artiles Betancort, Farmacia Lantigua Usar.
+- [Electrónica](https://zonaalcaravaneras.com/categoria/electronica/) — 17 comercios. Ejemplos: Alarmas Prosegur, Banana Computer, Batch-PC, Cainser Servicio Técnico, Center Gematel, CNCSystem.
+- [Deporte y ocio](https://zonaalcaravaneras.com/categoria/deporte-y-ocio/) — 13 comercios. Ejemplos: Alfonso Serrano Distribuciones Deportivas, Buy Muscle Las Palmas, Carlin, Floristería La Pagoda, Galería Eduardo Santana, Hesperia.
+- [Bazares](https://zonaalcaravaneras.com/categoria/bazares/) — 11 comercios. Ejemplos: 11, Bazar Oriental, Bazar Pío XII, Buy & Sell, Carolan Fiestas, Cash Converters Las Palmas.
+- [Motor](https://zonaalcaravaneras.com/categoria/motor/) — 5 comercios. Ejemplos: Antonio Acosta Enríquez, Free Motion Bike Center, Gubra Las Palmas, Motoaxial, Taller Eléctrico Electroauto Canarias.
+- [Mascotas](https://zonaalcaravaneras.com/categoria/mascotas/) — 2 comercios. Ejemplos: Acuario Pura Vida, Peluquería de Mascotas Trufa.
+
+## Páginas clave
+
+- [Inicio](https://zonaalcaravaneras.com/): buscador, plano del barrio y listado completo.
+- [Añadir o corregir un comercio](https://zonaalcaravaneras.com/alta/): gratis, por WhatsApp o correo.
+- [Créditos de fotografías y datos](https://zonaalcaravaneras.com/creditos/)
+- [Aviso legal](https://zonaalcaravaneras.com/aviso-legal/)
+- [Privacidad](https://zonaalcaravaneras.com/privacidad/)
+
+Cada comercio tiene su propia página en `https://zonaalcaravaneras.com/{nombre-del-comercio}/` con datos estructurados schema.org LocalBusiness.
+
+## Contacto
+
+- WhatsApp: +34 633 50 51 53
+- Correo: hola@zonaalcaravaneras.com

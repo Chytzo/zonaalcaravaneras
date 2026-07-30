@@ -1,0 +1,72 @@
+---
+import Base from '../layouts/Base.astro';
+import { contacto, enlaceWhatsapp } from '../config.js';
+
+const waAlta = enlaceWhatsapp(
+  'Hola, tengo un negocio en Alcaravaneras y quiero salir en la guía. Te paso los datos.'
+);
+const waBaja = enlaceWhatsapp('Hola, quiero que retiréis la ficha de mi negocio de la guía.');
+---
+
+<Base
+  titulo="Añadir o corregir mi comercio — Zona Alcaravaneras"
+  descripcion="Aparecer en la guía de comercios de Alcaravaneras es gratuito. Escríbenos para añadir tu negocio, corregir tus datos o retirar tu ficha."
+>
+  <section class="cinta" slot="portada">
+    <div class="contenedor">
+      <span class="etiqueta-cat">Gratis, de verdad</span>
+      <h1>Añade o corrige tu comercio</h1>
+      <p>Sin cuota, sin suscripción, sin permanencia y sin exclusividad. Tampoco hace falta que estés asociado a nada.</p>
+      <div class="acciones">
+        <a class="boton" href={waAlta} rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 2a10 10 0 0 0-8.6 15.05L2 22l5.1-1.33A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.03.79.81-2.95-.2-.31A8.2 8.2 0 1 1 12 20.2Zm4.5-6.13c-.25-.12-1.46-.72-1.69-.8-.22-.09-.39-.13-.55.12s-.63.8-.77.96-.28.19-.53.06a6.72 6.72 0 0 1-3.36-2.94c-.25-.43.25-.4.72-1.33a.45.45 0 0 0 0-.43c0-.12-.55-1.33-.76-1.82s-.4-.42-.55-.43h-.47a.9.9 0 0 0-.65.3 2.73 2.73 0 0 0-.85 2.04 4.77 4.77 0 0 0 1 2.52 10.9 10.9 0 0 0 4.18 3.7c1.55.67 2.16.73 2.94.61a2.5 2.5 0 0 0 1.65-1.17 2.05 2.05 0 0 0 .14-1.16c-.06-.11-.22-.17-.47-.29Z"/>
+          </svg>
+          Escribir por WhatsApp
+        </a>
+        <a class="boton fantasma" href={`mailto:${contacto.email}`}>O por correo</a>
+      </div>
+      <p style="margin-top:0.9rem;font-size:0.9rem;opacity:0.8">
+        WhatsApp directo: <strong>{contacto.whatsappVisible}</strong>
+      </p>
+    </div>
+  </section>
+
+  <div class="contenedor">
+    <div class="prosa">
+      <h2>Qué necesitamos</h2>
+      <ul>
+        <li>Nombre del negocio</li>
+        <li>Qué vendéis o qué servicio dais</li>
+        <li>Dirección y código postal</li>
+        <li>Teléfono, y WhatsApp si lo usáis</li>
+        <li>Horario</li>
+        <li>Dos o tres fotos, del local o del producto</li>
+      </ul>
+
+      <h2>¿Quieres que quitemos tu ficha?</h2>
+      <p>
+        Dilo y la retiramos el mismo día, sin preguntas y sin que tengas que justificar
+        nada. <a href={waBaja} rel="noopener">Escríbenos por WhatsApp</a> o a
+        <a href={`mailto:${contacto.email}`}>{contacto.email}</a>.
+      </p>
+
+      <h2>¿Quién está detrás y por qué es gratis?</h2>
+      <p>
+        Esta guía la mantiene <a href="https://impulcan.com" rel="noopener">Impulcan</a>
+        — marketing y automatizaciones. No cobramos por aparecer y no vamos a cobrar nunca:
+        la guía es nuestra forma de darnos a conocer en el barrio.
+      </p>
+      <p>
+        Lo decimos claro porque preferimos que lo sepas desde el principio. Si algún día
+        quieres contratar algo con nosotros, hablamos. Y si no, tu ficha seguirá
+        exactamente igual de visible.
+      </p>
+      <p>
+        No estamos afiliados a ninguna asociación de comerciantes ni a ningún partido
+        político, y no tenemos intención de estarlo. Da igual en qué asociación estés,
+        o si no estás en ninguna: aquí sales igual.
+      </p>
+    </div>
+  </div>
+</Base>

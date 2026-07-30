@@ -1,0 +1,44 @@
+---
+import Base from '../../layouts/Base.astro';
+import TarjetaComercio from '../../components/TarjetaComercio.astro';
+import comercios from '../../data/comercios.json';
+import { slugificar } from '../../utils/slug.js';
+
+export function getStaticPaths() {
+  const categorias = [...new Set(comercios.map((c) => c.categoria))];
+
+  return categorias.map((categoria) => ({
+    params: { cat: slugificar(categoria) },
+    props: {
+      categoria,
+      listado: comercios
+        .filter((c) => c.categoria === categoria)
+        .sort((a, b) => a.nombre.localeCompare(b.nombre, 'es')),
+    },
+  }));
+}
+
+const { categoria, listado } = Astro.props;
+---
+
+<Base
+  titulo={`${categoria} en Alcaravaneras — Zona Alcaravaneras`}
+  descripcion={`Comercios de ${categoria.toLowerCase()} en el barrio de Las Alcaravaneras, Las Palmas de Gran Canaria. Direcciones, teléfonos y horarios.`}
+>
+  <section class="cinta" slot="portada">
+    <div class="contenedor">
+      <span class="etiqueta-cat">Categoría</span>
+      <h1>{categoria} en Alcaravaneras</h1>
+      <p>{listado.length} {listado.length === 1 ? 'comercio' : 'comercios'} en el barrio.</p>
+    </div>
+  </section>
+
+  <div class="contenedor">
+    <section class="seccion">
+      <ul class="rejilla">
+        {listado.map((c) => <TarjetaComercio comercio={c} />)}
+      </ul>
+      <p><a href="/">&larr; Todos los comercios del barrio</a></p>
+    </section>
+  </div>
+</Base>
