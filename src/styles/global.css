@@ -496,3 +496,195 @@ img { max-width: 100%; display: block; }
   font-size: 0.78rem;
   color: rgba(255, 255, 255, 0.5);
 }
+
+/* ================= Portada aérea (v2) ================= */
+@font-face {
+  font-family: 'Baloo 2';
+  src: url('/fuentes/baloo-2-800.woff2') format('woff2');
+  font-weight: 800; font-style: normal; font-display: swap;
+}
+
+.aerea {
+  position: relative;
+  isolation: isolate;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 6rem 1.25rem 5rem;
+  overflow: hidden;
+}
+.aerea-fondo {
+  position: absolute; inset: 0; z-index: -3;
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center 55%;
+}
+/* Velo: arriba para que se lea la barra, abajo para enlazar con la página */
+.aerea::before {
+  content: ""; position: absolute; inset: 0; z-index: -2;
+  background:
+    linear-gradient(to bottom, rgba(6,20,30,0.55) 0%, rgba(6,20,30,0.12) 26%,
+                    rgba(6,20,30,0.30) 62%, rgba(4,34,46,0.92) 100%);
+}
+
+/* Nubes que cruzan despacio */
+.nubes { position: absolute; inset: 0; z-index: -1; pointer-events: none; }
+.nube {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, rgba(255,255,255,0.75), rgba(255,255,255,0) 70%);
+  filter: blur(22px);
+  will-change: transform;
+}
+.nube--1 { width: 58vw; height: 22vh; top: 14%; left: -60vw; animation: cruzar 64s linear infinite; }
+.nube--2 { width: 40vw; height: 16vh; top: 42%; left: -45vw; opacity: 0.7;
+           animation: cruzar 88s linear infinite; animation-delay: -22s; }
+.nube--3 { width: 70vw; height: 26vh; top: 66%; left: -75vw; opacity: 0.55;
+           animation: cruzar 108s linear infinite; animation-delay: -55s; }
+.nube--4 { width: 32vw; height: 13vh; top: 27%; left: -35vw; opacity: 0.5;
+           animation: cruzar 76s linear infinite; animation-delay: -38s; }
+@keyframes cruzar {
+  from { transform: translateX(0); }
+  to   { transform: translateX(190vw); }
+}
+
+.aerea-contenido { position: relative; z-index: 1; max-width: 900px; }
+
+.palabra-color {
+  font-family: 'Baloo 2', 'Baloo2', system-ui, sans-serif;
+  font-weight: 800;
+  font-size: clamp(2.5rem, 9vw, 6.2rem);
+  line-height: 1.02;
+  letter-spacing: -0.015em;
+  margin: 0 0 1rem;
+  text-shadow: 0 6px 40px rgba(0,0,0,0.45);
+}
+.palabra-color .palabra { display: inline-block; white-space: nowrap; }
+
+.aerea-lema {
+  font-size: clamp(1rem, 2.3vw, 1.28rem);
+  color: rgba(255,255,255,0.95);
+  text-shadow: 0 2px 18px rgba(0,0,0,0.6);
+  margin: 0 auto 2.1rem;
+  max-width: 46ch;
+}
+
+.aerea-botones { display: flex; flex-wrap: wrap; gap: 0.8rem; justify-content: center; }
+.pastilla {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 0.85rem 1.9rem; border-radius: 999px;
+  font-weight: 600; font-size: 1rem; text-decoration: none;
+  background: rgba(255,255,255,0.14);
+  border: 1px solid rgba(255,255,255,0.55);
+  color: #fff;
+  backdrop-filter: blur(8px);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+.pastilla:hover { transform: translateY(-2px); background: rgba(255,255,255,0.24); }
+.pastilla--llena {
+  background: #2563eb; border-color: #2563eb;
+  box-shadow: 0 8px 30px rgba(37,99,235,0.45);
+}
+.pastilla--llena:hover { background: #1d4ed8; }
+
+.aerea-bajar {
+  position: absolute; bottom: 1.6rem; left: 50%; transform: translateX(-50%);
+  z-index: 1; color: rgba(255,255,255,0.85);
+  animation: rebote 2.4s ease-in-out infinite;
+}
+@keyframes rebote {
+  0%, 100% { transform: translate(-50%, 0); }
+  50%      { transform: translate(-50%, 8px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nube, .aerea-bajar { animation: none !important; }
+}
+
+/* ================= Plano en perspectiva (v2) ================= */
+.escena {
+  position: relative;
+  perspective: 1400px;
+  perspective-origin: 50% 18%;
+  padding: 0 0 2rem;
+  /* El cielo del horizonte, detrás del plano inclinado */
+  background: linear-gradient(to bottom,
+    #bfe0ee 0%, #dcecf3 12%, rgba(242,236,225,0) 34%);
+  border-radius: var(--radio);
+  overflow: hidden;
+}
+.escena-inclinada {
+  transform: rotateX(46deg) translateY(-4%) scale(1.22);
+  transform-origin: 50% 100%;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+/* Al pasar el ratón el plano se endereza un poco: se lee mejor sin perder el efecto */
+.escena:hover .escena-inclinada { transform: rotateX(30deg) translateY(-2%) scale(1.1); }
+.escena.plano .escena-inclinada { transform: none; }
+
+/* Neblina en el horizonte, para que el plano no se corte en seco */
+.escena::after {
+  content: "";
+  position: absolute; inset: 0 0 auto; height: 34%;
+  pointer-events: none;
+  background: linear-gradient(to bottom, rgba(191,224,238,0.95) 0%,
+              rgba(220,236,243,0.55) 45%, rgba(220,236,243,0) 100%);
+}
+
+.escena-mandos {
+  display: flex; justify-content: flex-end; gap: 0.5rem;
+  margin-bottom: 0.7rem;
+}
+.boton-vista {
+  border: 1px solid var(--borde); background: #fff;
+  border-radius: 999px; padding: 0.4rem 0.95rem;
+  font: inherit; font-size: 0.85rem; font-weight: 500;
+  color: var(--tinta); cursor: pointer;
+}
+.boton-vista[aria-pressed="true"] {
+  background: var(--oceano); border-color: var(--oceano); color: #fff;
+}
+
+@media (max-width: 700px) {
+  /* En móvil la perspectiva se come la legibilidad: menos inclinación */
+  .escena-inclinada { transform: rotateX(34deg) scale(1.1); }
+  .escena:hover .escena-inclinada { transform: rotateX(24deg) scale(1.05); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .escena-inclinada, .escena:hover .escena-inclinada { transform: none; }
+}
+
+/* El buscador ya no vive sobre la foto: versión para fondo claro */
+.panel-busqueda--claro { border: 1px solid var(--borde); margin: 0 0 1rem; }
+.conteo--claro { color: var(--tinta); text-shadow: none; margin: 0 0 1.2rem; }
+
+/* Imagen principal de la ficha */
+.ficha-imagen { margin: 1.5rem 0 0; }
+.ficha-imagen img {
+  width: 100%; max-height: 420px; object-fit: cover;
+  border-radius: var(--radio); box-shadow: var(--sombra-alta);
+}
+.ficha-imagen--vacia {
+  display: flex; align-items: center; gap: 1.2rem;
+  background: linear-gradient(140deg, var(--agua) 0%, var(--oceano) 78%);
+  color: #fff; border-radius: var(--radio); padding: 1.5rem;
+}
+.ficha-imagen--vacia .inicial {
+  font-family: var(--serif); font-size: 3rem; line-height: 1;
+  width: 84px; height: 84px; flex: none;
+  display: grid; place-items: center;
+  background: rgba(255,255,255,0.14); border-radius: var(--radio-s);
+}
+.ficha-imagen--vacia p { margin: 0; font-size: 0.95rem; color: rgba(255,255,255,0.92); }
+.ficha-imagen--vacia a { color: #fff; }
+
+/* Bloque de contacto */
+.contacto-comercio {
+  margin-top: 1.4rem; padding-top: 1.3rem;
+  border-top: 1px solid var(--arena-honda);
+}
+.contacto-comercio h2 { font-size: 1.15rem; margin-bottom: 0.8rem; }
+.sin-contacto { font-size: 0.9rem; color: var(--tinta-suave); margin: 0.9rem 0 0; }

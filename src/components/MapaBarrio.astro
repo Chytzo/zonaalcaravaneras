@@ -40,8 +40,15 @@ const categorias = [...new Set(locales.map((l) => l.categoria))].sort((a, b) =>
     </button>
   </div>
 
-  <div class="mapa-lienzo">
-    <img src="/mapa-fondo.svg" alt="" width={ancho} height={alto} loading="lazy" />
+  <div class="escena-mandos">
+    <button class="boton-vista" data-vista="perspectiva" aria-pressed="true">Perspectiva</button>
+    <button class="boton-vista" data-vista="plano" aria-pressed="false">Cenital</button>
+  </div>
+
+  <div class="escena">
+   <div class="escena-inclinada">
+    <div class="mapa-lienzo">
+      <img src="/mapa-fondo.svg" alt="" width={ancho} height={alto} loading="lazy" />
 
     <svg
       class="mapa-capa"
@@ -82,7 +89,9 @@ const categorias = [...new Set(locales.map((l) => l.categoria))].sort((a, b) =>
       </g>
     </svg>
 
-    <div class="globo" hidden></div>
+      <div class="globo" hidden></div>
+    </div>
+   </div>
   </div>
 
   <p class="nota-mapa">
@@ -141,6 +150,18 @@ const categorias = [...new Set(locales.map((l) => l.categoria))].sort((a, b) =>
     lienzo.addEventListener('mouseleave', () => { globo.hidden = true; });
 
     capaInfantil.removeAttribute('hidden');
+
+    // Perspectiva o cenital
+    const escena = raiz.querySelector('.escena');
+    for (const b of raiz.querySelectorAll('.boton-vista')) {
+      b.addEventListener('click', () => {
+        const plano = b.dataset.vista === 'plano';
+        escena.classList.toggle('plano', plano);
+        for (const otro of raiz.querySelectorAll('.boton-vista')) {
+          otro.setAttribute('aria-pressed', String(otro === b));
+        }
+      });
+    }
   }
 </script>
 

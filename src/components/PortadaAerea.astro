@@ -1,0 +1,63 @@
+---
+// Portada a pantalla completa: vista aérea de la zona, nubes en movimiento
+// y el nombre en colores. Inspirada en la referencia que pasó el usuario.
+import { Image } from 'astro:assets';
+import aerea from '../assets/aerea-zona.jpg';
+
+const { titulo = 'ZONA ALCARAVANERAS', comercios = 0 } = Astro.props;
+
+// Una letra, un color. Se reparte la paleta a lo largo de la palabra.
+const COLORES = ['#ff6b2c', '#f5106b', '#c026d3', '#2563eb', '#0ea5e9', '#10b981', '#f59e0b'];
+const palabras = titulo.split(' ').map((p) => [...p]);
+let i = 0;
+const letras = palabras.map((p) => p.map((c) => ({ c, color: COLORES[i++ % COLORES.length] })));
+---
+
+<section class="aerea">
+  <Image
+    class="aerea-fondo"
+    src={aerea}
+    alt="Vista aérea del puerto, la playa y el barrio de Las Alcaravaneras al atardecer"
+    widths={[900, 1500, 2100]}
+    sizes="100vw"
+    loading="eager"
+    fetchpriority="high"
+  />
+
+  <div class="nubes" aria-hidden="true">
+    <span class="nube nube--1"></span>
+    <span class="nube nube--2"></span>
+    <span class="nube nube--3"></span>
+    <span class="nube nube--4"></span>
+  </div>
+
+  <div class="aerea-contenido">
+    <h1 class="palabra-color">
+      {letras.map((palabra, n) => (
+        <>
+          <span class="palabra">
+            {palabra.map(({ c, color }) => <span style={`color:${color}`}>{c}</span>)}
+          </span>
+          {n < letras.length - 1 && ' '}
+        </>
+      ))}
+    </h1>
+
+    <p class="aerea-lema">
+      {comercios > 0 ? `${comercios} comercios del barrio, en un sitio.` : 'Los comercios del barrio, en un sitio.'}
+      <br />Gratis, independiente y sin colores políticos.
+    </p>
+
+    <div class="aerea-botones">
+      <a class="pastilla pastilla--llena" href="#mapa">Ver el plano</a>
+      <a class="pastilla" href="#lista">Ver comercios</a>
+    </div>
+  </div>
+
+  <a class="aerea-bajar" href="#mapa" aria-label="Bajar al plano">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M12 5v14M6 13l6 6 6-6" stroke="currentColor" stroke-width="1.8"
+        stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </a>
+</section>

@@ -103,9 +103,23 @@ const migas = {
   </section>
 
   <div class="contenedor">
-    {comercio.fotos?.length > 0 && (
+    <div class="ficha-imagen">
+      {comercio.fotos?.length > 0 ? (
+        <img src={comercio.fotos[0]} alt={`Local de ${comercio.nombre}`} loading="lazy" />
+      ) : (
+        <div class="ficha-imagen--vacia">
+          <span class="inicial">{comercio.nombre.trim().charAt(0).toUpperCase()}</span>
+          <p>
+            Sin foto todavía. Si es tu negocio,
+            <a href={waGuia} rel="noopener"> mándanos una por WhatsApp</a> y la ponemos.
+          </p>
+        </div>
+      )}
+    </div>
+
+    {comercio.fotos?.length > 1 && (
       <div class="galeria">
-        {comercio.fotos.map((foto) => (
+        {comercio.fotos.slice(1).map((foto) => (
           <img src={foto} alt={`Local de ${comercio.nombre}`} loading="lazy" />
         ))}
       </div>
@@ -148,6 +162,33 @@ const migas = {
             </li>
           )}
         </ul>
+
+        <div class="contacto-comercio">
+          <h2>Contactar</h2>
+          <div class="acciones">
+            {comercio.telefono && (
+              <a class="boton" href={`tel:${telHref}`}>Llamar</a>
+            )}
+            {comercio.whatsapp && (
+              <a class="boton secundario" href={`https://wa.me/${waHref}`} rel="noopener">WhatsApp</a>
+            )}
+            {comercio.email && (
+              <a class="boton secundario" href={`mailto:${comercio.email}`}>Correo</a>
+            )}
+            {comercio.web && (
+              <a class="boton secundario" href={comercio.web} rel="noopener nofollow">Su web</a>
+            )}
+            {comercio.maps && (
+              <a class="boton secundario" href={comercio.maps} rel="noopener">Cómo llegar</a>
+            )}
+          </div>
+          {!comercio.telefono && !comercio.whatsapp && !comercio.email && !comercio.web && (
+            <p class="sin-contacto">
+              Todavía no tenemos forma de contacto de este negocio.
+              <a href={waGuia} rel="noopener"> Si es el tuyo, dínoslo</a> y la añadimos hoy.
+            </p>
+          )}
+        </div>
 
         {!comercio.telefono && !comercio.horario && (
           <p class="incompleta">
