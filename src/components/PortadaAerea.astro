@@ -4,7 +4,7 @@
 import { Image } from 'astro:assets';
 import aerea from '../assets/aerea-zona.jpg';
 
-const { titulo = 'ZONA ALCARAVANERAS', comercios = 0 } = Astro.props;
+const { titulo = 'zona alcaravaneras', comercios = 0 } = Astro.props;
 
 // Una letra, un color. Se reparte la paleta a lo largo de la palabra.
 const COLORES = ['#ff6b2c', '#f5106b', '#c026d3', '#2563eb', '#0ea5e9', '#10b981', '#f59e0b'];
@@ -44,8 +44,7 @@ const letras = palabras.map((p) => p.map((c) => ({ c, color: COLORES[i++ % COLOR
     </h1>
 
     <p class="aerea-lema">
-      {comercios > 0 ? `${comercios} comercios del barrio, en un sitio.` : 'Los comercios del barrio, en un sitio.'}
-      <br />Gratis, independiente y sin colores políticos.
+      {comercios > 0 ? `${comercios} comercios del barrio` : 'Los comercios del barrio'} · gratis e independiente
     </p>
 
     <div class="aerea-botones">

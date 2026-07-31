@@ -525,8 +525,8 @@ img { max-width: 100%; display: block; }
 .aerea::before {
   content: ""; position: absolute; inset: 0; z-index: -2;
   background:
-    linear-gradient(to bottom, rgba(6,20,30,0.55) 0%, rgba(6,20,30,0.12) 26%,
-                    rgba(6,20,30,0.30) 62%, rgba(4,34,46,0.92) 100%);
+    linear-gradient(to bottom, rgba(6,20,30,0.45) 0%, rgba(6,20,30,0.05) 22%,
+                    rgba(6,20,30,0.18) 58%, rgba(4,34,46,0.88) 100%);
 }
 
 /* Nubes que cruzan despacio */
@@ -538,13 +538,11 @@ img { max-width: 100%; display: block; }
   filter: blur(22px);
   will-change: transform;
 }
-.nube--1 { width: 58vw; height: 22vh; top: 14%; left: -60vw; animation: cruzar 64s linear infinite; }
-.nube--2 { width: 40vw; height: 16vh; top: 42%; left: -45vw; opacity: 0.7;
-           animation: cruzar 88s linear infinite; animation-delay: -22s; }
-.nube--3 { width: 70vw; height: 26vh; top: 66%; left: -75vw; opacity: 0.55;
-           animation: cruzar 108s linear infinite; animation-delay: -55s; }
-.nube--4 { width: 32vw; height: 13vh; top: 27%; left: -35vw; opacity: 0.5;
-           animation: cruzar 76s linear infinite; animation-delay: -38s; }
+.nube--1 { width: 70vw; height: 26vh; top: 46%; left: -75vw; opacity: 0.35; animation: cruzar 92s linear infinite; }
+.nube--2 { width: 48vw; height: 18vh; top: 62%; left: -55vw; opacity: 0.28;
+           animation: cruzar 118s linear infinite; animation-delay: -30s; }
+.nube--3 { display: none; }
+.nube--4 { display: none; }
 @keyframes cruzar {
   from { transform: translateX(0); }
   to   { transform: translateX(190vw); }
@@ -552,23 +550,27 @@ img { max-width: 100%; display: block; }
 
 .aerea-contenido { position: relative; z-index: 1; max-width: 900px; }
 
+/* Como la referencia: marca compacta, redondeada y en minúsculas,
+   apoyada abajo del encuadre y no ocupando toda la pantalla. */
 .palabra-color {
-  font-family: 'Baloo 2', 'Baloo2', system-ui, sans-serif;
+  font-family: 'Baloo 2', system-ui, sans-serif;
   font-weight: 800;
-  font-size: clamp(2.5rem, 9vw, 6.2rem);
-  line-height: 1.02;
-  letter-spacing: -0.015em;
-  margin: 0 0 1rem;
-  text-shadow: 0 6px 40px rgba(0,0,0,0.45);
+  font-size: clamp(2rem, 5.2vw, 3.6rem);
+  line-height: 0.95;
+  letter-spacing: -0.045em;
+  margin: 0 0 0.7rem;
+  text-shadow: 0 4px 26px rgba(0,0,0,0.5);
 }
 .palabra-color .palabra { display: inline-block; white-space: nowrap; }
+/* «zona» arriba, «alcaravaneras» debajo y más grande, como el bloque del vídeo */
+.palabra-color .palabra:first-child { display: block; font-size: 0.62em; opacity: 0.95; }
 
 .aerea-lema {
-  font-size: clamp(1rem, 2.3vw, 1.28rem);
-  color: rgba(255,255,255,0.95);
-  text-shadow: 0 2px 18px rgba(0,0,0,0.6);
-  margin: 0 auto 2.1rem;
-  max-width: 46ch;
+  font-size: clamp(0.9rem, 1.7vw, 1.02rem);
+  color: rgba(255,255,255,0.9);
+  text-shadow: 0 2px 16px rgba(0,0,0,0.65);
+  margin: 0 auto 1.5rem;
+  letter-spacing: 0.01em;
 }
 
 .aerea-botones { display: flex; flex-wrap: wrap; gap: 0.8rem; justify-content: center; }
@@ -611,18 +613,18 @@ img { max-width: 100%; display: block; }
   padding: 0 0 2rem;
   /* El cielo del horizonte, detrás del plano inclinado */
   background: linear-gradient(to bottom,
-    #bfe0ee 0%, #dcecf3 12%, rgba(242,236,225,0) 34%);
+    #9ec9e0 0%, #cfe3ee 14%, rgba(207,227,238,0) 38%);
   border-radius: var(--radio);
   overflow: hidden;
 }
 .escena-inclinada {
-  transform: rotateX(46deg) translateY(-4%) scale(1.22);
+  transform: rotateX(52deg) translateY(-6%) scale(1.34);
   transform-origin: 50% 100%;
   transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
   will-change: transform;
 }
 /* Al pasar el ratón el plano se endereza un poco: se lee mejor sin perder el efecto */
-.escena:hover .escena-inclinada { transform: rotateX(30deg) translateY(-2%) scale(1.1); }
+.escena:hover .escena-inclinada { transform: rotateX(34deg) translateY(-3%) scale(1.14); }
 .escena.plano .escena-inclinada { transform: none; }
 
 /* Neblina en el horizonte, para que el plano no se corte en seco */
