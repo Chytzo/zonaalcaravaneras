@@ -41,14 +41,15 @@ const categorias = [...new Set(locales.map((l) => l.categoria))].sort((a, b) =>
   </div>
 
   <div class="escena-mandos">
-    <button class="boton-vista" data-vista="perspectiva" aria-pressed="true">Perspectiva</button>
-    <button class="boton-vista" data-vista="plano" aria-pressed="false">Cenital</button>
+    <button class="boton-vista" data-base="foto" aria-pressed="true">Foto aérea</button>
+    <button class="boton-vista" data-base="plano" aria-pressed="false">Plano</button>
   </div>
 
-  <div class="escena">
-   <div class="escena-inclinada">
-    <div class="mapa-lienzo">
-      <img class="orto" src="/orto-zona.jpg" alt="Vista aérea de la zona" width={ancho} height={alto} loading="lazy" />
+  <div class="mapa-lienzo">
+      <img class="base base--foto" src="/orto-zona.jpg" alt="Vista aérea de la zona"
+        width={ancho} height={alto} loading="lazy" />
+      <img class="base base--plano" src="/mapa-fondo.svg" alt="" hidden
+        width={ancho} height={alto} loading="lazy" />
 
     <svg
       class="mapa-capa"
@@ -89,8 +90,6 @@ const categorias = [...new Set(locales.map((l) => l.categoria))].sort((a, b) =>
     </svg>
 
       <div class="globo" hidden></div>
-    </div>
-   </div>
   </div>
 
   <p class="nota-mapa">
@@ -151,12 +150,16 @@ const categorias = [...new Set(locales.map((l) => l.categoria))].sort((a, b) =>
 
     capaInfantil.removeAttribute('hidden');
 
-    // Perspectiva o cenital
-    const escena = raiz.querySelector('.escena');
+    // Base del plano: fotografía aérea o dibujo
+    const foto = raiz.querySelector('.base--foto');
+    const dibujo = raiz.querySelector('.base--plano');
     for (const b of raiz.querySelectorAll('.boton-vista')) {
       b.addEventListener('click', () => {
-        const plano = b.dataset.vista === 'plano';
-        escena.classList.toggle('plano', plano);
+        const esFoto = b.dataset.base === 'foto';
+        foto.hidden = !esFoto;
+        dibujo.hidden = esFoto;
+        // `raiz` ya es el .mapa: marcamos ahí el modo por si el CSS lo necesita
+        raiz.classList.toggle('sobre-foto', esFoto);
         for (const otro of raiz.querySelectorAll('.boton-vista')) {
           otro.setAttribute('aria-pressed', String(otro === b));
         }
@@ -202,11 +205,12 @@ const categorias = [...new Set(locales.map((l) => l.categoria))].sort((a, b) =>
     background: #f2ece1;
     line-height: 0;
   }
-  .mapa-lienzo img.orto {
-    width: 100%; height: auto; display: block;
-    /* Bajamos un poco el contraste de la foto para que las casillas destaquen */
-    filter: saturate(0.9) brightness(1.04) contrast(0.94);
-  }
+  /* Las dos bases van en flujo normal: así el contenedor conserva la altura
+     con cualquiera de ellas y la capa de locales encaja siempre. */
+  .mapa-lienzo img.base { width: 100%; height: auto; display: block; }
+  /* Apagamos un poco la foto para que las casillas de colores destaquen encima */
+  .mapa-lienzo img.base--foto { filter: saturate(0.62) brightness(0.82) contrast(0.95); }
+  .mapa-lienzo img.base[hidden] { display: none; }
 
   .mapa-capa {
     position: absolute;
@@ -218,9 +222,10 @@ const categorias = [...new Set(locales.map((l) => l.categoria))].sort((a, b) =>
   .locales a rect {
     transition: opacity 0.15s ease;
     cursor: pointer;
-    opacity: 0.82;
-    stroke: rgba(255, 255, 255, 0.75);
-    stroke-width: 0.6;
+    stroke: #fff;
+    stroke-width: 0.9;
+    paint-order: stroke;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.55));
   }
   .locales a:hover rect,
   .locales a:focus rect {

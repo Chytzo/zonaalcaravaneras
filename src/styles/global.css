@@ -605,41 +605,8 @@ img { max-width: 100%; display: block; }
   .nube, .aerea-bajar { animation: none !important; }
 }
 
-/* ================= Plano en perspectiva (v2) ================= */
-.escena {
-  position: relative;
-  perspective: 1400px;
-  perspective-origin: 50% 18%;
-  padding: 0 0 2rem;
-  /* El cielo del horizonte, detrás del plano inclinado */
-  background: linear-gradient(to bottom,
-    #9ec9e0 0%, #cfe3ee 14%, rgba(207,227,238,0) 38%);
-  border-radius: var(--radio);
-  overflow: hidden;
-}
-.escena-inclinada {
-  transform: rotateX(52deg) translateY(-6%) scale(1.34);
-  transform-origin: 50% 100%;
-  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-  will-change: transform;
-}
-/* Al pasar el ratón el plano se endereza un poco: se lee mejor sin perder el efecto */
-.escena:hover .escena-inclinada { transform: rotateX(34deg) translateY(-3%) scale(1.14); }
-.escena.plano .escena-inclinada { transform: none; }
-
-/* Neblina en el horizonte, para que el plano no se corte en seco */
-.escena::after {
-  content: "";
-  position: absolute; inset: 0 0 auto; height: 34%;
-  pointer-events: none;
-  background: linear-gradient(to bottom, rgba(191,224,238,0.95) 0%,
-              rgba(220,236,243,0.55) 45%, rgba(220,236,243,0) 100%);
-}
-
-.escena-mandos {
-  display: flex; justify-content: flex-end; gap: 0.5rem;
-  margin-bottom: 0.7rem;
-}
+/* Mandos del plano: elegir base */
+.escena-mandos { display: flex; justify-content: flex-end; gap: 0.5rem; margin-bottom: 0.7rem; }
 .boton-vista {
   border: 1px solid var(--borde); background: #fff;
   border-radius: 999px; padding: 0.4rem 0.95rem;
@@ -648,15 +615,6 @@ img { max-width: 100%; display: block; }
 }
 .boton-vista[aria-pressed="true"] {
   background: var(--oceano); border-color: var(--oceano); color: #fff;
-}
-
-@media (max-width: 700px) {
-  /* En móvil la perspectiva se come la legibilidad: menos inclinación */
-  .escena-inclinada { transform: rotateX(34deg) scale(1.1); }
-  .escena:hover .escena-inclinada { transform: rotateX(24deg) scale(1.05); }
-}
-@media (prefers-reduced-motion: reduce) {
-  .escena-inclinada, .escena:hover .escena-inclinada { transform: none; }
 }
 
 /* El buscador ya no vive sobre la foto: versión para fondo claro */
