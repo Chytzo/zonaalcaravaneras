@@ -1,4 +1,5 @@
 # zonaalcaravaneras.com
+Sitemap: https://zonaalcaravaneras.com/sitemap-index.xml
 # Queremos que nos encuentren, tanto buscadores como asistentes de IA.
 
 User-agent: *
@@ -6,10 +7,7 @@ Allow: /
 # /ruta es una página de trabajo interno
 Disallow: /ruta/
 
-# Rastreadores de IA, permitidos de forma explícita.
-# Google-Extended controla si Gemini y los resúmenes de IA de Google
-# pueden usar el contenido; sin esta línea el comportamiento es el mismo,
-# pero dejarla escrita documenta la intención.
+# Rastreadores de IA, permitidos de forma explícita (override del bloque Managed de Cloudflare).
 User-agent: GPTBot
 Allow: /
 
@@ -48,5 +46,3 @@ Allow: /
 
 User-agent: CCBot
 Allow: /
-
-Sitemap: https://zonaalcaravaneras.com/sitemap-index.xml

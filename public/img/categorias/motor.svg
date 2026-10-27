@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img">
+  <defs>
+    <linearGradient id="fondo" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#eef1f4"/>
+      <stop offset="1" stop-color="#dde3e9"/>
+    </linearGradient>
+    <radialGradient id="luz" cx="0.32" cy="0.22" r="0.85">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grano" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+    <filter id="difumina" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+  </defs>
+  <rect width="800" height="500" fill="url(#fondo)"/>
+  <rect width="800" height="500" fill="url(#luz)"/>
+  <ellipse cx="463.9" cy="404" rx="176" ry="24" fill="#073b4f" opacity="0.16" filter="url(#difumina)"/>
+  <!-- llanta -->
+  <g>
+    <circle cx="382" cy="312" r="118" fill="#16232a"/>
+    <circle cx="382" cy="312" r="72" fill="#faf6ee"/>
+    <circle cx="382" cy="312" r="30" fill="#073b4f"/>
+    <g stroke="#dcf0f6" stroke-width="10" stroke-linecap="round" opacity="0.5">
+      <path d="M382 218v34"/><path d="M382 372v34"/>
+      <path d="M288 312h34"/><path d="M442 312h34"/>
+      <path d="M316 246l24 24"/><path d="M448 246l-24 24"/>
+      <path d="M316 378l24-24"/><path d="M448 378l-24-24"/>
+    </g>
+  </g>
+  <!-- carretera -->
+  <g stroke="#16232a" stroke-width="12" stroke-linecap="round" opacity="0.3">
+    <path d="M180 452h58"/><path d="M268 452h58"/><path d="M356 452h58"/><path d="M444 452h58"/><path d="M532 452h58"/>
+  </g>
+  <!-- tuerca -->
+  <g>
+    <path d="M604 214l28 16v32l-28 16-28-16v-32z" fill="#e2683f" opacity="0.9"/>
+    <circle cx="604" cy="246" r="14" fill="#faf6ee" opacity="0.7"/>
+  </g>
+  <rect width="800" height="500" filter="url(#grano)" opacity="0.055" style="mix-blend-mode:multiply"/>
+</svg>

@@ -33,6 +33,7 @@ Calles con más comercios: Calle Néstor de la Torre (39), Avenida José Mesa y 
 - [Créditos de fotografías y datos](https://zonaalcaravaneras.com/creditos/)
 - [Aviso legal](https://zonaalcaravaneras.com/aviso-legal/)
 - [Privacidad](https://zonaalcaravaneras.com/privacidad/)
+- [Listado completo en texto plano](https://zonaalcaravaneras.com/llms-full.txt): los 327 comercios con dirección, teléfono y horario, para agentes de IA.
 
 Cada comercio tiene su propia página en `https://zonaalcaravaneras.com/{nombre-del-comercio}/` con datos estructurados schema.org LocalBusiness.
 

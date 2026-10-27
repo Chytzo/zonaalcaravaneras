@@ -8,6 +8,8 @@
   --arena-honda: #efe7d8;
   --sol: #e2683f;
   --sol-claro: #fbe6de;
+  --sol-cta: #c0552b;     /* sol oscurecido: 4.59:1 con texto blanco (WCAG AA) */
+  --agua-texto: #176d88;  /* agua oscurecida: 5.44:1 sobre arena, 4.88:1 sobre sol-claro */
   --tinta: #16232a;
   --tinta-suave: #5d6b73;
   --borde: #e5dccc;
@@ -17,6 +19,7 @@
   --ancho: 1120px;
   --sombra: 0 1px 2px rgba(7, 59, 79, 0.05), 0 8px 24px -12px rgba(7, 59, 79, 0.18);
   --sombra-alta: 0 2px 4px rgba(7, 59, 79, 0.06), 0 18px 40px -16px rgba(7, 59, 79, 0.28);
+  --oro: #d4a017;
 
   --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
   --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
@@ -43,7 +46,7 @@ h1, h2, h3 {
   margin: 0 0 0.4em;
 }
 
-a { color: var(--agua); text-underline-offset: 3px; }
+a { color: var(--agua-texto); text-underline-offset: 3px; }
 
 img { max-width: 100%; display: block; }
 
@@ -67,6 +70,7 @@ img { max-width: 100%; display: block; }
   inset: 0 0 auto;
   z-index: 3;
   padding: 1.15rem 0;
+  background: linear-gradient(to bottom, rgba(4, 34, 46, 0.62), rgba(4, 34, 46, 0.18) 65%, transparent);
 }
 .barra .contenedor {
   display: flex;
@@ -95,7 +99,7 @@ img { max-width: 100%; display: block; }
 
 /* Botón de alta: siempre visible, en todas las páginas y tamaños */
 .barra nav a.cta {
-  background: var(--sol);
+  background: var(--sol-cta);
   color: #fff;
   padding: 0.48rem 1rem;
   border-radius: 999px;
@@ -196,8 +200,9 @@ img { max-width: 100%; display: block; }
   position: absolute;
   right: 0.9rem;
   bottom: 0.5rem;
-  font-size: 0.68rem;
-  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.92);
+  text-shadow: 0 1px 3px rgba(4, 34, 46, 0.85);
   z-index: 2;
 }
 .credito-foto a { color: inherit; }
@@ -205,6 +210,7 @@ img { max-width: 100%; display: block; }
 /* ---------- Buscador ---------- */
 .panel-busqueda {
   background: #fff;
+  border: 1px solid rgba(7, 59, 79, 0.55);
   border-radius: var(--radio);
   box-shadow: var(--sombra-alta);
   padding: 0.5rem;
@@ -220,12 +226,12 @@ img { max-width: 100%; display: block; }
   outline: 0;
   font-size: 1rem;
   font-family: inherit;
-  padding: 0.7rem 0.2rem;
+  padding: 0.55rem 0.7rem;
   background: transparent;
   color: var(--tinta);
   min-width: 0;
 }
-.buscador::placeholder { color: #97a3a9; }
+.buscador::placeholder { color: var(--tinta-suave); opacity: 1; }
 
 /* Recuento de resultados, junto al buscador de la portada */
 .conteo {
@@ -247,6 +253,9 @@ img { max-width: 100%; display: block; }
   border: 1px solid var(--borde);
   background: #fff;
   border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;          /* objetivo táctil mínimo */
   padding: 0.42rem 0.95rem;
   font-size: 0.88rem;
   font-family: inherit;
@@ -287,6 +296,12 @@ img { max-width: 100%; display: block; }
   flex-direction: column;
 }
 .tarjeta:hover { transform: translateY(-3px); box-shadow: var(--sombra-alta); }
+/* Toda la tarjeta es pulsable: el enlace del nombre se estira sobre el
+   cuadrado completo (patrón stretched-link). El enlace de teléfono queda
+   por encima para seguir siendo usable. */
+.tarjeta { position: relative; }
+.tarjeta h3 a::after { content: ''; position: absolute; inset: 0; z-index: 1; }
+.tarjeta .tel a { position: relative; z-index: 2; }
 .tarjeta[hidden] { display: none; }
 
 .tarjeta .medio {
@@ -296,6 +311,33 @@ img { max-width: 100%; display: block; }
   background: var(--oceano);
 }
 .tarjeta .medio img { width: 100%; height: 100%; object-fit: cover; }
+.tarjeta .medio img.placeholder {
+  object-fit: cover;
+  display: block;
+  background: var(--agua);
+}
+/* Tarjeta destacada: la que elige Chytzo o paga por verse primero */
+.tarjeta.destacada { border-color: var(--oro); box-shadow: 0 0 0 1px var(--oro), var(--sombra); }
+.tarjeta.destacada .sello-destacado {
+  position: absolute;
+  right: 0.7rem;
+  top: 0.7rem;
+  background: var(--oro);
+  color: #fff;
+  border-radius: 999px;
+  padding: 0.2rem 0.65rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+/* Centinela del lazy load: ocupa una fila invisible hasta que hay que pintar más */
+.rejilla .centinela {
+  list-style: none;
+  height: 1px;
+  margin: 0;
+}
+.rejilla .centinela[hidden] { display: none; }
 .tarjeta .monograma {
   width: 100%; height: 100%;
   display: grid;
@@ -329,6 +371,22 @@ img { max-width: 100%; display: block; }
   display: flex;
   align-items: flex-start;
   gap: 0.35rem;
+}
+.tarjeta .tel {
+  margin: 0.25rem 0 0;
+  color: var(--tinta-suave);
+  font-size: 0.88rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.35rem;
+}
+.tarjeta .tel a {
+  color: var(--tinta-suave);
+  text-decoration: none;
+}
+.tarjeta .tel a:hover {
+  color: var(--agua);
+  text-decoration: underline;
 }
 
 .vacio {
@@ -429,7 +487,7 @@ img { max-width: 100%; display: block; }
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
-  background: var(--sol);
+  background: var(--sol-cta);
   color: #fff;
   text-decoration: none;
   padding: 0.75rem 1.25rem;
@@ -496,3 +554,303 @@ img { max-width: 100%; display: block; }
   font-size: 0.78rem;
   color: rgba(255, 255, 255, 0.5);
 }
+
+/* ================= Portada aérea (v2) ================= */
+@font-face {
+  font-family: 'Baloo 2';
+  src: url('/fuentes/baloo-2-800.woff2') format('woff2');
+  font-weight: 800; font-style: normal; font-display: swap;
+}
+
+.aerea {
+  position: relative;
+  isolation: isolate;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 6rem 1.25rem 5rem;
+  overflow: hidden;
+}
+.aerea-fondo {
+  position: absolute; inset: 0; z-index: -3;
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center 55%;
+}
+/* Velo: arriba para que se lea la barra, abajo para enlazar con la página */
+.aerea::before {
+  content: ""; position: absolute; inset: 0; z-index: -2;
+  background:
+    linear-gradient(to bottom, rgba(6,20,30,0.45) 0%, rgba(6,20,30,0.05) 22%,
+                    rgba(6,20,30,0.18) 58%, rgba(4,34,46,0.88) 100%);
+}
+
+/* Nubes que cruzan despacio */
+.nubes { position: absolute; inset: 0; z-index: -1; pointer-events: none; }
+.nube {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, rgba(255,255,255,0.75), rgba(255,255,255,0) 70%);
+  filter: blur(22px);
+  will-change: transform;
+}
+.nube--1 { width: 70vw; height: 26vh; top: 46%; left: -75vw; opacity: 0.35; animation: cruzar 92s linear infinite; }
+.nube--2 { width: 48vw; height: 18vh; top: 62%; left: -55vw; opacity: 0.28;
+           animation: cruzar 118s linear infinite; animation-delay: -30s; }
+.nube--3 { display: none; }
+.nube--4 { display: none; }
+@keyframes cruzar {
+  from { transform: translateX(0); }
+  to   { transform: translateX(190vw); }
+}
+
+.aerea-contenido { position: relative; z-index: 1; max-width: 900px; }
+
+/* Como la referencia: marca compacta, redondeada y en minúsculas,
+   apoyada abajo del encuadre y no ocupando toda la pantalla. */
+.palabra-color {
+  font-family: 'Baloo 2', system-ui, sans-serif;
+  font-weight: 800;
+  font-size: clamp(2rem, 5.2vw, 3.6rem);
+  line-height: 0.95;
+  letter-spacing: -0.045em;
+  margin: 0 0 0.7rem;
+  text-shadow: 0 4px 26px rgba(0,0,0,0.5);
+}
+.palabra-color .palabra { display: inline-block; white-space: nowrap; }
+/* «zona» arriba, «alcaravaneras» debajo y más grande, como el bloque del vídeo */
+.palabra-color .palabra:first-child { display: block; font-size: 0.62em; opacity: 0.95; }
+
+.aerea-lema {
+  font-size: clamp(0.9rem, 1.7vw, 1.02rem);
+  color: rgba(255,255,255,0.9);
+  text-shadow: 0 2px 16px rgba(0,0,0,0.65);
+  margin: 0 auto 1.5rem;
+  letter-spacing: 0.01em;
+}
+
+.aerea-botones { display: flex; flex-wrap: wrap; gap: 0.8rem; justify-content: center; }
+.pastilla {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 0.85rem 1.9rem; border-radius: 999px;
+  font-weight: 600; font-size: 1rem; text-decoration: none;
+  background: rgba(255,255,255,0.14);
+  border: 1px solid rgba(255,255,255,0.55);
+  color: #fff;
+  backdrop-filter: blur(8px);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+.pastilla:hover { transform: translateY(-2px); background: rgba(255,255,255,0.24); }
+.pastilla--llena {
+  background: #2563eb; border-color: #2563eb;
+  box-shadow: 0 8px 30px rgba(37,99,235,0.45);
+}
+.pastilla--llena:hover { background: #1d4ed8; }
+
+.aerea-bajar {
+  position: absolute; bottom: 1.6rem; left: 50%; transform: translateX(-50%);
+  z-index: 1; color: rgba(255,255,255,0.85);
+  animation: rebote 2.4s ease-in-out infinite;
+}
+@keyframes rebote {
+  0%, 100% { transform: translate(-50%, 0); }
+  50%      { transform: translate(-50%, 8px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nube, .aerea-bajar { animation: none !important; }
+}
+
+/* Mandos del plano: elegir base */
+.escena-mandos { display: flex; justify-content: flex-end; gap: 0.5rem; margin-bottom: 0.7rem; }
+.boton-vista {
+  border: 1px solid var(--borde); background: #fff;
+  border-radius: 999px; padding: 0.4rem 0.95rem;
+  font: inherit; font-size: 0.85rem; font-weight: 500;
+  color: var(--tinta); cursor: pointer;
+}
+.boton-vista[aria-pressed="true"] {
+  background: var(--oceano); border-color: var(--oceano); color: #fff;
+}
+
+/* El buscador ya no vive sobre la foto: versión para fondo claro */
+.panel-busqueda--claro { border: 1px solid var(--borde); margin: 0 0 1rem; }
+.conteo--claro { color: var(--tinta); text-shadow: none; margin: 0 0 1.2rem; }
+
+/* Imagen principal de la ficha */
+.ficha-imagen { margin: 1.5rem 0 0; }
+.ficha-imagen img {
+  width: 100%; max-height: 440px; object-fit: cover; object-position: center center;
+  border-radius: var(--radio); box-shadow: var(--sombra-alta);
+}
+.ficha-imagen--vacia {
+  display: flex; align-items: center; gap: 1.2rem;
+  background: linear-gradient(140deg, var(--agua) 0%, var(--oceano) 78%);
+  color: #fff; border-radius: var(--radio); padding: 1.5rem;
+}
+.ficha-imagen--vacia .inicial {
+  font-family: var(--serif); font-size: 3rem; line-height: 1;
+  width: 84px; height: 84px; flex: none;
+  display: grid; place-items: center;
+  background: rgba(255,255,255,0.14); border-radius: var(--radio-s);
+}
+.ficha-imagen--vacia p { margin: 0; font-size: 0.95rem; color: rgba(255,255,255,0.92); }
+.ficha-imagen--vacia a { color: #fff; }
+
+/* Bloque de contacto */
+.contacto-comercio {
+  margin-top: 1.4rem; padding-top: 1.3rem;
+  border-top: 1px solid var(--arena-honda);
+}
+.contacto-comercio h2 { font-size: 1.15rem; margin-bottom: 0.8rem; }
+.sin-contacto { font-size: 0.9rem; color: var(--tinta-suave); margin: 0.9rem 0 0; }
+
+.red-guias {
+  margin: 1.2rem 0 0;
+  font-size: 0.9rem;
+}
+.red-guias a { text-decoration: underline; }
+
+/* ---------- Cifras del hero, tipos con conteo y estado «abierto ahora» ---------- */
+/* Tomado del patrón de directorios densos (sísifo.app): cada enlace lleva su número
+   real, y el estado temporal de la ficha (abierto/cierra a las X) se calcula en el
+   cliente. Sin cookies, sin rastreo: el horario ya está en la ficha. */
+.cifras { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.9rem; }
+.cifras a,
+.cifras button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;          /* inline-flex colapsa el espacio de texto: el hueco va en gap */
+  min-height: 44px;
+  font: inherit;
+  font-size: 0.85rem;
+  color: #fff;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  border-radius: 999px;
+  padding: 0.32rem 0.8rem;
+  backdrop-filter: blur(6px);
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+.cifras a:hover,
+.cifras button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.45);
+}
+.cifras strong { font-variant-numeric: tabular-nums; }
+
+.tipos {
+  list-style: none;
+  display: grid;
+  gap: 0.6rem;
+  grid-template-columns: repeat(auto-fill, minmax(232px, 1fr));
+  margin: 1.2rem 0 0;
+  padding: 0;
+}
+.tipos a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background: #fff;
+  border: 1px solid var(--borde);
+  border-radius: var(--radio-s);
+  padding: 0.75rem 0.9rem;
+  text-decoration: none;
+  color: var(--tinta);
+  box-shadow: var(--sombra);
+  transition: border-color 0.15s, color 0.15s;
+}
+.tipos a:hover { border-color: var(--agua); color: var(--agua); }
+.tipos-nombre { font-weight: 600; }
+.tipos-num { font-variant-numeric: tabular-nums; color: var(--tinta-suave); font-size: 0.9rem; }
+.tipos a:hover .tipos-num { color: var(--agua); }
+
+.filtro .n {
+  margin-left: 0.28rem;
+  font-size: 0.85em;
+  opacity: 0.62;
+  font-variant-numeric: tabular-nums;
+}
+.filtro-abierto[disabled] { opacity: 0.45; cursor: default; }
+.filtro-abierto[aria-pressed="true"] { border-color: #1f9d6b; color: #1f9d6b; }
+.filtro-abierto[aria-pressed="true"] .n { opacity: 1; }
+
+.tarjeta .estado {
+  position: absolute;
+  left: 0.7rem;
+  bottom: 0.7rem;
+  background: rgba(4, 34, 46, 0.86);
+  color: #fff;
+  border-radius: 999px;
+  padding: 0.22rem 0.6rem;
+  font-size: 0.75rem;   /* 12px: por debajo cansa la vista (impeccable tiny-text) */
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  backdrop-filter: blur(4px);
+}
+.tarjeta .estado.abierto { background: #17794f; }  /* 5.41:1 con blanco */
+
+/* ---------- Ilustraciones de categoría ---------- */
+.tipos-img {
+  width: 46px;
+  height: 29px;
+  border-radius: 6px;
+  object-fit: cover;
+  flex: none;
+  order: -1;
+  background: var(--arena);
+}
+.tipos a { gap: 0.7rem; }
+.tipos-nombre { flex: 1; }
+
+.banda-cat {
+  margin: 1.4rem 0 0;
+  border-radius: var(--radio);
+  overflow: hidden;
+  box-shadow: var(--sombra);
+  line-height: 0;
+}
+.banda-cat img {
+  width: 100%;
+  height: clamp(140px, 22vw, 260px);
+  object-fit: cover;
+  object-position: center 60%;
+}
+
+/* ---------- Foco de teclado visible (sloplint 26a) ---------- */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+summary:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--agua-texto);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+.buscador:focus-visible {
+  outline: 2px solid var(--agua-texto);
+  outline-offset: 1px;
+  border-radius: 6px;
+}
+/* El buscador vive en un panel blanco sobre foto: el anillo marca su límite (WCAG 1.4.11) */
+.panel-busqueda:focus-within {
+  box-shadow: 0 0 0 2px rgba(7, 59, 79, 0.45), var(--sombra-alta);
+}
+
+/* Salto de linea del h1 sin perder el espacio para lectores y rastreadores */
+h1 .salto { display: block; }
+
+/* ---------- Legalidad tipografica minima (sloplint 34 y 75) ---------- */
+html, body { overflow-x: clip; }
+.leaflet-container .leaflet-control-attribution,
+.leaflet-container .leaflet-control-attribution a { font-size: 12px !important; }
+
+/* ---------- Medida de lectura y equilibrio de titulos (impeccable) ---------- */
+p { text-wrap: pretty; }
+h1, h2, h3 { text-wrap: balance; }
+.prosa p, .nota-mapa, .cols p { max-width: 68ch; }

@@ -2,19 +2,37 @@
 import { Image } from 'astro:assets';
 import Base from '../layouts/Base.astro';
 import TarjetaComercio from '../components/TarjetaComercio.astro';
-import MapaBarrio from '../components/MapaBarrio.astro';
+import MapaBarrio from '../components/MapaBarrioLeaflet.astro';
 import comercios from '../data/comercios.json';
 import portada from '../assets/playa-alcaravaneras.jpg';
 import { enlaceWhatsapp } from '../config.js';
+import { slugificar } from '../utils/slug.js';
 
 const waIndex = enlaceWhatsapp(
   'Hola, tengo un negocio en Alcaravaneras y quiero salir en la guía.'
 );
 
 const ordenados = [...comercios].sort((a, b) => a.nombre.localeCompare(b.nombre, 'es'));
+const destacados = comercios.filter((c) => c.destacado === true);
+// La categoría con más fichas es la que se marca por defecto al entrar:
+// así la primera carga no tiene que pintar las 327 tarjetas a la vez.
+const categoriaPorDefecto = [...comercios]
+  .reduce((acc, c) => {
+    acc[c.categoria] = (acc[c.categoria] || 0) + 1;
+    return acc;
+  }, {});
+const categoriaInicial = Object.entries(categoriaPorDefecto).sort((a, b) => b[1] - a[1])[0]?.[0] ?? '';
 const categorias = [...new Set(comercios.map((c) => c.categoria))].sort((a, b) =>
   a.localeCompare(b, 'es')
 );
+
+// Conteo por tipo de negocio: cada chip y cada enlace de la sección «Busca por
+// tipo» lleva su número real. Un directorio enlaza con cifras, no con etiquetas
+// peladas: orienta al visitante y da a cada página de categoría su peso interno.
+const conteoPorCategoria = Object.fromEntries(
+  categorias.map((cat) => [cat, comercios.filter((c) => c.categoria === cat).length])
+);
+const conHorario = comercios.filter((c) => (c.horarioSchema || []).length > 0).length;
 
 // Datos estructurados de la portada: qué es el sitio, quién lo mantiene y
 // qué colección de negocios contiene. Es lo que leen buscadores y asistentes.
@@ -32,8 +50,8 @@ const jsonLdPortada = [
     isAccessibleForFree: true,
     publisher: {
       '@type': 'Organization',
-      name: 'Impulcan',
-      url: 'https://impulcan.com/',
+      name: 'Zona Alcaravaneras',
+      url: 'https://zonaalcaravaneras.com/',
     },
     about: {
       '@type': 'Place',
@@ -41,6 +59,7 @@ const jsonLdPortada = [
       address: {
         '@type': 'PostalAddress',
         addressLocality: 'Las Palmas de Gran Canaria',
+        postalCode: '35006',
         addressRegion: 'Las Palmas',
         addressCountry: 'ES',
       },
@@ -48,18 +67,72 @@ const jsonLdPortada = [
   },
   {
     '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Zona Alcaravaneras',
+    alternateName: 'Guía de comercios de Las Alcaravaneras',
+    url: 'https://zonaalcaravaneras.com/',
+    logo: 'https://zonaalcaravaneras.com/favicon.svg',
+    description:
+      `Guía gratuita e independiente de los ${comercios.length} comercios del barrio de ` +
+      'Las Alcaravaneras, en Las Palmas de Gran Canaria.',
+    areaServed: {
+      '@type': 'Place',
+      name: 'Las Alcaravaneras',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Las Palmas de Gran Canaria',
+        postalCode: '35006',
+        addressRegion: 'Las Palmas',
+        addressCountry: 'ES',
+      },
+    },
+    parentOrganization: {
+      '@type': 'Organization',
+      name: 'Impulcan',
+      url: 'https://impulcan.com/',
+    },
+  },
+  {
+    '@context': 'https://schema.org',
     '@type': 'CollectionPage',
     name: 'Comercios de Las Alcaravaneras',
     url: 'https://zonaalcaravaneras.com/',
+    about: {
+      '@type': 'Place',
+      name: 'Las Alcaravaneras',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Las Palmas de Gran Canaria',
+        postalCode: '35006',
+        addressRegion: 'Las Palmas',
+        addressCountry: 'ES',
+      },
+    },
     mainEntity: {
       '@type': 'ItemList',
       numberOfItems: comercios.length,
-      itemListElement: ordenados.slice(0, 100).map((c, i) => ({
-        '@type': 'ListItem',
-        position: i + 1,
-        url: `https://zonaalcaravaneras.com/${c.slug}/`,
-        name: c.nombre,
-      })),
+      itemListElement: ordenados.slice(0, 100).map((c, i) => {
+        const item = {
+          '@type': 'ListItem',
+          position: i + 1,
+          url: `https://zonaalcaravaneras.com/${c.slug}/`,
+          name: c.nombre,
+        };
+        if (c.calle) {
+          item.address = {
+            '@type': 'PostalAddress',
+            streetAddress: c.calle,
+            addressLocality: 'Las Palmas de Gran Canaria',
+            postalCode: c.cp || '35006',
+            addressRegion: 'Las Palmas',
+            addressCountry: 'ES',
+          };
+        }
+        if (c.telefono) {
+          item.telephone = c.telefono;
+        }
+        return item;
+      }),
     },
   },
 ];
@@ -89,7 +162,7 @@ const jsonLdPortada = [
     />
     <div class="contenedor">
       <span class="sello">Gratis · Independiente · Del barrio</span>
-      <h1>Los comercios de<br />Las Alcaravaneras</h1>
+      <h1>Los comercios de <span class="salto">Las Alcaravaneras</span></h1>
       <p class="entradilla">
         Todo lo que abre en el barrio, en un sitio. Teléfono, horario y cómo llegar.
         Sin cuotas, sin socios y sin colores políticos.
@@ -111,6 +184,15 @@ const jsonLdPortada = [
       </div>
 
       <p class="conteo" id="conteo" hidden></p>
+
+      <div class="cifras">
+        <a href="#lista"><strong>{comercios.length}</strong> comercios</a>
+        <a href="#tipos"><strong>{categorias.length}</strong> tipos de negocio</a>
+        <a href="#lista"><strong>{conHorario}</strong> con horario</a>
+        <button type="button" class="cifra-abiertos" id="cifra-abiertos" hidden>
+          <strong id="n-abiertos">0</strong> abiertos ahora
+        </button>
+      </div>
     </div>
     <span class="credito-foto">
       Foto: Bengt Nyman, <a href="/creditos/">CC BY-SA 4.0</a>
@@ -120,8 +202,48 @@ const jsonLdPortada = [
   <div class="contenedor">
     <section class="seccion" id="mapa">
       <h2>El barrio, de un vistazo</h2>
-      <p class="sub">Cada cuadrado es un comercio. Pulsa el que quieras para ver su ficha.</p>
+      <p class="sub">
+        Cada punto es un comercio, con su color por tipo de negocio. Filtra arriba, acerca y pulsa uno para
+        abrir su ficha.
+      </p>
       <MapaBarrio />
+    </section>
+
+    {destacados.length > 0 && (
+      <section class="seccion" id="destacados">
+        <h2>Destacados</h2>
+        <p class="sub">Los comercios del barrio que quieren verse primero.</p>
+        <ul class="rejilla" id="rejilla-destacados">
+          {destacados.map((c) => <TarjetaComercio comercio={c} destacado={true} />)}
+        </ul>
+      </section>
+    )}
+
+    <section class="seccion" id="tipos">
+      <h2>Busca por tipo de negocio</h2>
+      <p class="sub">
+        Cada tipo tiene su propia página con todos los comercios del barrio, su dirección y su
+        horario. Sin registro y sin rastreo.
+      </p>
+      <ul class="tipos">
+        {categorias.map((cat) => (
+          <li>
+            <a href={`/categoria/${slugificar(cat)}/`}>
+              <img
+                class="tipos-img"
+                src={`/img/categorias/${slugificar(cat)}.jpg`}
+                alt=""
+                aria-hidden="true"
+                width="800"
+                height="500"
+                decoding="async"
+              />
+              <span class="tipos-nombre">{cat}</span>
+              <span class="tipos-num">{conteoPorCategoria[cat]}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
     </section>
 
     <section class="seccion" id="lista">
@@ -129,14 +251,22 @@ const jsonLdPortada = [
       <p class="sub">Filtra por tipo de negocio o busca arriba.</p>
 
       <div class="filtros" id="filtros">
-        <button class="filtro" data-cat="" aria-pressed="true">Todos</button>
+        <button class="filtro" data-cat="" aria-pressed={categoriaInicial === ''}>
+          Todos <span class="n">{comercios.length}</span>
+        </button>
         {categorias.map((cat) => (
-          <button class="filtro" data-cat={cat} aria-pressed="false">{cat}</button>
+          <button class="filtro" data-cat={cat} aria-pressed={cat === categoriaInicial}>
+            {cat} <span class="n">{conteoPorCategoria[cat]}</span>
+          </button>
         ))}
+        <button class="filtro filtro-abierto" data-abierto="1" aria-pressed="false" disabled>
+          Abierto ahora <span class="n" id="filtro-abiertos">0</span>
+        </button>
       </div>
 
       <ul class="rejilla" id="rejilla">
         {ordenados.map((c) => <TarjetaComercio comercio={c} />)}
+        <li class="centinela" id="centinela" aria-hidden="true"></li>
       </ul>
 
       <p class="vacio" id="vacio" hidden>
@@ -162,14 +292,129 @@ const jsonLdPortada = [
   const vacio = document.getElementById('vacio');
   const tarjetas = [...rejilla.querySelectorAll('.tarjeta')];
   const botones = [...document.querySelectorAll('#filtros .filtro')];
+  const centinela = document.getElementById('centinela');
+
+  // Carga por bloques: al entrar solo se pintan las primeras fichas y según
+  // se baja se añaden más. El filtro marca una categoría por defecto, así que
+  // la primera pintada es pequeña de todas formas.
+  const TAMANO_BLOQUE = 60;
+  let visiblesMax = TAMANO_BLOQUE;
   let categoria = '';
+  let soloAbierto = false;
+
+  const botonInicial = botones.find((b) => b.getAttribute('aria-pressed') === 'true');
+  if (botonInicial) categoria = botonInicial.dataset.cat;
 
   // Sin tildes: buscar "peluqueria" encuentra "Peluquería"
   const normalizar = (t) =>
-    t.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+    t.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
 
   for (const tarjeta of tarjetas) {
     tarjeta.dataset.buscar = normalizar(tarjeta.dataset.buscar);
+  }
+
+  // --- Abierto ahora -------------------------------------------------------
+  // El horario de cada ficha llega como reglas tipo OpenStreetMap
+  // ("Mo-Fr 09:00-14:00,17:00-20:00"). Se evalúan contra el reloj del visitante
+  // en el momento de abrir la página; por eso se calcula aquí y no en el build.
+  const DIAS = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa']; // getDay(): 0 = domingo
+  const aMinutos = (h) => {
+    const [hh, mm] = h.split(':').map(Number);
+    return hh * 60 + (mm || 0);
+  };
+  const dosDigitos = (n) => String(n).padStart(2, '0');
+  const comoHora = (m) => `${dosDigitos(Math.floor(m / 60) % 24)}:${dosDigitos(m % 60)}`;
+
+  function tramosDelDia(reglas, dia) {
+    const tramos = [];
+    for (const regla of reglas) {
+      const partes = String(regla).match(/^([A-Za-z,\-]+)\s+(.+)$/);
+      if (!partes) continue;
+      const [, selector, horas] = partes;
+      let entra = false;
+      for (const trozo of selector.split(',')) {
+        const [desde, hasta] = trozo.split('-');
+        if (!hasta) {
+          if (desde === dia) entra = true;
+          continue;
+        }
+        const i = DIAS.indexOf(desde);
+        const j = DIAS.indexOf(hasta);
+        if (i < 0 || j < 0) continue;
+        for (let k = i, n = 0; n < 7; n++, k = (k + 1) % 7) {
+          if (DIAS[k] === dia) {
+            entra = true;
+            break;
+          }
+          if (k === j) break;
+        }
+      }
+      if (!entra) continue;
+      for (const tramo of horas.split(',')) {
+        const [ini, fin] = tramo.trim().split('-');
+        if (!ini || !fin) continue;
+        tramos.push([aMinutos(ini), aMinutos(fin)]);
+      }
+    }
+    return tramos.sort((a, b) => a[0] - b[0]);
+  }
+
+  function estadoAhora(reglas, ahora) {
+    const hoy = DIAS[ahora.getDay()];
+    const minuto = ahora.getHours() * 60 + ahora.getMinutes();
+    for (const [ini, fin] of tramosDelDia(reglas, hoy)) {
+      if (minuto >= ini && minuto < fin) return { abierto: true, hasta: fin };
+    }
+    // Cerrado: buscar la próxima apertura en los siete días siguientes.
+    for (let d = 0; d < 7; d++) {
+      const dia = DIAS[(ahora.getDay() + d) % 7];
+      for (const [ini] of tramosDelDia(reglas, dia)) {
+        if (d === 0 && ini <= minuto) continue;
+        return { abierto: false, abre: ini, dia, dias: d };
+      }
+    }
+    return { abierto: false };
+  }
+
+  const ahora = new Date();
+  let abiertosAhora = 0;
+  for (const tarjeta of tarjetas) {
+    let reglas = [];
+    try {
+      reglas = JSON.parse(tarjeta.dataset.horario || '[]');
+    } catch {
+      reglas = [];
+    }
+    const sello = tarjeta.querySelector('.estado');
+    if (!reglas.length || !sello) continue;
+    const estado = estadoAhora(reglas, ahora);
+    tarjeta.dataset.abierto = estado.abierto ? '1' : '0';
+    if (estado.abierto) {
+      abiertosAhora++;
+      sello.textContent = `Abierto · hasta ${comoHora(estado.hasta)}`;
+      sello.classList.add('abierto');
+    } else if (estado.abre !== undefined) {
+      sello.textContent =
+        estado.dias === 0
+          ? `Cerrado · abre hoy ${comoHora(estado.abre)}`
+          : estado.dias === 1
+            ? `Cerrado · abre mañana ${comoHora(estado.abre)}`
+            : `Cerrado · abre ${estado.dia} ${comoHora(estado.abre)}`;
+    } else {
+      sello.textContent = 'Cerrado';
+    }
+    sello.hidden = false;
+  }
+
+  const botonAbierto = document.querySelector('.filtro-abierto');
+  const cifraAbiertos = document.getElementById('cifra-abiertos');
+  const nAbiertos = document.getElementById('n-abiertos');
+  const nFiltroAbiertos = document.getElementById('filtro-abiertos');
+  if (abiertosAhora > 0) {
+    if (nAbiertos) nAbiertos.textContent = String(abiertosAhora);
+    if (nFiltroAbiertos) nFiltroAbiertos.textContent = String(abiertosAhora);
+    if (cifraAbiertos) cifraAbiertos.hidden = false;
+    if (botonAbierto) botonAbierto.disabled = false;
   }
 
   const conteo = document.getElementById('conteo');
@@ -179,16 +424,23 @@ const jsonLdPortada = [
   function filtrar() {
     const texto = normalizar(entrada.value.trim());
     let visibles = 0;
+    let mostradas = 0;
 
     for (const tarjeta of tarjetas) {
       const coincideTexto = !texto || tarjeta.dataset.buscar.includes(texto);
       const coincideCat = !categoria || tarjeta.dataset.cat === categoria;
-      const mostrar = coincideTexto && coincideCat;
+      const coincideAbierto = !soloAbierto || tarjeta.dataset.abierto === '1';
+      const coincide = coincideTexto && coincideCat && coincideAbierto;
+      if (coincide) visibles++;
+      const mostrar = coincide && mostradas < visiblesMax;
       tarjeta.hidden = !mostrar;
-      if (mostrar) visibles++;
+      if (mostrar) mostradas++;
     }
 
     vacio.hidden = visibles > 0;
+
+    // Quedan fichas por cargar solo si hay más coincidencias que las ya pintadas.
+    centinela.hidden = mostradas >= visibles;
 
     // La lista queda muy por debajo del buscador. Sin esto parece que no pasa nada:
     // mostramos el recuento al lado del campo y apartamos el plano mientras se busca.
@@ -205,6 +457,19 @@ const jsonLdPortada = [
     seccionMapa.hidden = buscando;
   }
 
+  // Cuando el centinela asoma, se pinta el siguiente bloque.
+  const observador = new IntersectionObserver(
+    (entries) => {
+      if (entries[0].isIntersecting) {
+        visiblesMax += TAMANO_BLOQUE;
+        filtrar();
+        if (centinela.hidden) observador.disconnect();
+      }
+    },
+    { rootMargin: '900px' }
+  );
+  observador.observe(centinela);
+
   entrada.addEventListener('input', filtrar);
 
   entrada.addEventListener('keydown', (e) => {
@@ -216,11 +481,32 @@ const jsonLdPortada = [
 
   for (const boton of botones) {
     boton.addEventListener('click', () => {
-      categoria = boton.dataset.cat;
-      for (const otro of botones) {
-        otro.setAttribute('aria-pressed', String(otro === boton));
+      if (boton.dataset.abierto) {
+        // Chip independiente: se enciende y apaga sin borrar la categoría elegida.
+        soloAbierto = !soloAbierto;
+        boton.setAttribute('aria-pressed', String(soloAbierto));
+      } else {
+        categoria = boton.dataset.cat;
+        for (const otro of botones) {
+          if (otro.dataset.abierto) continue;
+          otro.setAttribute('aria-pressed', String(otro === boton));
+        }
       }
+      visiblesMax = TAMANO_BLOQUE;
       filtrar();
     });
   }
+
+  // El contador del hero lleva a la lista con el filtro ya puesto.
+  if (cifraAbiertos) {
+    cifraAbiertos.addEventListener('click', () => {
+      soloAbierto = true;
+      if (botonAbierto) botonAbierto.setAttribute('aria-pressed', 'true');
+      visiblesMax = TAMANO_BLOQUE;
+      filtrar();
+      seccionLista.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  }
+
+  filtrar();
 </script>

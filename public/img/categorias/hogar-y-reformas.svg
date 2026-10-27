@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img">
+  <defs>
+    <linearGradient id="fondo" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#f5f1e8"/>
+      <stop offset="1" stop-color="#e9e1d0"/>
+    </linearGradient>
+    <radialGradient id="luz" cx="0.32" cy="0.22" r="0.85">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grano" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+    <filter id="difumina" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+  </defs>
+  <rect width="800" height="500" fill="url(#fondo)"/>
+  <rect width="800" height="500" fill="url(#luz)"/>
+  <ellipse cx="473.9" cy="404" rx="176" ry="22" fill="#073b4f" opacity="0.16" filter="url(#difumina)"/>
+  <g transform="rotate(-16 300 300)">
+    <rect x="288" y="238" width="26" height="174" rx="12" fill="#d4a017"/>
+    <path d="M244 196h120a15 15 0 0 1 0 30h-44v22h-34v-22h-42z" fill="#16232a"/>
+  </g>
+  <g>
+    <path d="M452 266h176l-18 146H470z" fill="#1b7f9e"/>
+    <path d="M452 266h176l-4 32H456z" fill="#073b4f" opacity="0.8"/>
+    <path d="M482 266c0-38 28-56 58-56s58 18 58 56" fill="none" stroke="#073b4f" stroke-width="9" opacity="0.55"/>
+    <rect x="500" y="318" width="80" height="14" rx="7" fill="#faf6ee" opacity="0.55"/>
+  </g>
+  <path d="M300 148c14 18 22 30 22 42a22 22 0 0 1-44 0c0-12 8-24 22-42z" fill="#e2683f" opacity="0.7"/>
+  <rect width="800" height="500" filter="url(#grano)" opacity="0.055" style="mix-blend-mode:multiply"/>
+</svg>

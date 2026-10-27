@@ -14,10 +14,58 @@ export function getStaticPaths() {
 const { comercio } = Astro.props;
 const url = new URL(`/${comercio.slug}/`, Astro.site).toString();
 
+// og:image: la foto del comercio si existe; si no, la imagen generada por
+// categoría (public/og/*.png). Así toda ficha comparte bien en WhatsApp.
+const ogImagen = comercio.fotos?.length
+  ? comercio.fotos[0]
+  : `/og/${slugificar(comercio.categoria)}.png`;
+
+// Mapa categoría → tipo schema.org. Convierte cada ficha de "LocalBusiness
+// genérico" a su tipo real de negocio: es lo que hace que Google y los LLMs
+// (ChatGPT/Perplexity/Gemini) reconozcan la ficha como una entidad concreta
+// y la citen para su categoría ("dónde comer", "peluquería en ...", etc.).
+const TIPO = {
+  'Alimentación': 'GroceryStore',
+  'Bares y cafés': 'BarOrPub',
+  'Bazares': 'Store',
+  'Belleza': 'BeautySalon',
+  'Deporte y ocio': 'SportsActivityLocation',
+  'Electrónica': 'ElectronicsStore',
+  'Hogar y reformas': 'HomeGoodsStore',
+  'Hogar y decoración': 'HomeGoodsStore',
+  'Mascotas': 'PetStore',
+  'Moda': 'ClothingStore',
+  'Motor': 'AutoDealer',
+  'Restaurantes': 'Restaurant',
+  'Salud': 'MedicalBusiness',
+  'Servicios': 'ProfessionalService',
+};
+const tipo = TIPO[comercio.categoria] || 'LocalBusiness';
+const CON_COCINA = new Set(['Restaurant', 'BarOrPub', 'CafeOrCoffeeShop']);
+
+// Etiqueta legible en singular de la categoría (para la frase answer-first).
+const CAT_LABEL = {
+  'Alimentación': 'tienda de alimentación',
+  'Bares y cafés': 'bar o cafetería',
+  'Bazares': 'bazar',
+  'Belleza': 'establecimiento de belleza',
+  'Deporte y ocio': 'tienda de deporte y ocio',
+  'Electrónica': 'tienda de electrónica',
+  'Hogar y reformas': 'tienda de hogar y reformas',
+  'Hogar y decoración': 'tienda de artículos para el hogar y decoración',
+  'Mascotas': 'tienda de mascotas',
+  'Moda': 'tienda de moda',
+  'Motor': 'establecimiento de automoción',
+  'Restaurantes': 'restaurante',
+  'Salud': 'establecimiento de salud',
+  'Servicios': 'servicio',
+};
+const catLabel = CAT_LABEL[comercio.categoria] || comercio.categoria.toLowerCase();
+
 // JSON-LD: es lo que hace que Google entienda cada ficha como un negocio real
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
+  '@type': tipo,
   name: comercio.nombre,
   description: comercio.descripcion || undefined,
   url,
@@ -30,12 +78,38 @@ const jsonLd = {
     addressRegion: 'Las Palmas',
     addressCountry: 'ES',
   },
+  containedInPlace: {
+    '@type': 'Place',
+    name: 'Las Alcaravaneras',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Las Palmas de Gran Canaria',
+      postalCode: '35006',
+      addressRegion: 'Las Palmas',
+      addressCountry: 'ES',
+    },
+  },
   openingHours: comercio.horarioSchema?.length ? comercio.horarioSchema : undefined,
+  ...(comercio.lat != null && comercio.lon != null
+    ? { geo: { '@type': 'GeoCoordinates', latitude: comercio.lat, longitude: comercio.lon } }
+    : {}),
   sameAs: comercio.web ? [comercio.web] : undefined,
   image: comercio.fotos?.length
     ? comercio.fotos.map((f) => new URL(f, Astro.site).toString())
     : undefined,
+  ...(CON_COCINA.has(tipo) && comercio.rasgos?.length
+    ? { servesCuisine: comercio.rasgos }
+    : {}),
 };
+
+// Frase answer-first (visible + sumario): responde en una línea a la consulta
+// local de la categoría, con solo datos verificados. Los LLMs extraen este
+// formato como cita directa.
+const lineaGeo = `${comercio.nombre}, ${catLabel} en ${
+  comercio.calle
+}, barrio de Alcaravaneras (Las Palmas de Gran Canaria)${
+  comercio.telefono ? `, teléfono ${comercio.telefono}` : ''
+}${comercio.horario ? `, horario ${comercio.horario}` : ''}.`;
 
 const telHref = comercio.telefono?.replace(/\s/g, '');
 const waHref = comercio.whatsapp?.replace(/[^\d]/g, '');
@@ -70,7 +144,8 @@ const migas = {
 
 <Base
   titulo={`${comercio.nombre} — ${comercio.categoria} en Alcaravaneras`}
-  descripcion={`${comercio.nombre}, ${comercio.categoria.toLowerCase()} en ${comercio.calle}, barrio de Las Alcaravaneras (Las Palmas de Gran Canaria). Teléfono y horario.`}
+  descripcion={lineaGeo}
+  imagen={ogImagen}
 >
   <script
     slot="head"
@@ -82,6 +157,7 @@ const migas = {
     <div class="contenedor">
       <span class="etiqueta-cat">{comercio.categoria}</span>
       <h1>{comercio.nombre}</h1>
+      <p class="geo-intro">{lineaGeo}</p>
       {comercio.descripcion && <p>{comercio.descripcion}</p>}
       <div class="acciones">
         {comercio.telefono && (
@@ -103,9 +179,23 @@ const migas = {
   </section>
 
   <div class="contenedor">
-    {comercio.fotos?.length > 0 && (
+    <div class="ficha-imagen">
+      {comercio.fotos?.length > 0 ? (
+        <img src={comercio.fotos[0]} alt={`Local de ${comercio.nombre}`} loading="lazy" />
+      ) : (
+        <div class="ficha-imagen--vacia">
+          <span class="inicial">{comercio.nombre.trim().charAt(0).toUpperCase()}</span>
+          <p>
+            Sin foto todavía. Si es tu negocio,
+            <a href={waGuia} rel="noopener"> mándanos una por WhatsApp</a> y la ponemos.
+          </p>
+        </div>
+      )}
+    </div>
+
+    {comercio.fotos?.length > 1 && (
       <div class="galeria">
-        {comercio.fotos.map((foto) => (
+        {comercio.fotos.slice(1).map((foto) => (
           <img src={foto} alt={`Local de ${comercio.nombre}`} loading="lazy" />
         ))}
       </div>
@@ -148,6 +238,33 @@ const migas = {
             </li>
           )}
         </ul>
+
+        <div class="contacto-comercio">
+          <h2>Contactar</h2>
+          <div class="acciones">
+            {comercio.telefono && (
+              <a class="boton" href={`tel:${telHref}`}>Llamar</a>
+            )}
+            {comercio.whatsapp && (
+              <a class="boton secundario" href={`https://wa.me/${waHref}`} rel="noopener">WhatsApp</a>
+            )}
+            {comercio.email && (
+              <a class="boton secundario" href={`mailto:${comercio.email}`}>Correo</a>
+            )}
+            {comercio.web && (
+              <a class="boton secundario" href={comercio.web} rel="noopener nofollow">Su web</a>
+            )}
+            {comercio.maps && (
+              <a class="boton secundario" href={comercio.maps} rel="noopener">Cómo llegar</a>
+            )}
+          </div>
+          {!comercio.telefono && !comercio.whatsapp && !comercio.email && !comercio.web && (
+            <p class="sin-contacto">
+              Todavía no tenemos forma de contacto de este negocio.
+              <a href={waGuia} rel="noopener"> Si es el tuyo, dínoslo</a> y la añadimos hoy.
+            </p>
+          )}
+        </div>
 
         {!comercio.telefono && !comercio.horario && (
           <p class="incompleta">

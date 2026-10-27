@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img">
+  <defs>
+    <linearGradient id="fondo" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#fdeeee"/>
+      <stop offset="1" stop-color="#f7dcdc"/>
+    </linearGradient>
+    <radialGradient id="luz" cx="0.32" cy="0.22" r="0.85">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grano" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+    <filter id="difumina" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+  </defs>
+  <rect width="800" height="500" fill="url(#fondo)"/>
+  <rect width="800" height="500" fill="url(#luz)"/>
+  <ellipse cx="468.9" cy="400" rx="164" ry="22" fill="#073b4f" opacity="0.16" filter="url(#difumina)"/>
+  <g fill="#1b7f9e">
+    <ellipse cx="400" cy="330" rx="70" ry="58"/>
+    <ellipse cx="306" cy="212" rx="30" ry="42" transform="rotate(-18 306 212)"/>
+    <ellipse cx="368" cy="176" rx="30" ry="44"/>
+    <ellipse cx="432" cy="176" rx="30" ry="44"/>
+    <ellipse cx="494" cy="212" rx="30" ry="42" transform="rotate(18 494 212)"/>
+  </g>
+  <g>
+    <ellipse cx="600" cy="368" rx="66" ry="26" fill="#e2683f" opacity="0.85"/>
+    <ellipse cx="600" cy="352" rx="52" ry="20" fill="#fbe6de" opacity="0.7"/>
+    <circle cx="588" cy="300" r="12" fill="#d4a017"/>
+    <circle cx="620" cy="286" r="10" fill="#d4a017"/>
+  </g>
+  <circle cx="206" cy="300" r="40" fill="#e2683f" opacity="0.55"/>
+  <circle cx="206" cy="300" r="20" fill="#faf6ee" opacity="0.8"/>
+  <rect width="800" height="500" filter="url(#grano)" opacity="0.055" style="mix-blend-mode:multiply"/>
+</svg>

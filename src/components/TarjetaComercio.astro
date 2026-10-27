@@ -1,21 +1,52 @@
 ---
-const { comercio } = Astro.props;
+// Tarjeta de comercio en la portada de la guía.
+// Si el comercio tiene foto se muestra; si no, un placeholder SVG por
+// categoría (autoalojado, sin hotlinking). El monograma con la inicial
+// se jubiló: una imagen por categoría queda mejor y pide menos explicación.
+const { comercio, destacado = false } = Astro.props;
+
 const inicial = comercio.nombre.trim().charAt(0).toUpperCase();
 const portada = comercio.fotos?.[0];
+// El horario viaja como dato al navegador: el estado «abierto ahora» se calcula
+// en el cliente contra la hora real del visitante, nunca en el build (caducaría).
+const horarioJson = JSON.stringify(comercio.horarioSchema || []);
+
+// Ilustración de la categoría: public/img/categorias/*.jpg, generadas por
+// herramientas/gen-imagenes-categorias.py (misma familia visual en las cuatro
+// guías). Nombre en minúsculas, sin tildes y con guiones; si falla, la genérica.
+const slugCat = (cat) =>
+  (cat || '')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/ñ/g, 'n')
+    .replace(/\s+/g, '-');
+const placeholder = `/img/categorias/${slugCat(comercio.categoria)}.jpg`;
+const telHref = comercio.telefono ? comercio.telefono.replace(/\s/g, '') : null;
 ---
 
 <li
-  class="tarjeta"
+  class={`tarjeta${destacado ? ' destacada' : ''}`}
   data-cat={comercio.categoria}
+  data-horario={horarioJson}
   data-buscar={`${comercio.nombre} ${comercio.categoria} ${comercio.calle}`.toLowerCase()}
 >
   <div class="medio">
     {portada ? (
       <img src={portada} alt={`Local de ${comercio.nombre}`} loading="lazy" />
     ) : (
-      <div class="monograma" aria-hidden="true">{inicial}</div>
+      <img
+        class="placeholder"
+        src={placeholder}
+        alt=""
+        loading="lazy"
+        aria-hidden="true"
+        onerror="this.onerror=null;this.src='/img/categorias/generico.jpg';"
+      />
     )}
     <span class="etiqueta">{comercio.categoria}</span>
+    <span class="estado" hidden></span>
+    {destacado && <span class="sello-destacado">Destacado</span>}
   </div>
   <div class="cuerpo">
     <h3><a href={`/${comercio.slug}/`}>{comercio.nombre}</a></h3>
@@ -26,5 +57,13 @@ const portada = comercio.fotos?.[0];
       </svg>
       {comercio.calle}
     </p>
+    {comercio.telefono && (
+      <p class="tel">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true" style="margin-top:3px;flex:none">
+          <path d="M6.5 3h3l1.5 4-2 1.5a12 12 0 0 0 6.5 6.5L17 13l4 1.5v3a2 2 0 0 1-2.2 2A17 17 0 0 1 3 5.2 2 2 0 0 1 5 3h1.5Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+        </svg>
+        <a href={`tel:${telHref}`}>{comercio.telefono}</a>
+      </p>
+    )}
   </div>
 </li>

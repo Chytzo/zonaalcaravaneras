@@ -1,0 +1,439 @@
+---
+// Mapa del barrio con Leaflet sobre cartografía propia (sustituye al plano SVG).
+//
+// Regla del sitio: cero peticiones a dominios de terceros desde el navegador del
+// visitante. Por eso NO se usan teselas de OpenStreetMap ni CDNs: las dos bases
+// (ortofoto PNOA y plano vectorial) son imágenes locales georreferenciadas con
+// el mismo recorte que usa `herramientas/generar-zona.py`.
+//
+// Los marcadores salen de las coordenadas de cada ficha (lat/lon de OSM), se
+// colorean por categoría, se filtran por tipo de negocio y abren un globo con
+// enlace a la ficha.
+import mapa from '../data/mapa.json';
+import comercios from '../data/comercios.json';
+
+// Recorte idéntico al de generar-zona.py (sur, norte, oeste, este).
+const ZONA = { sur: 28.127, norte: 28.135, oeste: -15.437, este: -15.4255 };
+
+const paleta = {
+  Restaurantes: '#e2683f',
+  'Bares y cafés': '#efa03f',
+  Alimentación: '#4c9f63',
+  Belleza: '#b5559b',
+  Salud: '#3e8fd0',
+  Moda: '#8a63c7',
+  'Hogar y reformas': '#8a7b5c',
+  Electrónica: '#2a9d9a',
+  Servicios: '#5f7183',
+  Motor: '#4b5f6e',
+  Bazares: '#c9a227',
+  'Deporte y ocio': '#3f9e86',
+  Mascotas: '#c76a6a',
+  'Hogar y decoración': '#a2845e',
+};
+const color = (cat) => paleta[cat] ?? '#5f7183';
+
+const dentroDelRecorte = (lat, lon) =>
+  lon >= ZONA.oeste && lon <= ZONA.este && lat >= ZONA.sur && lat <= ZONA.norte;
+
+const conCoordenadas = comercios.filter(
+  (c) => typeof c.lat === 'number' && typeof c.lon === 'number'
+);
+const puntos = conCoordenadas
+  .filter((c) => dentroDelRecorte(c.lat, c.lon))
+  .map((c) => ({
+    slug: c.slug,
+    nombre: c.nombre,
+    cat: c.categoria,
+    lat: c.lat,
+    lon: c.lon,
+    dir: c.calle || '',
+    tel: c.telefono || '',
+  }));
+const fueraDelRecorte = conCoordenadas.length - puntos.length;
+
+// Parques infantiles: en mapa.json vienen en coordenadas del plano (x/y); se pasan
+// a lat/lon con la proyección inversa del generador.
+const infantiles = (mapa.infantiles || []).map((p) => ({
+  nombre: p.nombre || 'Parque infantil',
+  lat: ZONA.sur + (1 - p.y / mapa.alto) * (ZONA.norte - ZONA.sur),
+  lon: ZONA.oeste + (p.x / mapa.ancho) * (ZONA.este - ZONA.oeste),
+}));
+
+const categorias = [...new Set(puntos.map((p) => p.cat))].sort((a, b) => a.localeCompare(b, 'es'));
+const conteo = Object.fromEntries(
+  categorias.map((cat) => [cat, puntos.filter((p) => p.cat === cat).length])
+);
+// Total de fichas por categoría (con y sin ubicación): el chip del mapa muestra
+// cuántas están localizadas, y el title aclara cuántas son en total.
+const totalPorCategoria = Object.fromEntries(
+  categorias.map((cat) => [cat, comercios.filter((c) => c.categoria === cat).length])
+);
+
+const datosMapa = { zona: ZONA, puntos, infantiles, paleta };
+---
+
+<div class="mapa" data-mapa>
+  <div class="mapa-barra">
+    <button class="filtro-mapa" data-filtro="" aria-pressed="true">
+      Todo <span class="cuenta">{puntos.length}</span>
+    </button>
+    {categorias.map((cat) => (
+      <button
+        class="filtro-mapa"
+        data-filtro={cat}
+        aria-pressed="false"
+        title={`${conteo[cat]} de ${totalPorCategoria[cat]} fichas con ubicación en el plano`}
+      >
+        <span class="punto" style={`background:${color(cat)}`}></span>
+        {cat} <span class="cuenta">{conteo[cat]}</span>
+      </button>
+    ))}
+    <button class="filtro-mapa" data-filtro="__infantiles" aria-pressed="false">
+      <span class="punto" style="background:#2f8f4e"></span>Parques infantiles
+      <span class="cuenta">{infantiles.length}</span>
+    </button>
+  </div>
+
+  <div class="escena-mandos">
+    <button class="boton-vista" data-base="foto" aria-pressed="true">Satélite</button>
+    <button class="boton-vista" data-base="plano" aria-pressed="false">Plano</button>
+  </div>
+
+  <div class="mapa-lienzo" data-lienzo style={`aspect-ratio:${mapa.ancho} / ${mapa.alto}`}></div>
+
+  <p class="nota-mapa">
+    {puntos.length} comercios con ubicación dentro del plano, de {comercios.length} fichas.
+    {fueraDelRecorte > 0 &&
+      ` ${fueraDelRecorte} más tienen coordenadas justo fuera del recorte del barrio.`}
+    Toca un punto para ver el comercio y abrir su ficha; los números agrupan varios comercios y se abren al
+    acercar. Ortofoto: PNOA del <a href="https://www.ign.es" rel="noopener">Instituto Geográfico Nacional</a>,
+    <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener">CC BY 4.0</a> scne.es. Plano y
+    situación de los comercios: <a href="https://www.openstreetmap.org/copyright" rel="noopener">OpenStreetMap</a>
+    (ODbL).
+  </p>
+</div>
+
+<script type="application/json" id="datos-mapa" set:html={JSON.stringify(datosMapa)}></script>
+
+<script>
+  import L from 'leaflet';
+  import 'leaflet/dist/leaflet.css';
+  import 'leaflet.markercluster';
+  import 'leaflet.markercluster/dist/MarkerCluster.css';
+
+  type Punto = {
+    slug: string;
+    nombre: string;
+    cat: string;
+    lat: number;
+    lon: number;
+    dir: string;
+    tel: string;
+  };
+  type Datos = {
+    zona: { sur: number; norte: number; oeste: number; este: number };
+    puntos: Punto[];
+    infantiles: { nombre: string; lat: number; lon: number }[];
+    paleta: Record<string, string>;
+  };
+
+  const raiz = document.querySelector('[data-mapa]');
+  const contenedorDatos = document.getElementById('datos-mapa');
+
+  if (raiz && contenedorDatos) {
+    const datos: Datos = JSON.parse(contenedorDatos.textContent || '{}');
+    const color = (cat: string) => datos.paleta[cat] ?? '#5f7183';
+    const limite: [[number, number], [number, number]] = [
+      [datos.zona.sur, datos.zona.oeste],
+      [datos.zona.norte, datos.zona.este],
+    ];
+
+    const mapa = L.map(raiz.querySelector('[data-lienzo]') as HTMLElement, {
+      zoomControl: true,
+      scrollWheelZoom: false, // no secuestrar el scroll de la página
+      minZoom: 14,
+      maxZoom: 19,
+      zoomSnap: 0, // encuadre exacto: con pasos enteros la ortofoto no llena el marco
+      maxBounds: L.latLngBounds(limite).pad(0.01),
+    });
+
+    // Las dos bases son locales y comparten la misma georreferencia.
+    const baseFoto = L.imageOverlay('/orto-zona.jpg', limite, { opacity: 1 });
+    const basePlano = L.imageOverlay('/mapa-fondo.svg', limite, { opacity: 1 });
+    baseFoto.addTo(mapa);
+
+    mapa.fitBounds(L.latLngBounds(limite), { padding: [20, 20] });
+    // El contenedor toma su tamaño definitivo después del primer pintado (aspect-ratio):
+    // sin recalcular, el encuadre sale a media escala y sobra lienzo vacío alrededor.
+    const encuadrar = () => {
+      mapa.invalidateSize();
+      mapa.fitBounds(L.latLngBounds(limite), { padding: [20, 20] });
+    };
+    requestAnimationFrame(encuadrar);
+    window.addEventListener('load', encuadrar);
+    if (typeof ResizeObserver !== 'undefined') {
+      new ResizeObserver(() => mapa.invalidateSize()).observe(
+        raiz.querySelector('[data-lienzo]') as HTMLElement
+      );
+    }
+    mapa.attributionControl.setPrefix('');
+    mapa.attributionControl.addAttribution(
+      '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · Ortofoto PNOA (IGN) CC BY 4.0'
+    );
+
+    // La rueda solo hace zoom cuando el puntero está dentro del mapa.
+    mapa.on('mouseover', () => mapa.scrollWheelZoom.enable());
+    mapa.on('mouseout', () => mapa.scrollWheelZoom.disable());
+
+    function globo(p: Punto): HTMLElement {
+      const caja = document.createElement('div');
+      caja.className = 'globo-ficha';
+      const titulo = document.createElement('strong');
+      titulo.textContent = p.nombre;
+      const cat = document.createElement('span');
+      cat.className = 'globo-cat';
+      cat.textContent = p.cat;
+      cat.style.color = color(p.cat);
+      caja.append(titulo, cat);
+      if (p.dir) {
+        const dir = document.createElement('div');
+        dir.className = 'globo-dato';
+        dir.textContent = p.dir;
+        caja.append(dir);
+      }
+      if (p.tel) {
+        const tel = document.createElement('a');
+        tel.className = 'globo-dato';
+        tel.href = `tel:${p.tel.replace(/\s/g, '')}`;
+        tel.textContent = p.tel;
+        caja.append(tel);
+      }
+      const enlace = document.createElement('a');
+      enlace.className = 'globo-enlace';
+      enlace.href = `/${p.slug}/`;
+      enlace.textContent = 'Ver ficha →';
+      caja.append(enlace);
+      return caja;
+    }
+
+    const capaComercios = (L as any).markerClusterGroup({
+      maxClusterRadius: 42,
+      showCoverageOnHover: false,
+      spiderfyOnMaxZoom: true,
+      disableClusteringAtZoom: 18,
+      iconCreateFunction: (cluster: any) => {
+        const n = cluster.getChildCount();
+        const tamano = n < 10 ? 'small' : n < 30 ? 'medium' : 'large';
+        return L.divIcon({
+          html: `<span>${n}</span>`,
+          className: `cluster-comercios cluster-${tamano}`,
+          iconSize: L.point(36, 36),
+        });
+      },
+    }).addTo(mapa);
+    const capaInfantiles = L.layerGroup().addTo(mapa);
+
+    const marcadores = datos.puntos.map((p) => {
+      const m = L.circleMarker([p.lat, p.lon], {
+        radius: 5.5,
+        weight: 1.4,
+        color: '#ffffff',
+        fillColor: color(p.cat),
+        fillOpacity: 0.95,
+      });
+      m.bindPopup(globo(p), { closeButton: true, minWidth: 170 });
+      m.bindTooltip(p.nombre, { direction: 'top', offset: [0, -6], opacity: 0.9 });
+      (m as unknown as { cat: string }).cat = p.cat;
+      return m;
+    });
+
+    const marcasInfantiles = datos.infantiles.map((p) => {
+      const m = L.circleMarker([p.lat, p.lon], {
+        radius: 7,
+        weight: 2.5,
+        color: '#ffffff',
+        fillColor: '#2f8f4e',
+        fillOpacity: 1,
+      });
+      m.bindTooltip(p.nombre, { direction: 'top', offset: [0, -6] });
+      return m;
+    });
+
+    function pintar(filtro: string) {
+      capaComercios.clearLayers();
+      capaInfantiles.clearLayers();
+      if (filtro === '__infantiles') {
+        for (const m of marcasInfantiles) capaInfantiles.addLayer(m);
+      } else {
+        const visibles = filtro
+          ? marcadores.filter((m) => (m as unknown as { cat: string }).cat === filtro)
+          : marcadores;
+        capaComercios.addLayers(visibles);
+      }
+      for (const b of raiz!.querySelectorAll<HTMLButtonElement>('.filtro-mapa')) {
+        b.setAttribute('aria-pressed', String((b.dataset.filtro || '') === filtro));
+      }
+    }
+
+    pintar('');
+
+    for (const b of raiz.querySelectorAll<HTMLButtonElement>('.filtro-mapa')) {
+      b.addEventListener('click', () => pintar(b.dataset.filtro || ''));
+    }
+
+    for (const b of raiz.querySelectorAll<HTMLButtonElement>('.boton-vista')) {
+      b.addEventListener('click', () => {
+        const esFoto = b.dataset.base === 'foto';
+        if (esFoto) {
+          mapa.removeLayer(basePlano);
+          baseFoto.addTo(mapa);
+        } else {
+          mapa.removeLayer(baseFoto);
+          basePlano.addTo(mapa);
+        }
+        for (const otro of raiz!.querySelectorAll('.boton-vista')) {
+          otro.setAttribute('aria-pressed', String(otro === b));
+        }
+      });
+    }
+  }
+</script>
+
+<style>
+  .mapa-barra {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-bottom: 0.9rem;
+  }
+  .filtro-mapa {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    gap: 0.4rem;
+    border: 1px solid var(--borde);
+    background: #fff;
+    border-radius: 999px;
+    padding: 0.3rem 0.75rem;
+    font: inherit;
+    font-size: 0.82rem;
+    color: var(--tinta);
+    cursor: pointer;
+  }
+  .filtro-mapa:hover { border-color: var(--agua); }
+  .filtro-mapa[aria-pressed='true'] {
+    background: var(--oceano);
+    border-color: var(--oceano);
+    color: #fff;
+  }
+  .filtro-mapa .cuenta {
+    font-variant-numeric: tabular-nums;
+    opacity: 0.6;
+    font-size: 0.92em;
+  }
+  .filtro-mapa[aria-pressed='true'] .cuenta { opacity: 0.85; }
+  .filtro-mapa[data-filtro='__infantiles'] { margin-left: 0.6rem; border-style: dashed; }
+  .punto { width: 10px; height: 10px; border-radius: 50%; flex: none; }
+
+  .escena-mandos {
+    display: flex;
+    gap: 0.35rem;
+    justify-content: flex-end;
+    margin-bottom: 0.5rem;
+  }
+  .boton-vista {
+    border: 1px solid var(--borde);
+    background: #fff;
+    border-radius: 999px;
+    padding: 0.25rem 0.8rem;
+    font: inherit;
+    font-size: 0.8rem;
+    color: var(--tinta);
+    cursor: pointer;
+  }
+  .boton-vista[aria-pressed='true'] {
+    background: var(--agua);
+    border-color: var(--agua);
+    color: #fff;
+  }
+
+  .mapa-lienzo {
+    width: 100%;
+    max-width: 780px;
+    margin-inline: auto;
+    border-radius: var(--radio);
+    overflow: hidden;
+    border: 1px solid var(--borde);
+    box-shadow: var(--sombra);
+    background: var(--arena-honda);
+    position: relative;
+    z-index: 0;
+  }
+
+  /* Racimos de comercios: círculo con el número, en el color de marca */
+  .mapa-lienzo :global(.cluster-comercios) {
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--oceano);
+    color: #fff;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 6px rgba(4, 34, 46, 0.35);
+  }
+  .mapa-lienzo :global(.cluster-comercios span) { line-height: 1; }
+  .mapa-lienzo :global(.cluster-small) { width: 32px; height: 32px; font-size: 0.8rem; }
+  .mapa-lienzo :global(.cluster-medium) { width: 38px; height: 38px; font-size: 0.85rem; background: var(--agua); }
+  .mapa-lienzo :global(.cluster-large) { width: 44px; height: 44px; font-size: 0.9rem; background: var(--oceano-hondo); }
+
+  .mapa-lienzo :global(.globo-ficha) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    font-size: 0.86rem;
+    line-height: 1.35;
+    color: var(--tinta);
+  }
+  .mapa-lienzo :global(.globo-ficha strong) { font-size: 0.95rem; }
+  .mapa-lienzo :global(.globo-cat) {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-weight: 700;
+  }
+  .mapa-lienzo :global(.globo-dato) { color: var(--tinta-suave); text-decoration: none; }
+  .mapa-lienzo :global(a.globo-dato:hover) { color: var(--agua); }
+  .mapa-lienzo :global(.globo-enlace) {
+    margin-top: 0.35rem;
+    font-weight: 700;
+    color: var(--agua);
+    text-decoration: none;
+  }
+
+  .mapa-lienzo :global(.leaflet-container) {
+    font: inherit;
+    background: var(--arena-honda);
+  }
+  .mapa-lienzo :global(.leaflet-control-attribution) {
+    font-size: 0.68rem;
+    background: rgba(255, 255, 255, 0.94);
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: var(--tinta);
+  }
+  .mapa-lienzo :global(.leaflet-popup-content-wrapper) { border-radius: var(--radio-s); }
+
+  .nota-mapa {
+    margin: 0.7rem 0 0;
+    font-size: 0.78rem;
+    color: var(--tinta-suave);
+    line-height: 1.5;
+  }
+</style>
+
+<style is:global>
+  /* Atribucion de Leaflet a 12px: por debajo de 12 cansa la vista */
+  .leaflet-control-attribution { font-size: 12px; }
+</style>

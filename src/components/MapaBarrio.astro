@@ -40,8 +40,16 @@ const categorias = [...new Set(locales.map((l) => l.categoria))].sort((a, b) =>
     </button>
   </div>
 
+  <div class="escena-mandos">
+    <button class="boton-vista" data-base="foto" aria-pressed="true">Satélite</button>
+    <button class="boton-vista" data-base="plano" aria-pressed="false">Plano</button>
+  </div>
+
   <div class="mapa-lienzo">
-    <img src="/mapa-fondo.svg" alt="" width={ancho} height={alto} loading="lazy" />
+      <img class="base base--foto" src="/orto-zona.jpg" alt="Vista de satélite de la zona"
+        width={ancho} height={alto} loading="lazy" />
+      <img class="base base--plano" src="/mapa-fondo.svg" alt="" hidden
+        width={ancho} height={alto} loading="lazy" />
 
     <svg
       class="mapa-capa"
@@ -49,7 +57,6 @@ const categorias = [...new Set(locales.map((l) => l.categoria))].sort((a, b) =>
       role="group"
       aria-label="Comercios de la zona"
     >
-      <path d={contornos} fill="#d5c9b4" stroke="#bcae95" stroke-width="0.5" />
 
       <g class="locales">
         {locales.map((l) => (
@@ -82,12 +89,13 @@ const categorias = [...new Set(locales.map((l) => l.categoria))].sort((a, b) =>
       </g>
     </svg>
 
-    <div class="globo" hidden></div>
+      <div class="globo" hidden></div>
   </div>
 
   <p class="nota-mapa">
-    Manzanas, calles, parques y playa de
-    <a href="https://www.openstreetmap.org/copyright" rel="noopener">OpenStreetMap</a> (ODbL).
+    Ortofoto: PNOA del <a href="https://www.ign.es" rel="noopener">Instituto Geográfico Nacional</a>,
+    <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener">CC BY 4.0</a> scne.es.
+    Situación de los comercios: <a href="https://www.openstreetmap.org/copyright" rel="noopener">OpenStreetMap</a> (ODbL).
     Cada edificio se reparte entre los locales que tiene dentro. Toca uno para abrir su ficha.
   </p>
 </div>
@@ -141,6 +149,22 @@ const categorias = [...new Set(locales.map((l) => l.categoria))].sort((a, b) =>
     lienzo.addEventListener('mouseleave', () => { globo.hidden = true; });
 
     capaInfantil.removeAttribute('hidden');
+
+    // Base del plano: fotografía aérea o dibujo
+    const foto = raiz.querySelector('.base--foto');
+    const dibujo = raiz.querySelector('.base--plano');
+    for (const b of raiz.querySelectorAll('.boton-vista')) {
+      b.addEventListener('click', () => {
+        const esFoto = b.dataset.base === 'foto';
+        foto.hidden = !esFoto;
+        dibujo.hidden = esFoto;
+        // `raiz` ya es el .mapa: marcamos ahí el modo por si el CSS lo necesita
+        raiz.classList.toggle('sobre-foto', esFoto);
+        for (const otro of raiz.querySelectorAll('.boton-vista')) {
+          otro.setAttribute('aria-pressed', String(otro === b));
+        }
+      });
+    }
   }
 </script>
 
@@ -154,6 +178,7 @@ const categorias = [...new Set(locales.map((l) => l.categoria))].sort((a, b) =>
   .filtro-mapa {
     display: inline-flex;
     align-items: center;
+    min-height: 44px;
     gap: 0.4rem;
     border: 1px solid var(--borde);
     background: #fff;
@@ -181,7 +206,12 @@ const categorias = [...new Set(locales.map((l) => l.categoria))].sort((a, b) =>
     background: #f2ece1;
     line-height: 0;
   }
-  .mapa-lienzo img { width: 100%; height: auto; display: block; }
+  /* Las dos bases van en flujo normal: así el contenedor conserva la altura
+     con cualquiera de ellas y la capa de locales encaja siempre. */
+  .mapa-lienzo img.base { width: 100%; height: auto; display: block; }
+  /* Apagamos un poco la foto para que las casillas de colores destaquen encima */
+  .mapa-lienzo img.base--foto { filter: saturate(0.62) brightness(0.82) contrast(0.95); }
+  .mapa-lienzo img.base[hidden] { display: none; }
 
   .mapa-capa {
     position: absolute;
@@ -193,6 +223,10 @@ const categorias = [...new Set(locales.map((l) => l.categoria))].sort((a, b) =>
   .locales a rect {
     transition: opacity 0.15s ease;
     cursor: pointer;
+    stroke: #fff;
+    stroke-width: 0.9;
+    paint-order: stroke;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.55));
   }
   .locales a:hover rect,
   .locales a:focus rect {

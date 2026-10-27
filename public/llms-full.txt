@@ -1,0 +1,375 @@
+# Zona Alcaravaneras — listado completo
+
+> Los 327 comercios del barrio de Las Alcaravaneras, en Las Palmas de Gran Canaria, agrupados por categoría. Cada línea lleva nombre, dirección, teléfono, horario y el enlace a su ficha. Es el mismo contenido que se ve en el sitio, en un solo fichero de texto.
+
+Procedencia: OpenStreetMap (ODbL) más los datos que facilitan los propios comercios. Si reutilizas este listado, cita a OpenStreetMap y mantén la licencia ODbL. Actualizado en cada publicación del sitio.
+
+## Restaurantes (46)
+
+- **20conmigo** · Calle Manuel González Martín, 9 · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/20conmigo/
+- **Asadero El Puente** · Calle Pío XII · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/asadero-el-puente/
+- **Asahi** · Calle Pi y Margall · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/asahi/
+- **Bacoterapia** · Calle Menéndez y Pelayo · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/bacoterapia/
+- **Bar Restaurante Alemania** · Calle Barcelona · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/bar-restaurante-alemania/
+- **Bar Sam** · Calle Pi y Margall · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/bar-sam/
+- **Bodeguita Central** · Calle Barcelona · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/bodeguita-central/
+- **Cristal** · Calle Barcelona · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/cristal/
+- **El Equilibrista** · Calle Ingeniero Salinas, 23 · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/el-equilibrista/
+- **El Rincón Libanés** · Calle Alemania · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/el-rincon-libanes/
+- **El Taller de Allende** · Calle Menéndez y Pelayo · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/el-taller-de-allende/
+- **Eskina 10** · Calle Alemania · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/eskina-10/
+- **Hermanos Díaz** · Calle Italia · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/hermanos-diaz/
+- **Hermanos Rogelio** · Calle Manuel González Martín · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/hermanos-rogelio/
+- **I. Parioli Pizzeria** · Calle Néstor de la Torre · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/i-parioli-pizzeria/
+- **K´Marisu** · Calle Italia · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/k-marisu/
+- **La Piccola Italia** · Calle Menéndez y Pelayo · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/la-piccola-italia/
+- **La Taberna del Viejo** · Calle Pi y Margall · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/la-taberna-del-viejo/
+- **Las Rejas Y Olé** · Calle General Mas de Gaminde · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/las-rejas-y-ole/
+- **Las Tablas Taberna Urbana** · Calle Néstor de la Torre · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/las-tablas-taberna-urbana/
+- **Malvón** · Avenida José Mesa y López · 35006 Las Palmas de Gran Canaria · tel. +34928210222 · lunes-domingo 10:00-23:00 · https://www.malvon.es · https://zonaalcaravaneras.com/malvon/
+- **McDonald's** · Avenida José Mesa y López · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/mcdonald-s/
+- **Mesón Sabor Andaluz** · Calle Luis Antúnez, 25 · 35006 Las Palmas de Gran Canaria · tel. +34928292570 · https://zonaalcaravaneras.com/meson-sabor-andaluz/
+- **Monte Carlo** · General Vives · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/monte-carlo/
+- **Monóculo** · Avenida José Mesa y López · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/monoculo/
+- **Mundo Ibérico** · Calle Olof Palme · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/mundo-iberico/
+- **Natural Burguer** · Avenida José Mesa y López, 3 · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/natural-burguer/
+- **Néstor de la Torre** · Calle Néstor de la Torre · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/nestor-de-la-torre/
+- **Pagasarri** · Calle General Mas de Gaminde · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/pagasarri/
+- **Pizza Real** · Calle General Mas de Gaminde · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/pizza-real/
+- **Pizzeria Michelangelo** · Calle Luis Antúnez, 23 · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/pizzeria-michelangelo/
+- **Pizzería Vino e Cappuccino** · Avenida José Mesa y López · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/pizzeria-vino-e-cappuccino/
+- **Real Club Nautico** · Avenida Juan Rodríguez Doreste · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/real-club-nautico/
+- **Restaurante Casa Suerte** · Calle Valencia · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/restaurante-casa-suerte/
+- **Restaurante El Coto Libanés** · Calle General Mas de Gaminde · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/restaurante-el-coto-libanes/
+- **Restaurante Huifeng Yuan** · Calle León y Castillo · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/restaurante-huifeng-yuan/
+- **Restaurante Japonés Kyoto** · Calle Barcelona · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/restaurante-japones-kyoto/
+- **Restaurante Japonés Osaka** · Calle Barcelona · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/restaurante-japones-osaka/
+- **Restaurante La Sama** · Calle Néstor de la Torre · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/restaurante-la-sama/
+- **Restaurante Rong Cheng** · Calle Barcelona · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/restaurante-rong-cheng/
+- **Rockabilly Burger Bar** · Calle Néstor de la Torre · 35006 Las Palmas de Gran Canaria · tel. +34928077045 · lunes-domingo 13:00-00:00 · https://rockabillyburgerbar.com/en · https://zonaalcaravaneras.com/rockabilly-burger-bar/
+- **Sakura I** · Calle Néstor de la Torre · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/sakura-i/
+- **Samoa** · Calle Valencia · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/samoa/
+- **Scooter's Pizza Factory** · Calle Néstor de la Torre · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/scooter-s-pizza-factory/
+- **TIKI TACO** · Calle Galicia · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/tiki-taco/
+- **TKO** · Calle Pi y Margall · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/tko/
+
+## Belleza (44)
+
+- **Alelí Perfumería Mesa y López** · General Vives · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/aleli-perfumeria-mesa-y-lopez/
+- **Atmaram, Veena** · Calle Néstor de la Torre · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/atmaram-veena/
+- **Beauty Shop S A U** · Calle Alemania · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/beauty-shop-s-a-u/
+- **Biondi Elite Peluquería** · Avenida José Mesa y López · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/biondi-elite-peluqueria/
+- **Carroussel** · Calle León Tolstoi · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/carroussel/
+- **Centro De Bienestar Nestor de la Torre** · Calle Néstor de la Torre · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/centro-de-bienestar-nestor-de-la-torre/
+- **Centro de Bronceado La Playa** · Calle General Mas de Gaminde · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/centro-de-bronceado-la-playa/
+- **CentroBell Cosmética** · Calle Menéndez y Pelayo · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/centrobell-cosmetica/
+- **Cosméticos Paquita Ors** · Calle Néstor de la Torre · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/cosmeticos-paquita-ors/
+- **Dania Peluquería** · Calle León Tolstoi · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/dania-peluqueria/
+- **Distamaran** · Calle General Mas de Gaminde · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/distamaran/
+- **Droguería Perfumeria Italia** · Calle Alemania · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/drogueria-perfumeria-italia/
+- **Entaban Belleza Integral** · Calle General Mas de Gaminde · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/entaban-belleza-integral/
+- **Enzo** · Calle Juan Manuel Durán González · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/enzo/
+- **Equivalenza** · Calle León Tolstoi · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/equivalenza/
+- **María Del Carmen Hernández Galván** · Calle Alfredo Calderón · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/maria-del-carmen-hernandez-galvan/
+- **Monyui Heras** · Calle Pi y Margall · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/monyui-heras/
+- **My dream** · Calle Italia · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/my-dream/
+- **New Elise** · Calle León y Castillo · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/new-elise/
+- **Nueva Imagen** · Calle Ingeniero Salinas · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/nueva-imagen/
+- **Peluquería MH** · Calle Néstor de la Torre · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/peluqueria-mh/
+- **Peluquería Mijin Jung** · Calle Menéndez y Pelayo · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/peluqueria-mijin-jung/
+- **Peluquería Shenmei** · Calle Barcelona · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/peluqueria-shenmei/
+- **Peluquería Unisex Sunao** · Pasaje de Inglaterra · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/peluqueria-unisex-sunao/
+- **Peluquería Victor Santana** · Calle Menéndez y Pelayo · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/peluqueria-victor-santana/
+- **Peluquería y Estética Grissel Santana** · Calle Pi y Margall · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/peluqueria-y-estetica-grissel-santana/
+- **Peluquería y Estética Ruiz** · Calle Galicia · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/peluqueria-y-estetica-ruiz/
+- **Piluca Valerón** · Calle Galicia · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/piluca-valeron/
+- **Renato Tatuajes** · Calle Italia, 47 · 35006 Las Palmas de Gran Canaria · tel. +34828014095 · https://renatotatuajes.es/ · https://zonaalcaravaneras.com/renato-tatuajes/
+- **Salón Alhambra** · Calle Néstor de la Torre · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/salon-alhambra/
+- **Salón Fátima** · Calle Italia · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/salon-fatima/
+- **Salón Peluquería Mercy** · Calle Alfredo Calderón · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/salon-peluqueria-mercy/
+- **Sebastián peluqueros** · Calle General Mas de Gaminde · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/sebastian-peluqueros/
+- **Styleform** · Avenida José Mesa y López · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/styleform/
+- **The Black Blood Tattoo** · Calle Menéndez y Pelayo · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/the-black-blood-tattoo/
+- **Tienda Avon** · Calle Alemania · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/tienda-avon/
+- **Todo Estética** · Calle Ingeniero Salinas · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/todo-estetica/
+- **Todo uñas desde Europa** · Calle Pi y Margall · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/todo-unas-desde-europa/
+- **VCanto Cosmética** · Calle Néstor de la Torre · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/vcanto-cosmetica/
+- **Vitacool peluqueros** · Calle Pi y Margall · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/vitacool-peluqueros/
+- **World Tattoo Zone** · Paseo de Chil · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/world-tattoo-zone/
+- **Xerach Peluquería** · Calle Concepción Arenal · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/xerach-peluqueria/
+- **Yves Rocher** · Calle Galicia · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/yves-rocher/
+- **Zen By Mijin** · Calle Néstor de la Torre · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/zen-by-mijin/
+
+## Alimentación (39)
+
+- **24 Horas Vip noche y día** · Calle Néstor de la Torre · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/24-horas-vip-noche-y-dia/
+- **B A M Alfaship** · Calle León y Castillo · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/b-a-m-alfaship/
+- **Baza - Minimercado** · Calle Pío XII · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/baza-minimercado/
+- **Bazar - Minimercado** · Calle Pío XII · 35006 Las Palmas de Gran Canaria · lunes-domingo 09:00-23:00 · https://zonaalcaravaneras.com/bazar-minimercado/
+- **Bazar Ainomar** · Calle Luis Antúnez · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/bazar-ainomar/
+- **Bazar Alcaravaneras** · Calle Luis Antúnez · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/bazar-alcaravaneras/
+- **Bazar Kirin** · Calle Barcelona · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/bazar-kirin/
+- **Comercial Quintana Sánchez** · Calle Néstor de la Torre · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/comercial-quintana-sanchez/
+- **D'Guijuelo** · Calle Pío XII · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/d-guijuelo/
+- **Dipesa** · Calle Pi y Margall · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/dipesa/
+- **Dulcería Colomar** · Calle Menéndez y Pelayo · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/dulceria-colomar/
+- **Dulcería Parrilla** · Calle Menéndez y Pelayo · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/dulceria-parrilla/
+- **Europan 2012** · Calle General Mas de Gaminde · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/europan-2012/
+- **Francisco Sosa Santana** · Calle Néstor de la Torre · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/francisco-sosa-santana/
+- **Frutas Agustín Domínguez** · Calle Pi y Margall · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/frutas-agustin-dominguez/
+- **Frutería** · Calle Pi y Margall · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/fruteria/
+- **Granier** · Pasaje de Finlandia · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/granier/
+- **La comida de Katia** · Calle Barcelona · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/la-comida-de-katia/
+- **La Encina de Zimmermann Alonso** · Calle Alfredo Calderón · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/la-encina-de-zimmermann-alonso/
+- **La Garriga** · Calle Néstor de la Torre · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/la-garriga/
+- **La Garriga Mas de Gaminde** · Calle General Mas de Gaminde · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/la-garriga-mas-de-gaminde/
+- **La Trastienda Fábrica de Sabores** · Calle Alemania · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/la-trastienda-fabrica-de-sabores/
+- **La Zanahoria Bioglobal** · Plaza Mercado Central · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/la-zanahoria-bioglobal/
+- **Levain Masa Madre** · Pío XII, 84 · 35006 Las Palmas de Gran Canaria · tel. +34928847964 · https://zonaalcaravaneras.com/levain-masa-madre/
+- **Mercado Central** · Calle Galicia, 24 · 35006 Las Palmas de Gran Canaria · lunes-sábado 08:00-14:00 · https://zonaalcaravaneras.com/mercado-central/
+- **Panadería El Triguero** · Calle Barcelona · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/panaderia-el-triguero/
+- **Panadería y Pastelería Del Pino** · Calle Valencia · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/panaderia-y-pasteleria-del-pino/
+- **Panaria** · Calle León Tolstoi · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/panaria/
+- **Pastelería Don Pan** · General Vives · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/pasteleria-don-pan/
+- **Pescadería Sargo** · Calle Barcelona · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/pescaderia-sargo/
+- **Savialud** · Calle Barcelona · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/savialud/
+- **Spar** · Calle Pi y Margall · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/spar/
+- **Spar** · Calle General Mas de Gaminde · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/spar-234/
+- **SuperDino** · Calle Manuel González Martín · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/superdino/
+- **SuperDino** · Calle General Mas de Gaminde · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/superdino-133/
+- **Supermercado Mak** · Calle Manuel González Martín · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/supermercado-mak/
+- **Supermercado Oriental** · Calle Barcelona · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/supermercado-oriental/
+- **Supermercado Yong Xin** · Calle Barcelona · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/supermercado-yong-xin/
+- **Trigal** · Calle Alfredo Calderón · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/trigal/
+
+## Moda (36)
+
+- **Albert Joyeros** · Calle Néstor de la Torre · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/albert-joyeros/
+- **Bata** · Avenida José Mesa y López · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/bata/
+- **Central Uniformes** · Calle Presidente Alvear · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/central-uniformes/
+- **Colorín Tienda de Costura** · Calle Barcelona · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/colorin-tienda-de-costura/
+- **Creativa Mercería y Labores** · Calle Barcelona · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/creativa-merceria-y-labores/
+- **Dimikelo Milano** · Avenida José Mesa y López · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/dimikelo-milano/
+- **El Kilo de San Bernardo** · General Vives · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/el-kilo-de-san-bernardo/
+- **Enhébrate** · Calle Barcelona · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/enhebrate/
+- **Eurekakids** · Avenida José Mesa y López · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/eurekakids/
+- **Eurofiel** · Avenida José Mesa y López · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/eurofiel/
+- **Foot Locker** · Avenida José Mesa y López · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/foot-locker/
+- **Garvi** · Calle Galicia · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/garvi/
+- **Intermeco** · General Vives · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/intermeco/
+- **Intimissimi** · Avenida José Mesa y López · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/intimissimi/
+- **Joyería Sonia** · Calle Alemania · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/joyeria-sonia/
+- **Jumesti** · Calle Pi y Margall · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/jumesti/
+- **Juveca** · Calle General Mas de Gaminde · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/juveca/
+- **La Faune** · Calle Néstor de la Torre · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/la-faune/
+- **Mango** · Avenida José Mesa y López · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/mango/
+- **Massimo Dutti** · Calle Galicia · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/massimo-dutti/
+- **Momenti** · Calle Néstor de la Torre · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/momenti/
+- **Muselina** · Pasaje de Francia · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/muselina/
+- **Padrón Lencería** · Calle Pi y Margall · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/padron-lenceria/
+- **Pronovias** · Avenida José Mesa y López · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/pronovias/
+- **Pull & Bear** · Pasaje de Finlandia · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/pull-bear/
+- **Rieber Andrea** · Avenida José Mesa y López · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/rieber-andrea/
+- **Rotensystem** · Calle Néstor de la Torre · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/rotensystem/
+- **Select** · Calle León Tolstoi · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/select/
+- **Stradivarius** · Calle Galicia · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/stradivarius/
+- **Tapicerías Noroeste** · Calle Pío XII · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/tapicerias-noroeste/
+- **Tomás Gil Izquierdo** · Calle Italia · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/tomas-gil-izquierdo/
+- **Uniformes Maurice Larache** · General Vives · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/uniformes-maurice-larache/
+- **United Colors of Benetton** · Avenida José Mesa y López · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/united-colors-of-benetton/
+- **United Colors of Benetton** · Pasaje de Francia · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/united-colors-of-benetton-21/
+- **Zapatería Infantil 100 pies** · Calle Pío XII · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/zapateria-infantil-100-pies/
+- **Zara** · Avenida José Mesa y López · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/zara/
+
+## Servicios (33)
+
+- **2000 Autoescuelas** · Avenida José Mesa y López · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/2000-autoescuelas/
+- **Acfi Press Agencia de Fotografía** · Bécquer · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/acfi-press-agencia-de-fotografia/
+- **Autoescuela Eco** · Paseo de Chil · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/autoescuela-eco/
+- **Autoescuela Los Alisios** · Calle León Tolstoi · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/autoescuela-los-alisios/
+- **B The Travel Brand** · Calle Barcelona · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/b-the-travel-brand/
+- **Banco Santander** · Avenida José Mesa y López · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/banco-santander/
+- **Banco Santander** · Calle Néstor de la Torre · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/banco-santander-35/
+- **Banco Santander** · Calle León Tolstoi · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/banco-santander-55/
+- **Bankinter** · Calle Galicia · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/bankinter/
+- **Bazar Galicia** · Calle Víctor Hugo · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/bazar-galicia/
+- **BBVA** · Calle León Tolstoi · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/bbva/
+- **BBVA** · Avenida José Mesa y López, 44 · 35007 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/bbva-58/
+- **Boutique del Fumador** · Calle Concepción Arenal · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/boutique-del-fumador/
+- **Caixabank** · Calle Néstor de la Torre · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/caixabank/
+- **Caixabank** · Calle Néstor de la Torre · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/caixabank-61/
+- **Caixabank** · Paseo de Chil · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/caixabank-143/
+- **Caixabank** · Calle Pío XII · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/caixabank-283/
+- **Centro de Formación Vial Las Palmas** · Calle Valencia · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/centro-de-formacion-vial-las-palmas/
+- **CopySuAr** · Calle Blasco Ibáñez · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/copysuar/
+- **Drugstore 3** · Calle León Tolstoi · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/drugstore-3/
+- **Eduardo Monzón Fotógrafo** · Calle Italia · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/eduardo-monzon-fotografo/
+- **Febeda Bazar** · Calle Pío XII · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/febeda-bazar/
+- **Halcón Viajes** · Calle Galicia · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/halcon-viajes/
+- **ING** · Avenida José Mesa y López · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/ing/
+- **Inkcrea Centro de impresión** · General Vives · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/inkcrea-centro-de-impresion/
+- **Online Tours Viajes a Cuba** · Calle Galicia · 35006 Las Palmas de Gran Canaria · lunes-viernes 09:30-13:30, 15:00-18:30 · https://zonaalcaravaneras.com/online-tours-viajes-a-cuba/
+- **Rótulos Samper** · Calle Manuel González Martín · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/rotulos-samper/
+- **Tavio** · Calle Alfredo Calderón · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/tavio/
+- **Tintorería Avenida** · Calle Néstor de la Torre · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/tintoreria-avenida/
+- **Tintorería Isis** · Calle Ingeniero Salinas · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/tintoreria-isis/
+- **Tourismat** · Calle León y Castillo · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/tourismat/
+- **Triodos Bank** · Calle Manuel González Martín · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/triodos-bank/
+- **Viajes Paralelo 28** · Calle Alemania · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/viajes-paralelo-28/
+
+## Bares y cafés (32)
+
+- **Bahía Playa** · Calle Presidente Alvear · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/bahia-playa/
+- **Bar Cafetería Churrería Mercado Central** · Calle Valencia · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/bar-cafeteria-churreria-mercado-central/
+- **Bar Cafetería La Parada** · Paseo de Chil · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/bar-cafeteria-la-parada/
+- **Bar El Cubi** · Calle Alfredo Calderón · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/bar-el-cubi/
+- **Bar La Sacristía** · Calle Valencia · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/bar-la-sacristia/
+- **Bar Restaurante Villa de Madrid** · Calle General Mas de Gaminde · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/bar-restaurante-villa-de-madrid/
+- **Bar Tatono** · Calle General Mas de Gaminde · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/bar-tatono/
+- **Cabali** · Calle León y Castillo · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/cabali/
+- **Cafeteria Estadio Insular** · Túnel Julio Luengo · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/cafeteria-estadio-insular/
+- **Cafetería 012** · Calle Presidente Alvear · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/cafeteria-012/
+- **Cafetería Cokí** · Pasaje de Inglaterra, 5 · 35007 Las Palmas de Gran Canaria · https://www.coki.es/ · https://zonaalcaravaneras.com/cafeteria-coki/
+- **Cafetería Néstor** · Calle Néstor de la Torre · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/cafeteria-nestor/
+- **Cj's Café** · Calle Olof Palme · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/cj-s-cafe/
+- **Croissantería Hermanos Rogelio** · Calle Valencia · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/croissanteria-hermanos-rogelio/
+- **Cubo Producciones** · Calle Hermanos García de La Torre · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/cubo-producciones/
+- **El Buen Sabor** · Calle Néstor de la Torre · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/el-buen-sabor/
+- **El Buho** · Calle León y Castillo · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/el-buho/
+- **El Fénix** · Calle Manuel González Martín · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/el-fenix/
+- **Gelateria Naturale, Come Mi Gira?** · Avenida José Mesa y López, 50 · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/gelateria-naturale-come-mi-gira/
+- **Granier** · Pasaje de Inglaterra · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/granier-324/
+- **Hoock** · Calle General Mas de Gaminde, 39 · 35007 Las Palmas de Gran Canaria · martes-sábado 22:00-04:00 · https://zonaalcaravaneras.com/hoock/
+- **Hoock Las Palmas** · Calle General Mas de Gaminde · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/hoock-las-palmas/
+- **La Palmita Bar y Tapas** · Calle León y Castillo · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/la-palmita-bar-y-tapas/
+- **La Sereta** · Calle Galicia, 10 · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/la-sereta/
+- **Las Cazuelas de Antonio** · Calle Italia · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/las-cazuelas-de-antonio/
+- **Laveintitres** · Calle General Mas de Gaminde · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/laveintitres/
+- **Martínez Canteli** · Calle Presidente Alvear · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/martinez-canteli/
+- **Son 8** · Calle Néstor de la Torre · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/son-8/
+- **Starbucks** · Avenida José Mesa y López · 35006 Las Palmas de Gran Canaria · https://www.starbucks.co.uk/store-locator/51504-267116/eci-mesa-y-lopez · https://zonaalcaravaneras.com/starbucks/
+- **Terraza Amira** · Avenida José Mesa y López · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/terraza-amira/
+- **Terraza Plaza** · Calle Diderot · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/terraza-plaza/
+- **Vinos y Quesos** · Calle Alfredo Calderón · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/vinos-y-quesos/
+
+## Hogar y reformas (26)
+
+- **Banak Importa Gran Canaria** · Calle Alemania · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/banak-importa-gran-canaria/
+- **Benítez Menaje** · Calle Barcelona · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/benitez-menaje/
+- **Bike Gran Canaria** · Calle Alemania · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/bike-gran-canaria/
+- **CASA** · General Vives · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/casa/
+- **Cegrisa** · Calle Alfredo Calderón · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/cegrisa/
+- **Central de Representaciones Canarias** · Calle Concepción Arenal · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/central-de-representaciones-canarias/
+- **Cin pinturas y barnices** · Calle General Mas de Gaminde · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/cin-pinturas-y-barnices/
+- **Comercial Nolasco** · Calle Ingeniero Salinas · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/comercial-nolasco/
+- **Desván de Néstor** · Calle Néstor de la Torre · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/desvan-de-nestor/
+- **Duerme & Descansa** · Calle Néstor de la Torre · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/duerme-descansa/
+- **Enrique Schamann** · Calle Menéndez y Pelayo · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/enrique-schamann/
+- **Ferretería Mas de Gaminde** · Calle General Mas de Gaminde · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/ferreteria-mas-de-gaminde/
+- **Grapascan Maquinaria** · Calle Alfredo Calderón · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/grapascan-maquinaria/
+- **Hiper Rastro Remar** · Calle General Mas de Gaminde · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/hiper-rastro-remar/
+- **Lino** · Calle Barcelona · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/lino/
+- **Palcanarias** · Calle Leopoldo Matos · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/palcanarias/
+- **Peláez Cerámicas** · Calle Barcelona · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/pelaez-ceramicas/
+- **Plaza's Ferretería** · Calle León Tolstoi · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/plaza-s-ferreteria/
+- **Riegotec** · Calle Blasco Ibáñez · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/riegotec/
+- **Rocasa Néstor de la Torre** · Calle Néstor de la Torre · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/rocasa-nestor-de-la-torre/
+- **Stil Canarias Cocinas** · Calle Néstor de la Torre · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/stil-canarias-cocinas/
+- **Tienda Colchones Outlet Española del Descanso** · Calle General Mas de Gaminde · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/tienda-colchones-outlet-espanola-del-descanso/
+- **V.V.V. García Machín** · Calle León y Castillo · 35006 Las Palmas de Gran Canaria · lunes-viernes 09:30-13:30, 16:00-20:00 · https://zonaalcaravaneras.com/v-v-v-garcia-machin/
+- **Velas Linton** · Calle Alfredo Calderón · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/velas-linton/
+- **Velvet Hogar** · Calle León y Castillo · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/velvet-hogar/
+- **Zara Home** · Avenida José Mesa y López · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/zara-home/
+
+## Salud (23)
+
+- **Animal Lab Laboratorio** · Calle Leopoldo Matos · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/animal-lab-laboratorio/
+- **CareDent** · Calle Olof Palme · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/caredent/
+- **Clínica Dental Infantil Inmaculada Viñuela** · Calle Olof Palme · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/clinica-dental-infantil-inmaculada-vinuela/
+- **Clínica Veterinaria Atlántico** · Calle Pi y Margall · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/clinica-veterinaria-atlantico/
+- **Farmacia Alicia Artiles Betancort** · Calle Presidente Alvear · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/farmacia-alicia-artiles-betancort/
+- **Farmacia Lantigua Usar** · Calle General Mas de Gaminde · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/farmacia-lantigua-usar/
+- **Farmacia María Luisa Osborne Verdugo** · Calle Barcelona · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/farmacia-maria-luisa-osborne-verdugo/
+- **Farmacia Militar** · Avenida Juan Rodríguez Doreste · 35006 Las Palmas de Gran Canaria · tel. +34928443163 · https://zonaalcaravaneras.com/farmacia-militar/
+- **Farmacia Pedro Limiñana Jorge** · Calle Pío XII · 35006 Las Palmas de Gran Canaria · lunes-viernes 08:30-20:30 · https://zonaalcaravaneras.com/farmacia-pedro-liminana-jorge/
+- **Gaes, Instituto Auditivo Integral** · Calle León Tolstoi · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/gaes-instituto-auditivo-integral/
+- **Gregorio Rodríguez Centro Ortopédico** · Calle Blasco Ibáñez · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/gregorio-rodriguez-centro-ortopedico/
+- **José Mª Fernández Valencia** · Calle Galicia · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/jose-m-fernandez-valencia/
+- **La Tisana** · Calle Blasco Ibáñez · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/la-tisana/
+- **María Luisa Antúnez Jiménez Cardióloga Pediatra** · Calle Néstor de la Torre · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/maria-luisa-antunez-jimenez-cardiologa-pediatra/
+- **NeuroVitalia Las Palmas** · Calle Néstor de la Torre · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/neurovitalia-las-palmas/
+- **ProteínaCanaria.com** · Calle Presidente Alvear · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/proteinacanaria-com/
+- **Sunglass Hut** · Avenida José Mesa y López · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/sunglass-hut/
+- **Veterinario Clinica Can** · Calle Barcelona · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/veterinario-clinica-can/
+- **Visionlab** · Avenida José Mesa y López · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/visionlab/
+- **Óptica 2000** · Avenida José Mesa y López · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/optica-2000/
+- **Óptica Hermanas Jaén Martínez** · Calle Néstor de la Torre · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/optica-hermanas-jaen-martinez/
+- **Óptica Pío XII 70** · Calle Pío XII · 35006 Las Palmas de Gran Canaria · lunes-viernes 09:30-13:00, 16:30-20:00 · https://zonaalcaravaneras.com/optica-pio-xii-70/
+- **Ópticas Herrera Cerpa Mercado Central** · Calle Galicia · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/opticas-herrera-cerpa-mercado-central/
+
+## Electrónica (17)
+
+- **Alarmas Prosegur** · Calle Luis Antúnez · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/alarmas-prosegur/
+- **Banana Computer** · Calle Néstor de la Torre · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/banana-computer/
+- **Batch-PC** · Calle General Mas de Gaminde · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/batch-pc/
+- **Cainser Servicio Técnico** · Calle Blasco Ibáñez · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/cainser-servicio-tecnico/
+- **Center Gematel** · Calle Blasco Ibáñez · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/center-gematel/
+- **CNCSystem** · Calle Galicia · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/cncsystem/
+- **Comercial Naranjo Maquinaria Hostelería y Alimentación** · Calle Pi y Margall · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/comercial-naranjo-maquinaria-hosteleria-y-alimentacion/
+- **Game** · Paseo de Chil · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/game/
+- **Imagen y Sonido** · Calle Alfredo Calderón · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/imagen-y-sonido/
+- **Lopacan Electrónica** · Calle Alemania · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/lopacan-electronica/
+- **Manhattan Computer** · Calle Alemania · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/manhattan-computer/
+- **Pecan Maquinaria Hostelería** · Calle Blasco Ibáñez · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/pecan-maquinaria-hosteleria/
+- **Personal Computer Sistem Canarias** · Calle Alemania · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/personal-computer-sistem-canarias/
+- **Reelca** · Calle Barcelona · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/reelca/
+- **Senedrac Venta y Servicio Técnico** · Calle Alemania · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/senedrac-venta-y-servicio-tecnico/
+- **Servicio Técnico Guillermo Palmero** · Calle Alfredo Calderón · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/servicio-tecnico-guillermo-palmero/
+- **Televés Las Palmas** · Calle General Mas de Gaminde · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/televes-las-palmas/
+
+## Deporte y ocio (13)
+
+- **Alfonso Serrano Distribuciones Deportivas** · Calle Ingeniero Salinas · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/alfonso-serrano-distribuciones-deportivas/
+- **Buy Muscle Las Palmas** · Calle León y Castillo · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/buy-muscle-las-palmas/
+- **Carlin** · Pasaje de Inglaterra · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/carlin/
+- **Floristería La Pagoda** · Calle General Mas de Gaminde · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/floristeria-la-pagoda/
+- **Galería Eduardo Santana** · Calle Néstor de la Torre · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/galeria-eduardo-santana/
+- **Hesperia** · Calle Manuel González Martín · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/hesperia/
+- **Jugueterías Nikki** · Calle Presidente Alvear · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/jugueterias-nikki/
+- **Mandala Climb** · Calle Manuel González Martín · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/mandala-climb/
+- **Papelería Jost** · Calle Barcelona · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/papeleria-jost/
+- **Pega Creaciones** · Calle Manuel González Martín · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/pega-creaciones/
+- **Running Proyect Canarias** · Calle León y Castillo · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/running-proyect-canarias/
+- **Zipi y Zape** · Calle Néstor de la Torre · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/zipi-y-zape/
+- **Zona Skate Shop** · Calle Presidente Alvear · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/zona-skate-shop/
+
+## Bazares (11)
+
+- **11** · Avenida José Mesa y López · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/11/
+- **Bazar Oriental** · Calle Concepción Arenal · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/bazar-oriental/
+- **Bazar Pío XII** · Calle Pío XII · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/bazar-pio-xii/
+- **Buy & Sell** · Calle Olof Palme · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/buy-sell/
+- **Carolan Fiestas** · Calle Valencia · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/carolan-fiestas/
+- **Cash Converters Las Palmas** · Calle General Mas de Gaminde · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/cash-converters-las-palmas/
+- **Comercial Yu Fong** · Calle Menéndez y Pelayo · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/comercial-yu-fong/
+- **El Corte Inglés** · Avenida José Mesa y López · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/el-corte-ingles/
+- **Exclusivas Cárdenes y Caballero** · Calle Valencia · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/exclusivas-cardenes-y-caballero/
+- **M&S Outlet** · Avenida José Mesa y López · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/m-s-outlet/
+- **Merca Oriental** · Calle Manuel González Martín · 35006 Las Palmas de Gran Canaria · lunes-sábado 09:00-21:00 · https://zonaalcaravaneras.com/merca-oriental/
+
+## Motor (5)
+
+- **Antonio Acosta Enríquez** · Calle Pi y Margall · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/antonio-acosta-enriquez/
+- **Free Motion Bike Center** · Calle León y Castillo, 323 · 35006 Las Palmas de Gran Canaria · tel. +34928774660 · https://www.free-motion.com/ · https://zonaalcaravaneras.com/free-motion-bike-center/
+- **Gubra Las Palmas** · Calle Manuel González Martín · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/gubra-las-palmas/
+- **Motoaxial** · Calle Manuel González Martín · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/motoaxial/
+- **Taller Eléctrico Electroauto Canarias** · Calle Concepción Arenal, 3 · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/taller-electrico-electroauto-canarias/
+
+## Mascotas (2)
+
+- **Acuario Pura Vida** · Calle Galicia · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/acuario-pura-vida/
+- **Peluquería de Mascotas Trufa** · Calle Manuel González Martín · 35006 Las Palmas de Gran Canaria · https://zonaalcaravaneras.com/peluqueria-de-mascotas-trufa/
+
+## Contacto
+
+Para añadir un comercio, corregir un dato o pedir que se retire una ficha: WhatsApp +34 633 50 51 53 o hola@zonaalcaravaneras.com. Es gratis y sin condiciones.

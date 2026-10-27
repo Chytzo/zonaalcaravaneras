@@ -1,0 +1,122 @@
+{
+  ".claude/launch.json": {
+    "mtime": 1785347440.4723115,
+    "ast_hash": "60034b4dbf944ef96957a32a5278ea66",
+    "semantic_hash": "60034b4dbf944ef96957a32a5278ea66"
+  },
+  "astro.config.mjs": {
+    "mtime": 1785360453.4749622,
+    "ast_hash": "5e68286aaa42b3afcd2c3cea36cdba14",
+    "semantic_hash": "5e68286aaa42b3afcd2c3cea36cdba14"
+  },
+  "herramientas/categorias.json": {
+    "mtime": 1785354321.4687994,
+    "ast_hash": "cc31c73dc56cffd0f0789f6203f01603",
+    "semantic_hash": "cc31c73dc56cffd0f0789f6203f01603"
+  },
+  "herramientas/generar-llms-full.py": {
+    "mtime": 1785630896.9385936,
+    "ast_hash": "7915e3f16d62d057cab8521eb31c636e",
+    "semantic_hash": "7915e3f16d62d057cab8521eb31c636e"
+  },
+  "herramientas/generar-llms.py": {
+    "mtime": 1785630971.107192,
+    "ast_hash": "c9c956265bd1027732d1511b4e047e0f",
+    "semantic_hash": "c9c956265bd1027732d1511b4e047e0f"
+  },
+  "herramientas/generar-zona.py": {
+    "mtime": 1785534841.7729993,
+    "ast_hash": "96469af21b070e206b1e64e11c54a07d",
+    "semantic_hash": "96469af21b070e206b1e64e11c54a07d"
+  },
+  "package.json": {
+    "mtime": 1785347409.9017005,
+    "ast_hash": "d5bdc14c8425f634c9543f2480605067",
+    "semantic_hash": "d5bdc14c8425f634c9543f2480605067"
+  },
+  "src/components/MapaBarrio.astro": {
+    "mtime": 1785534841.779247,
+    "ast_hash": "0d04f21a94090cedc0902aa27a753e1c",
+    "semantic_hash": "0d04f21a94090cedc0902aa27a753e1c"
+  },
+  "src/components/PortadaAerea.astro": {
+    "mtime": 1785534841.7794714,
+    "ast_hash": "a2942b4f71a98222f2d756116cede91e",
+    "semantic_hash": "a2942b4f71a98222f2d756116cede91e"
+  },
+  "src/components/TarjetaComercio.astro": {
+    "mtime": 1785347835.3018947,
+    "ast_hash": "fd25c09bd62d646db5ddaef779d46ffb",
+    "semantic_hash": "fd25c09bd62d646db5ddaef779d46ffb"
+  },
+  "src/config.js": {
+    "mtime": 1785348426.6050525,
+    "ast_hash": "4e2f38dead2dbb5c4e97bde8d571cd00",
+    "semantic_hash": "4e2f38dead2dbb5c4e97bde8d571cd00"
+  },
+  "src/data/comercios.json": {
+    "mtime": 1785375896.5506744,
+    "ast_hash": "f2d88dc0e54d2f33858ac0c6dec8256c",
+    "semantic_hash": "f2d88dc0e54d2f33858ac0c6dec8256c"
+  },
+  "src/data/mapa.json": {
+    "mtime": 1785375896.1869705,
+    "ast_hash": "aa8186c98258178441c39e9a271d23ce",
+    "semantic_hash": "aa8186c98258178441c39e9a271d23ce"
+  },
+  "src/data/zona.json": {
+    "mtime": 1785630787.2137966,
+    "ast_hash": "ce8ddb9c995c633a9021a8d686799423",
+    "semantic_hash": "ce8ddb9c995c633a9021a8d686799423"
+  },
+  "src/layouts/Base.astro": {
+    "mtime": 1785375920.308024,
+    "ast_hash": "3638252712112f88c12263240ebe4d9f",
+    "semantic_hash": "3638252712112f88c12263240ebe4d9f"
+  },
+  "src/pages/[slug].astro": {
+    "mtime": 1785534841.7798123,
+    "ast_hash": "cf08e93be0bff06d483a0415e9751d09",
+    "semantic_hash": "cf08e93be0bff06d483a0415e9751d09"
+  },
+  "src/pages/alta.astro": {
+    "mtime": 1785348671.4137123,
+    "ast_hash": "b4745192be0282f6e7dc98953e986c8f",
+    "semantic_hash": "b4745192be0282f6e7dc98953e986c8f"
+  },
+  "src/pages/aviso-legal.astro": {
+    "mtime": 1785429400.9193387,
+    "ast_hash": "825b169768a678fa737b06a4e399d613",
+    "semantic_hash": "825b169768a678fa737b06a4e399d613"
+  },
+  "src/pages/categoria/[cat].astro": {
+    "mtime": 1785347878.5414133,
+    "ast_hash": "ba94ba95d7a9f03ff6205f722f8cf256",
+    "semantic_hash": "ba94ba95d7a9f03ff6205f722f8cf256"
+  },
+  "src/pages/creditos.astro": {
+    "mtime": 1785351103.6686497,
+    "ast_hash": "a13e4efb8e5759472be22513d8caa86a",
+    "semantic_hash": "a13e4efb8e5759472be22513d8caa86a"
+  },
+  "src/pages/index.astro": {
+    "mtime": 1785530380.2116468,
+    "ast_hash": "a372e8acd6381e520031e9da7da91ac8",
+    "semantic_hash": "a372e8acd6381e520031e9da7da91ac8"
+  },
+  "src/pages/privacidad.astro": {
+    "mtime": 1785429423.3546836,
+    "ast_hash": "fc46f6e0e20e8a2fdf4821a93145a6ed",
+    "semantic_hash": "fc46f6e0e20e8a2fdf4821a93145a6ed"
+  },
+  "src/pages/ruta.astro": {
+    "mtime": 1785360447.0780108,
+    "ast_hash": "87356f5ea805ddb579bfbd14c33d9e38",
+    "semantic_hash": "87356f5ea805ddb579bfbd14c33d9e38"
+  },
+  "src/utils/slug.js": {
+    "mtime": 1785347419.6252735,
+    "ast_hash": "9346c66aca7dc0c56ebe4f83a19def09",
+    "semantic_hash": "9346c66aca7dc0c56ebe4f83a19def09"
+  }
+}

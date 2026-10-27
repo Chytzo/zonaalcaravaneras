@@ -1,0 +1,2087 @@
+{
+  "nodes": [
+    {
+      "id": "astro_config",
+      "label": "astro.config.mjs",
+      "file_type": "code",
+      "source_file": "astro.config.mjs",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "herramientas_generar_llms_full",
+      "label": "generar-llms-full.py",
+      "file_type": "code",
+      "source_file": "herramientas/generar-llms-full.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "herramientas_generar_llms_full_de_que_es",
+      "label": "de_que_es()",
+      "file_type": "code",
+      "source_file": "herramientas/generar-llms-full.py",
+      "source_location": "L16",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "herramientas_generar_llms_full_rationale_1",
+      "label": "Genera public/llms-full.txt de la gu\u00eda: el listado completo de comercios en\u2026",
+      "file_type": "rationale",
+      "source_file": "herramientas/generar-llms-full.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "herramientas_generar_llms",
+      "label": "generar-llms.py",
+      "file_type": "code",
+      "source_file": "herramientas/generar-llms.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "herramientas_generar_llms_slug_cat",
+      "label": "slug_cat()",
+      "file_type": "code",
+      "source_file": "herramientas/generar-llms.py",
+      "source_location": "L12",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "herramientas_generar_llms_rationale_1",
+      "label": "Genera public/llms.txt de la gu\u00eda a partir de los comercios reales.",
+      "file_type": "rationale",
+      "source_file": "herramientas/generar-llms.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "herramientas_generar_zona",
+      "label": "generar-zona.py",
+      "file_type": "code",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "herramientas_generar_zona_px",
+      "label": "px()",
+      "file_type": "code",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L33",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "herramientas_generar_zona_dentro",
+      "label": "dentro()",
+      "file_type": "code",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L38",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "herramientas_generar_zona_toca_zona",
+      "label": "toca_zona()",
+      "file_type": "code",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L41",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "herramientas_generar_zona_camino",
+      "label": "camino()",
+      "file_type": "code",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L50",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "herramientas_generar_zona_slugificar",
+      "label": "slugificar()",
+      "file_type": "code",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L70",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "herramientas_generar_zona_dist_m",
+      "label": "dist_m()",
+      "file_type": "code",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L75",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "herramientas_generar_zona_en_poligono",
+      "label": "en_poligono()",
+      "file_type": "code",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L82",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "herramientas_generar_zona_unir",
+      "label": "unir()",
+      "file_type": "code",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L176",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "herramientas_generar_zona_mar",
+      "label": "mar()",
+      "file_type": "code",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L191",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "herramientas_generar_zona_reparto",
+      "label": "reparto()",
+      "file_type": "code",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L244",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "herramientas_generar_zona_calle_cercana",
+      "label": "calle_cercana()",
+      "file_type": "code",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L320",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "herramientas_generar_zona_rasgos_de",
+      "label": "rasgos_de()",
+      "file_type": "code",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L349",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "herramientas_generar_zona_horario",
+      "label": "horario()",
+      "file_type": "code",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L387",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "herramientas_generar_zona_rationale_1",
+      "label": "Genera el plano del barrio a partir de datos de OpenStreetMap (ODbL). Salida: -\u2026",
+      "file_type": "rationale",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "herramientas_generar_zona_rationale_42",
+      "label": "\u00bfLa geometr\u00eda entra en el recorte? Evita dibujar lo que cae fuera.",
+      "file_type": "rationale",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L42",
+      "_origin": "ast"
+    },
+    {
+      "id": "herramientas_generar_zona_rationale_51",
+      "label": "Convierte una lista de puntos OSM en un subcamino SVG. Redondea a entero y\u2026",
+      "file_type": "rationale",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L51",
+      "_origin": "ast"
+    },
+    {
+      "id": "herramientas_generar_zona_rationale_245",
+      "label": "Divide el edificio entre sus locales: franjas sobre el lado largo.",
+      "file_type": "rationale",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L245",
+      "_origin": "ast"
+    },
+    {
+      "id": "herramientas_generar_zona_rationale_350",
+      "label": "Datos que OSM etiqueta de forma expl\u00edcita. No inventamos nada.",
+      "file_type": "rationale",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L350",
+      "_origin": "ast"
+    },
+    {
+      "id": "package",
+      "label": "package.json",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_name",
+      "label": "name",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_type",
+      "label": "type",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_version",
+      "label": "version",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_private",
+      "label": "private",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_scripts",
+      "label": "scripts",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L6",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_scripts_dev",
+      "label": "dev",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L7",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_scripts_build",
+      "label": "build",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_scripts_preview",
+      "label": "preview",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L9",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_dependencies",
+      "label": "dependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L11",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_dependencies_astrojs_sitemap",
+      "label": "@astrojs/sitemap",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L12",
+      "_origin": "ast"
+    },
+    {
+      "id": "astrojs_sitemap",
+      "label": "@astrojs/sitemap",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L12",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_dependencies_astro",
+      "label": "astro",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "_origin": "ast"
+    },
+    {
+      "id": "astro",
+      "label": "astro",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_components_mapabarrio",
+      "label": "MapaBarrio.astro",
+      "file_type": "code",
+      "source_file": "src/components/MapaBarrio.astro",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_components_mapabarrio_paleta",
+      "label": "paleta",
+      "file_type": "code",
+      "source_file": "src/components/MapaBarrio.astro",
+      "source_location": "L8",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_components_mapabarrio_color",
+      "label": "color()",
+      "file_type": "code",
+      "source_file": "src/components/MapaBarrio.astro",
+      "source_location": "L23",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_components_mapabarrio_categorias",
+      "label": "categorias",
+      "file_type": "code",
+      "source_file": "src/components/MapaBarrio.astro",
+      "source_location": "L25",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_components_portadaaerea",
+      "label": "PortadaAerea.astro",
+      "file_type": "code",
+      "source_file": "src/components/PortadaAerea.astro",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "astro_assets",
+      "label": "astro:assets",
+      "file_type": "code",
+      "source_file": "astro:assets",
+      "confidence": "EXTRACTED",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_components_tarjetacomercio",
+      "label": "TarjetaComercio.astro",
+      "file_type": "code",
+      "source_file": "src/components/TarjetaComercio.astro",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_components_tarjetacomercio_inicial",
+      "label": "inicial",
+      "file_type": "code",
+      "source_file": "src/components/TarjetaComercio.astro",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_config",
+      "label": "config.js",
+      "file_type": "code",
+      "source_file": "src/config.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_config_contacto",
+      "label": "contacto",
+      "file_type": "code",
+      "source_file": "src/config.js",
+      "source_location": "L2",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_config_enlacewhatsapp",
+      "label": "enlaceWhatsapp()",
+      "file_type": "code",
+      "source_file": "src/config.js",
+      "source_location": "L11",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_layouts_base",
+      "label": "Base.astro",
+      "file_type": "code",
+      "source_file": "src/layouts/Base.astro",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_layouts_base_wapie",
+      "label": "waPie",
+      "file_type": "code",
+      "source_file": "src/layouts/Base.astro",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_layouts_base_urlcanonica",
+      "label": "urlCanonica",
+      "file_type": "code",
+      "source_file": "src/layouts/Base.astro",
+      "source_location": "L14",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_slug",
+      "label": "[slug].astro",
+      "file_type": "code",
+      "source_file": "src/pages/[slug].astro",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_slug_getstaticpaths",
+      "label": "getStaticPaths()",
+      "file_type": "code",
+      "source_file": "src/pages/[slug].astro",
+      "source_location": "L7",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_alta",
+      "label": "alta.astro",
+      "file_type": "code",
+      "source_file": "src/pages/alta.astro",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_alta_waalta",
+      "label": "waAlta",
+      "file_type": "code",
+      "source_file": "src/pages/alta.astro",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_alta_wabaja",
+      "label": "waBaja",
+      "file_type": "code",
+      "source_file": "src/pages/alta.astro",
+      "source_location": "L8",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_aviso_legal",
+      "label": "aviso-legal.astro",
+      "file_type": "code",
+      "source_file": "src/pages/aviso-legal.astro",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_aviso_legal_wabaja",
+      "label": "waBaja",
+      "file_type": "code",
+      "source_file": "src/pages/aviso-legal.astro",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_categoria_cat",
+      "label": "[cat].astro",
+      "file_type": "code",
+      "source_file": "src/pages/categoria/[cat].astro",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_categoria_cat_getstaticpaths",
+      "label": "getStaticPaths()",
+      "file_type": "code",
+      "source_file": "src/pages/categoria/[cat].astro",
+      "source_location": "L7",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_creditos",
+      "label": "creditos.astro",
+      "file_type": "code",
+      "source_file": "src/pages/creditos.astro",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_index",
+      "label": "index.astro",
+      "file_type": "code",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_index_waindex",
+      "label": "waIndex",
+      "file_type": "code",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L10",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_index_ordenados",
+      "label": "ordenados",
+      "file_type": "code",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L14",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_index_categorias",
+      "label": "categorias",
+      "file_type": "code",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L15",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_index_jsonldportada",
+      "label": "jsonLdPortada",
+      "file_type": "code",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L21",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_index_rejilla",
+      "label": "rejilla",
+      "file_type": "code",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L161",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_index_vacio",
+      "label": "vacio",
+      "file_type": "code",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L162",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_index_tarjetas",
+      "label": "tarjetas",
+      "file_type": "code",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L163",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_index_botones",
+      "label": "botones",
+      "file_type": "code",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L164",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_index_normalizar",
+      "label": "normalizar()",
+      "file_type": "code",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L168",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_index_conteo",
+      "label": "conteo",
+      "file_type": "code",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L175",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_index_seccionmapa",
+      "label": "seccionMapa",
+      "file_type": "code",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L176",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_index_seccionlista",
+      "label": "seccionLista",
+      "file_type": "code",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L177",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_index_filtrar",
+      "label": "filtrar()",
+      "file_type": "code",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L179",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_privacidad",
+      "label": "privacidad.astro",
+      "file_type": "code",
+      "source_file": "src/pages/privacidad.astro",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_privacidad_wabaja",
+      "label": "waBaja",
+      "file_type": "code",
+      "source_file": "src/pages/privacidad.astro",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_ruta",
+      "label": "ruta.astro",
+      "file_type": "code",
+      "source_file": "src/pages/ruta.astro",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_ruta_falta",
+      "label": "falta()",
+      "file_type": "code",
+      "source_file": "src/pages/ruta.astro",
+      "source_location": "L7",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_ruta_porcalle",
+      "label": "porCalle",
+      "file_type": "code",
+      "source_file": "src/pages/ruta.astro",
+      "source_location": "L14",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_pages_ruta_calles",
+      "label": "calles",
+      "file_type": "code",
+      "source_file": "src/pages/ruta.astro",
+      "source_location": "L22",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_utils_slug",
+      "label": "slug.js",
+      "file_type": "code",
+      "source_file": "src/utils/slug.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_utils_slug_slugificar",
+      "label": "slugificar()",
+      "file_type": "code",
+      "source_file": "src/utils/slug.js",
+      "source_location": "L2",
+      "_callable": true,
+      "_origin": "ast"
+    }
+  ],
+  "edges": [
+    {
+      "source": "astro_config",
+      "target": "ref_astro_config",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "astro.config.mjs",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "astro_config",
+      "target": "ref_astrojs_sitemap",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "astro.config.mjs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "herramientas_generar_llms_full",
+      "target": "json",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "herramientas/generar-llms-full.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "herramientas_generar_llms_full",
+      "target": "os",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "herramientas/generar-llms-full.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "herramientas_generar_llms_full",
+      "target": "re",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "herramientas/generar-llms-full.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "herramientas_generar_llms_full",
+      "target": "unicodedata",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "herramientas/generar-llms-full.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "herramientas_generar_llms_full",
+      "target": "collections",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "herramientas/generar-llms-full.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "herramientas_generar_llms_full",
+      "target": "herramientas_generar_llms_full_de_que_es",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "herramientas/generar-llms-full.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "herramientas_generar_llms_full_rationale_1",
+      "target": "herramientas_generar_llms_full",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "herramientas/generar-llms-full.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "herramientas_generar_llms",
+      "target": "json",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "herramientas/generar-llms.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "herramientas_generar_llms",
+      "target": "os",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "herramientas/generar-llms.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "herramientas_generar_llms",
+      "target": "collections",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "herramientas/generar-llms.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "herramientas_generar_llms",
+      "target": "herramientas_generar_llms_slug_cat",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "herramientas/generar-llms.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "herramientas_generar_llms_rationale_1",
+      "target": "herramientas_generar_llms",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "herramientas/generar-llms.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "herramientas_generar_zona",
+      "target": "json",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "herramientas_generar_zona",
+      "target": "math",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "herramientas_generar_zona",
+      "target": "unicodedata",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "herramientas_generar_zona",
+      "target": "re",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "herramientas_generar_zona",
+      "target": "collections",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "herramientas_generar_zona",
+      "target": "herramientas_generar_zona_px",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "herramientas_generar_zona",
+      "target": "herramientas_generar_zona_dentro",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "herramientas_generar_zona",
+      "target": "herramientas_generar_zona_toca_zona",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "herramientas_generar_zona",
+      "target": "herramientas_generar_zona_camino",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L50",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "herramientas_generar_zona",
+      "target": "herramientas_generar_zona_slugificar",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L70",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "herramientas_generar_zona",
+      "target": "herramientas_generar_zona_dist_m",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L75",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "herramientas_generar_zona",
+      "target": "herramientas_generar_zona_en_poligono",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L82",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "herramientas_generar_zona",
+      "target": "herramientas_generar_zona_unir",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L176",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "herramientas_generar_zona",
+      "target": "herramientas_generar_zona_mar",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L191",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "herramientas_generar_zona",
+      "target": "herramientas_generar_zona_reparto",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L244",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "herramientas_generar_zona",
+      "target": "os",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L309",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "herramientas_generar_zona",
+      "target": "herramientas_generar_zona_calle_cercana",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L320",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "herramientas_generar_zona",
+      "target": "herramientas_generar_zona_rasgos_de",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L349",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "herramientas_generar_zona",
+      "target": "herramientas_generar_zona_horario",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L387",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "herramientas_generar_zona_camino",
+      "target": "herramientas_generar_zona_px",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L58",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "herramientas_generar_zona_unir",
+      "target": "herramientas_generar_zona_toca_zona",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L180",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "herramientas_generar_zona_unir",
+      "target": "herramientas_generar_zona_camino",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L181",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "herramientas_generar_zona_mar",
+      "target": "herramientas_generar_zona_toca_zona",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L197",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "herramientas_generar_zona_mar",
+      "target": "herramientas_generar_zona_px",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L199",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "herramientas_generar_zona_reparto",
+      "target": "herramientas_generar_zona_px",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L246",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "herramientas_generar_zona_calle_cercana",
+      "target": "herramientas_generar_zona_dist_m",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L325",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "herramientas_generar_zona_rationale_1",
+      "target": "herramientas_generar_zona",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "herramientas_generar_zona_rationale_42",
+      "target": "herramientas_generar_zona_toca_zona",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "herramientas_generar_zona_rationale_51",
+      "target": "herramientas_generar_zona_camino",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L51",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "herramientas_generar_zona_rationale_245",
+      "target": "herramientas_generar_zona_reparto",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L245",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "herramientas_generar_zona_rationale_350",
+      "target": "herramientas_generar_zona_rasgos_de",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "herramientas/generar-zona.py",
+      "source_location": "L350",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package",
+      "target": "package_name",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package",
+      "target": "package_type",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package",
+      "target": "package_version",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package",
+      "target": "package_private",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package",
+      "target": "package_scripts",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package_scripts",
+      "target": "package_scripts_dev",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package_scripts",
+      "target": "package_scripts_build",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package_scripts",
+      "target": "package_scripts_preview",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package",
+      "target": "package_dependencies",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package_dependencies",
+      "target": "package_dependencies_astrojs_sitemap",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package_dependencies_astrojs_sitemap",
+      "target": "astrojs_sitemap",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "package_dependencies",
+      "target": "package_dependencies_astro",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package_dependencies_astro",
+      "target": "astro",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "src_components_mapabarrio",
+      "target": "src_components_mapabarrio_paleta",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/MapaBarrio.astro",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_components_mapabarrio",
+      "target": "src_components_mapabarrio_color",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/MapaBarrio.astro",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_components_mapabarrio",
+      "target": "src_components_mapabarrio_categorias",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/MapaBarrio.astro",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_components_mapabarrio",
+      "target": "src_data_mapa",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/MapaBarrio.astro",
+      "_origin": "ast"
+    },
+    {
+      "source": "src_components_portadaaerea",
+      "target": "src_assets_aerea_zona",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/PortadaAerea.astro",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_components_portadaaerea",
+      "target": "astro_assets",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/PortadaAerea.astro",
+      "_origin": "ast"
+    },
+    {
+      "source": "src_components_tarjetacomercio",
+      "target": "src_components_tarjetacomercio_inicial",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/TarjetaComercio.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_config",
+      "target": "src_config_contacto",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_config",
+      "target": "src_config_enlacewhatsapp",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_layouts_base",
+      "target": "src_config",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Base.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_layouts_base",
+      "target": "src_config_contacto",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Base.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_layouts_base",
+      "target": "src_config_enlacewhatsapp",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Base.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_layouts_base",
+      "target": "src_layouts_base_wapie",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Base.astro",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_layouts_base",
+      "target": "src_layouts_base_urlcanonica",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Base.astro",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_layouts_base",
+      "target": "src_styles_global",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Base.astro",
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_slug",
+      "target": "src_data_comercios",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/[slug].astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_slug",
+      "target": "src_utils_slug",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/[slug].astro",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_slug",
+      "target": "src_utils_slug_slugificar",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/[slug].astro",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_slug",
+      "target": "src_config",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/[slug].astro",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_slug",
+      "target": "src_config_enlacewhatsapp",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/[slug].astro",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_slug",
+      "target": "src_pages_slug_getstaticpaths",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/[slug].astro",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_slug",
+      "target": "src_layouts_base",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/[slug].astro",
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_alta",
+      "target": "src_config",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/alta.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_alta",
+      "target": "src_config_contacto",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/alta.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_alta",
+      "target": "src_config_enlacewhatsapp",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/alta.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_alta",
+      "target": "src_pages_alta_waalta",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/alta.astro",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_alta",
+      "target": "src_pages_alta_wabaja",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/alta.astro",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_alta",
+      "target": "src_layouts_base",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/alta.astro",
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_aviso_legal",
+      "target": "src_config",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/aviso-legal.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_aviso_legal",
+      "target": "src_config_contacto",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/aviso-legal.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_aviso_legal",
+      "target": "src_config_enlacewhatsapp",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/aviso-legal.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_aviso_legal",
+      "target": "src_pages_aviso_legal_wabaja",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/aviso-legal.astro",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_aviso_legal",
+      "target": "src_layouts_base",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/aviso-legal.astro",
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_categoria_cat",
+      "target": "src_components_tarjetacomercio",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/categoria/[cat].astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_categoria_cat",
+      "target": "src_data_comercios",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/categoria/[cat].astro",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_categoria_cat",
+      "target": "src_utils_slug",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/categoria/[cat].astro",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_categoria_cat",
+      "target": "src_utils_slug_slugificar",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/categoria/[cat].astro",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_categoria_cat",
+      "target": "src_pages_categoria_cat_getstaticpaths",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/categoria/[cat].astro",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_categoria_cat",
+      "target": "src_layouts_base",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/categoria/[cat].astro",
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_creditos",
+      "target": "src_layouts_base",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/creditos.astro",
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_index",
+      "target": "src_layouts_base",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_index",
+      "target": "src_components_tarjetacomercio",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_index",
+      "target": "src_components_mapabarrio",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_index",
+      "target": "src_data_comercios",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_index",
+      "target": "src_assets_playa_alcaravaneras",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_index",
+      "target": "src_config",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_index",
+      "target": "src_config_enlacewhatsapp",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_index",
+      "target": "src_pages_index_waindex",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_index",
+      "target": "src_pages_index_ordenados",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_index",
+      "target": "src_pages_index_categorias",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_index",
+      "target": "src_pages_index_jsonldportada",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_index",
+      "target": "src_pages_index_rejilla",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L161",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_index",
+      "target": "src_pages_index_vacio",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L162",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_index",
+      "target": "src_pages_index_tarjetas",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L163",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_index",
+      "target": "src_pages_index_botones",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L164",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_index",
+      "target": "src_pages_index_normalizar",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L168",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_index",
+      "target": "src_pages_index_conteo",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L175",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_index",
+      "target": "src_pages_index_seccionmapa",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L176",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_index",
+      "target": "src_pages_index_seccionlista",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L177",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_index",
+      "target": "src_pages_index_filtrar",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L179",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_index_filtrar",
+      "target": "src_pages_index_normalizar",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L180",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_index",
+      "target": "src_pages_index_filtrar",
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L208",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_index",
+      "target": "astro_assets",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/index.astro",
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_privacidad",
+      "target": "src_config",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/privacidad.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_privacidad",
+      "target": "src_config_contacto",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/privacidad.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_privacidad",
+      "target": "src_config_enlacewhatsapp",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/privacidad.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_privacidad",
+      "target": "src_pages_privacidad_wabaja",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/privacidad.astro",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_privacidad",
+      "target": "src_layouts_base",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/privacidad.astro",
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_ruta",
+      "target": "src_data_comercios",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/ruta.astro",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_ruta",
+      "target": "src_pages_ruta_falta",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/ruta.astro",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_ruta",
+      "target": "src_pages_ruta_porcalle",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/ruta.astro",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_ruta",
+      "target": "src_pages_ruta_calles",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/ruta.astro",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_ruta",
+      "target": "src_layouts_base",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/ruta.astro",
+      "_origin": "ast"
+    },
+    {
+      "source": "src_utils_slug",
+      "target": "src_utils_slug_slugificar",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/slug.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_pages_categoria_cat_getstaticpaths",
+      "target": "src_utils_slug_slugificar",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/categoria/[cat].astro",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

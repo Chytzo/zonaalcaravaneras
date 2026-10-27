@@ -1,0 +1,37 @@
+---
+import Base from '../layouts/Base.astro';
+import { contacto, enlaceWhatsapp } from '../config.js';
+
+const wa = enlaceWhatsapp('Hola, quiero añadir mi comercio a la guía de Zona Alcaravaneras.');
+---
+
+<Base
+  titulo="Página no encontrada — Zona Alcaravaneras"
+  descripcion="Esta dirección no existe en la guía de comercios de Zona Alcaravaneras. Vuelve a la portada o busca tu comercio por categoría."
+>
+  <section class="cinta" slot="portada">
+    <div class="contenedor">
+      <span class="etiqueta-cat">Error 404</span>
+      <h1>Esta página no existe</h1>
+    </div>
+  </section>
+
+  <div class="contenedor"><div class="prosa">
+    <p>
+      La dirección que has escrito no corresponde a ningún comercio ni a ninguna sección
+      de la guía. Puede que el enlace esté mal copiado o que el negocio haya cerrado.
+    </p>
+    <p>
+      Vuelve a la <a href="/">portada de la guía</a> para ver los comercios del barrio,
+      o escríbenos y lo buscamos por ti.
+    </p>
+    <div class="acciones">
+      <a class="boton" href="/">Ir a la portada</a>
+      <a class="boton secundario" href={wa}>Escribir por WhatsApp</a>
+    </div>
+    <p>
+      ¿Tienes un comercio en el barrio y no aparece? <a href={wa}>Añadirlo es gratis</a> y se queda mientras quieras.
+      También puedes escribir a <a href={`mailto:${contacto.email}`}>{contacto.email}</a>.
+    </p>
+  </div></div>
+</Base>

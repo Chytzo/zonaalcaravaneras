@@ -60,6 +60,8 @@ L.append('- [Añadir o corregir un comercio](https://zonaalcaravaneras.com/alta/
 L.append('- [Créditos de fotografías y datos](https://zonaalcaravaneras.com/creditos/)')
 L.append('- [Aviso legal](https://zonaalcaravaneras.com/aviso-legal/)')
 L.append('- [Privacidad](https://zonaalcaravaneras.com/privacidad/)')
+L.append(f'- [Listado completo en texto plano](https://zonaalcaravaneras.com/llms-full.txt): '
+         f'los {len(comercios)} comercios con dirección, teléfono y horario, para agentes de IA.')
 L.append('')
 L.append('Cada comercio tiene su propia página en `https://zonaalcaravaneras.com/{nombre-del-comercio}/` '
          'con datos estructurados schema.org LocalBusiness.')

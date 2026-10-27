@@ -19,19 +19,105 @@ export function getStaticPaths() {
 }
 
 const { categoria, listado } = Astro.props;
+
+// Comercios representativos para la frase answer-first
+const nombresRepresentativos = listado.slice(0, 3).map((c) => c.nombre).join(', ');
+const textoAnswerFirst = `Guía de los ${listado.length} comercios de ${categoria.toLowerCase()} en Las Alcaravaneras, Las Palmas de Gran Canaria, con dirección, teléfono y horario. ${categoria} en este barrio: ${nombresRepresentativos}.`;
+
+const urlCategoria = new URL(`/categoria/${slugificar(categoria)}/`, Astro.site).toString();
+
+const jsonLdCategoria = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: `${categoria} en Las Alcaravaneras`,
+    description: `Guía de los ${listado.length} comercios de ${categoria.toLowerCase()} en Las Alcaravaneras, Las Palmas de Gran Canaria.`,
+    url: urlCategoria,
+    numberOfItems: listado.length,
+    about: {
+      '@type': 'Place',
+      name: 'Las Alcaravaneras',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Las Palmas de Gran Canaria',
+        postalCode: '35006',
+        addressRegion: 'Las Palmas',
+        addressCountry: 'ES',
+      },
+    },
+    itemListElement: listado.map((c, i) => {
+      const item = {
+        '@type': 'ListItem',
+        position: i + 1,
+        name: c.nombre,
+        url: new URL(`/${c.slug}/`, Astro.site).toString(),
+      };
+      if (c.calle) {
+        item.address = {
+          '@type': 'PostalAddress',
+          streetAddress: c.calle,
+          addressLocality: 'Las Palmas de Gran Canaria',
+          postalCode: c.cp || '35006',
+          addressRegion: 'Las Palmas',
+          addressCountry: 'ES',
+        };
+      }
+      if (c.telefono) {
+        item.telephone = c.telefono;
+      }
+      return item;
+    }),
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Comercios de Alcaravaneras',
+        item: new URL('/', Astro.site).toString(),
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: categoria,
+        item: urlCategoria,
+      },
+    ],
+  },
+];
 ---
 
 <Base
   titulo={`${categoria} en Alcaravaneras — Zona Alcaravaneras`}
   descripcion={`Comercios de ${categoria.toLowerCase()} en el barrio de Las Alcaravaneras, Las Palmas de Gran Canaria. Direcciones, teléfonos y horarios.`}
 >
+  <script
+    slot="head"
+    type="application/ld+json"
+    set:html={JSON.stringify(jsonLdCategoria)}
+  />
+
   <section class="cinta" slot="portada">
     <div class="contenedor">
       <span class="etiqueta-cat">Categoría</span>
       <h1>{categoria} en Alcaravaneras</h1>
-      <p>{listado.length} {listado.length === 1 ? 'comercio' : 'comercios'} en el barrio.</p>
+      <p class="geo-intro">{textoAnswerFirst}</p>
     </div>
   </section>
+
+  <div class="contenedor">
+    <figure class="banda-cat">
+      <img
+        src={`/img/categorias/${slugificar(categoria)}.jpg`}
+        alt={`Ilustración de la categoría ${categoria}`}
+        width="800"
+        height="500"
+        loading="lazy"
+      />
+    </figure>
+  </div>
 
   <div class="contenedor">
     <section class="seccion">

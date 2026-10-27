@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img">
+  <defs>
+    <linearGradient id="fondo" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#fdf1e3"/>
+      <stop offset="1" stop-color="#f8dfc4"/>
+    </linearGradient>
+    <radialGradient id="luz" cx="0.32" cy="0.22" r="0.85">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grano" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+    <filter id="difumina" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+  </defs>
+  <rect width="800" height="500" fill="url(#fondo)"/>
+  <rect width="800" height="500" fill="url(#luz)"/>
+  <ellipse cx="463.4" cy="396" rx="170" ry="22" fill="#073b4f" opacity="0.16" filter="url(#difumina)"/>
+  <path d="M258 244h236v86a70 70 0 0 1-70 70h-96a70 70 0 0 1-70-70z" fill="#faf6ee"/>
+  <path d="M258 244h236v22H258z" fill="#efe7d8"/>
+  <path d="M494 268h34a30 30 0 0 1 0 60h-34" fill="none" stroke="#faf6ee" stroke-width="18"/>
+  <ellipse cx="376" cy="248" rx="118" ry="18" fill="#073b4f" opacity="0.86"/>
+  <g stroke="#faf6ee" stroke-width="7" stroke-linecap="round" opacity="0.55" fill="none">
+    <path d="M330 214c14-18 14-32 0-48"/>
+    <path d="M382 206c16-22 16-38 0-58"/>
+    <path d="M434 214c14-18 14-32 0-48"/>
+  </g>
+  <g fill="#e2683f">
+    <ellipse cx="216" cy="330" rx="17" ry="23" transform="rotate(-20 216 330)"/>
+    <ellipse cx="216" cy="330" rx="4" ry="20" fill="#073b4f" opacity="0.35" transform="rotate(-20 216 330)"/>
+    <ellipse cx="196" cy="382" rx="16" ry="22" transform="rotate(14 196 382)"/>
+  </g>
+  <circle cx="596" cy="376" r="34" fill="#d4a017" opacity="0.85"/>
+  <circle cx="596" cy="376" r="22" fill="#faf6ee" opacity="0.55"/>
+  <rect width="800" height="500" filter="url(#grano)" opacity="0.055" style="mix-blend-mode:multiply"/>
+</svg>

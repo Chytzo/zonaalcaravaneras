@@ -1,1 +1,2959 @@
-{"ancho":1000,"alto":789,"contornos":"M407 16 473 10 503 8 510 1 508 -40 505 -40 505 -43 403 -36 405 -11 406 -5ZM601 121 603 119 614 119 623 120 625 121 621 134 619 142 603 142 602 132ZM692 140 690 149 685 148 682 147 680 156 683 157 687 158 685 164 692 166 691 169 727 179 734 151 720 147ZM473 391 467 392 467 387 467 384 471 384 473 385ZM305 110 305 123 294 123 294 109ZM522 -18 523 1 531 6 550 5 549 -12 543 -12 543 -19ZM407 16 385 19 382 -3 406 -5ZM331 1 333 19 332 21 334 23 340 23 343 22 349 22 374 19 381 19 381 17 379 -4ZM260 -27 265 28 280 28 275 -28ZM239 -25 244 30 257 29 254 -26 245 -26ZM218 -24 223 32 237 30 232 -25ZM240 62 223 63 224 78 242 79ZM204 78 194 92 226 93 224 78ZM226 93 242 93 242 79 224 78ZM242 93 251 94 251 79 242 79ZM251 94 261 94 261 84 261 79 251 79ZM261 94 273 94 273 85 261 84ZM273 94 322 96 321 81 311 81 311 87 273 85ZM334 52 334 79 350 80 355 80 354 51ZM334 79 334 98 350 99 350 80ZM350 99 364 99 364 80 355 80 350 80ZM378 49 380 80 391 81 405 81 420 81 436 81 441 82 438 44ZM364 99 391 100 391 81 380 80 371 80 364 80ZM391 100 405 101 405 81 391 81ZM405 81 420 81 420 101 405 101ZM420 81 436 81 435 102 420 101ZM436 81 441 82 447 82 447 102 435 102ZM447 82 461 82 460 103 447 102ZM527 70 528 79 583 79 582 75 582 71ZM527 70 527 61 551 61 551 70ZM527 61 526 48 579 50 580 55 581 62 560 61 551 61ZM526 48 525 43 530 39 573 36 578 40 579 50ZM528 79 528 86 548 87 557 87 571 87 584 87 584 84 583 81ZM638 41 611 44 611 47 592 47 591 42 591 38 596 32 598 31 607 30 640 27 649 27 652 26 658 34 652 48 638 47ZM597 87 597 94 599 104 602 107 604 107 606 107 607 87ZM617 87 607 87 606 107 618 107 626 107 630 105 633 97 637 87ZM642 75 625 74 612 74 612 61 593 61 595 74 596 83 597 87 607 87 617 87 637 87 639 80ZM750 19 750 24 754 23 762 23 762 18ZM423 144 423 165 432 166 437 166 437 150 437 144ZM132 25 106 10 106 0 133 -15 138 -17 167 -19 172 -14 168 8 166 8 164 8 161 8 159 8 157 9 155 9 153 10 151 11 147 12 144 14 142 15 140 16 138 18 136 20 133 23ZM78 59 81 65 88 65 88 67 94 67 94 65 100 65 100 69 103 69 103 76 115 78 122 72 122 70 125 69 124 66 122 59 122 50 123 45 125 37 113 36 113 40 108 40 108 36 101 36 101 41 101 59ZM65 35 61 29 63 25 84 13 87 13 126 36 113 36 108 36 101 36 95 36 95 34 92 33 86 30 80 34 77 34ZM81 65 92 85 95 88 103 89 115 78 103 76 103 78 99 78 99 69 100 65 94 65 94 67 88 67 88 65ZM149 134 153 134 152 137 155 137 155 134 162 134 163 153 156 153 156 150 153 150 153 153 149 153 149 150ZM119 135 129 153 147 153 147 150 149 150 149 134ZM147 184 152 193 165 189 165 184 157 184 153 184ZM117 118 145 92 160 97 162 134 155 134 153 134 149 134 119 135 116 129ZM228 178 198 178 195 175 192 138 194 138 194 133 226 134 227 141 221 141 221 144 227 144 227 154 227 156 222 156 222 172 228 172ZM229 137 229 154 227 154 227 156 227 160 232 160 232 178 235 177 240 178 240 176 244 176 244 178 249 178 251 177 253 178 253 161 254 155 250 155 250 137 249 139 247 139 247 137 242 137 242 139 238 139 238 137 233 137 231 138ZM326 147 326 136 305 136 298 136 299 147 304 147ZM326 136 324 113 320 110 305 110 305 123 305 136ZM301 181 319 181 318 174 318 171 315 170 315 167 318 167 318 163 300 163 300 168 304 168 304 171 300 171ZM267 113 271 109 284 109 283 135 268 135ZM423 135 423 117 426 114 458 115 458 130 451 130 451 139 437 139 437 135ZM445 172 438 182 435 184 432 184 432 175 432 171ZM461 150 449 167 439 166 439 150 446 150 446 153 449 153 449 150ZM475 131 469 139 459 139 459 130ZM458 115 481 115 483 120 475 131 459 130ZM423 174 422 183 432 184 432 175ZM458 176 454 182 454 184 464 184 464 176ZM475 169 475 156 473 156 464 168ZM475 176 475 169 464 168 458 176 464 176ZM482 158 482 166 488 166 491 166 494 166 497 166 500 166 503 166 508 167 508 159 506 159 504 159ZM482 166 482 183 483 185 488 185 488 166ZM488 185 494 185 494 175 491 175 491 166 488 166ZM495 125 485 140 508 140 510 140 517 140 517 135 517 125ZM524 140 524 135 524 117 537 117 537 128 537 140 530 140ZM198 196 198 194 200 191 204 191 204 196ZM244 239 256 240 259 237 258 224 252 224 252 228 244 228ZM237 239 244 239 244 228 240 227 240 223 237 223 237 227 237 231 240 231 240 234 237 234ZM212 191 219 191 219 202 211 202ZM204 191 212 191 211 202 209 202 209 199 206 199 206 202 204 202 204 196ZM331 204 331 212 327 211 324 210 322 211 321 205ZM321 193 328 193 330 197 331 204 321 205ZM318 225 309 225 310 241 318 241ZM316 193 321 193 321 205 321 211 316 211ZM286 211 292 211 292 208 295 208 295 193 287 192ZM344 205 344 197 347 194 354 195 354 205 351 205ZM360 242 350 242 347 238 346 226 350 226 354 226 354 228 356 229 356 226 360 226 360 232 360 235ZM393 195 411 196 413 198 414 213 393 213 393 206 395 206 395 203 393 203ZM382 195 393 195 393 203 393 206 393 213 388 213 385 213 382 213ZM371 195 377 195 376 213 371 213ZM365 195 371 195 371 213 365 212ZM359 195 365 195 365 212 359 212 359 208 359 205ZM474 236 474 244 466 244 466 239 469 239 469 236ZM426 221 431 215 447 215 450 215 453 215 453 222ZM460 198 471 198 475 200 474 210 460 210ZM453 198 460 198 460 210 453 210ZM495 198 502 198 502 204 499 204 499 207 502 207 502 215 500 215 495 215 495 210 497 210 497 207 495 207ZM515 245 484 244 481 242 482 222 488 222 495 222 500 222 508 222 515 221ZM508 198 516 198 516 210 513 210 513 212 516 212 516 216 514 216 514 218 515 221 509 221 509 218 508 215 510 215 510 211 508 211 508 207 508 204ZM482 209 482 200 484 198 495 198 495 207 495 209ZM261 274 262 292 260 294 253 294 252 287 254 287 254 280 252 280 252 274 254 274ZM276 261 277 272 287 272 289 272 292 272 298 272 297 261 287 261ZM287 249 279 249 275 252 276 261 287 261 287 258 284 257 284 255 287 255ZM336 262 335 252 332 250 326 250 326 262 329 262ZM326 262 320 262 320 258 320 256 320 250 326 250ZM277 272 278 290 282 294 287 294 287 275 287 272ZM313 249 305 249 305 257 307 257 307 259 305 259 305 261 307 261 313 261 313 259 310 258 310 255 313 255ZM349 267 349 262 355 262 360 262 362 262 362 266ZM370 251 375 251 374 263 370 263ZM350 282 350 277 359 277 359 282ZM366 251 370 251 370 263 366 262 366 260 366 258ZM372 271 368 276 359 277 359 271 362 271 364 271 366 271ZM350 277 349 271 355 271 358 271 359 277ZM413 275 413 254 411 252 405 252 402 254 393 265 393 275ZM387 274 393 265 393 275 393 293 387 293 387 288 387 286ZM474 290 471 292 456 292 456 284 459 284 459 281 456 281 456 274 459 273 463 273 463 277 474 277ZM463 253 473 253 474 255 474 265 471 265 472 263 469 263 469 265 456 265 456 261 462 261 466 261 466 259 463 258ZM426 293 420 293 420 278 424 278 426 278ZM420 264 427 264 427 261 429 261 429 259 429 252 424 252 420 254ZM534 254 528 254 528 260 527 266 534 266 534 263 534 260ZM481 265 481 256 484 253 496 254 496 262 493 263 493 265 489 265ZM535 292 552 291 552 284 544 285 544 287 539 287 539 285 537 285 537 287 535 287ZM546 254 540 254 540 261 540 264 540 266 542 266 545 266ZM603 291 603 283 594 282 594 286 593 282 590 282 590 284 590 291ZM604 268 604 259 601 256 582 255 582 267ZM280 319 281 332 284 335 309 335 309 324 300 325 301 327 295 327 294 324 289 324 289 319ZM280 319 279 307 282 304 289 304 289 319ZM309 335 339 335 341 332 340 319 323 319 316 319 310 319 309 324ZM340 319 339 307 335 304 321 304 323 319ZM369 302 366 302 360 310 360 313 369 313ZM360 319 360 335 366 335 366 321 366 319ZM450 392 457 392 457 386 455 386 455 383 457 383 457 381 457 375 454 374 454 372 453 369 450 369ZM443 344 436 344 436 352 436 355 436 358 436 365 436 368 443 368 443 359ZM413 385 413 392 407 392 407 388 404 388 404 385 406 385ZM360 383 360 375 370 375 370 383ZM360 368 360 362 367 362 367 364 369 364 369 362 372 362 375 362 375 368 369 368 369 365 366 365 366 368ZM360 362 360 344 367 344 367 362ZM268 378 267 368 251 368 251 370 251 379ZM267 368 266 357 251 357 251 365 251 368ZM266 357 266 349 263 345 251 346 251 357ZM244 346 238 346 239 368 245 368 245 365 244 358 244 355ZM584 400 601 400 603 403 603 414 589 414 584 414ZM603 421 603 433 600 436 589 436 589 421ZM508 436 499 436 498 427 498 420 498 418 501 418 502 421 505 421 505 418 508 418ZM491 436 482 436 480 434 480 427 491 427ZM480 420 480 411 486 411 490 412 495 411 495 413 498 412 498 416 498 418 495 419 491 420 489 420 489 418 485 419ZM554 425 554 436 545 436 545 425ZM544 400 544 407 553 407 553 402 552 400ZM412 415 412 422 406 422 403 421 397 422 397 419 397 415ZM473 425 473 436 462 436 463 425ZM443 400 450 400 450 418 446 418 444 418ZM404 436 397 436 397 427 399 427 403 427ZM382 400 390 400 390 408 390 410 390 416 388 416 388 419 385 419 385 416 382 416ZM382 436 372 436 372 430 372 418 376 418 376 422 378 422 378 418 382 418 382 430ZM360 400 360 418 368 418 368 409 366 409 366 405 368 405 368 400ZM285 413 286 423 302 423 302 419 303 413ZM285 413 285 406 290 401 305 401 305 413 303 413ZM323 401 317 401 318 419 323 418 323 408ZM302 436 313 436 313 419 303 419 302 423ZM286 423 286 436 302 436 302 423ZM270 423 271 432 269 436 255 436 255 429 257 429 257 427 255 427 255 424 257 424ZM270 418 270 423 257 424 257 421 255 421 254 418 257 418ZM215 424 215 414 233 413 233 418 232 423 225 424 221 424ZM254 401 267 401 269 403 270 412 254 412 254 409 256 409 256 407 254 407ZM244 436 232 436 232 429 232 426 232 423 232 418 237 418 237 421 239 421 239 418 244 418ZM554 456 554 461 541 461 541 456ZM541 445 554 445 554 456 541 456ZM604 475 604 460 586 460 586 465 586 472 586 475 586 480 591 481 591 475 597 475ZM603 455 603 445 595 445 596 451 598 452 598 454 596 454ZM473 467 473 460 462 460 462 467 469 467ZM473 460 473 454 467 454 467 456 466 454 463 454 462 460ZM456 445 450 445 450 463 450 467 456 467 456 459 454 459 454 457 456 457 456 451 454 451 454 449 456 449ZM419 481 419 487 422 490 444 490 444 472 439 472 439 475 436 475 436 472 431 472 431 479 431 481 429 481ZM359 463 360 448 362 448 362 445 368 445 367 465 365 465 365 463ZM289 466 289 462 289 459 288 454 288 451 288 449 290 447 298 447 303 447 316 446 333 446 344 446 346 449 346 466 330 466 326 466 315 466 306 466 304 466 296 466ZM299 489 307 489 306 472 298 472ZM289 472 290 487 293 489 299 489 298 472ZM261 446 269 446 273 449 273 457 262 457ZM235 446 242 446 243 467 237 467 237 464 236 458 236 454ZM229 446 235 446 236 454 235 458 237 464 234 464 234 467 230 467ZM219 467 218 449 219 446 229 446 230 467 225 467 223 467ZM226 489 222 489 220 488 219 467 223 467 223 469 225 469 225 471 223 471 223 474 225 474ZM414 699 413 709 425 710 426 704 430 705 428 720 423 720 416 718 412 718 413 713 409 712 410 702 411 699ZM585 723 582 742 603 746 602 723ZM576 686 582 686 586 685 594 685 602 685 602 691 599 691 585 691 585 694 599 694 602 695 602 700 583 700 579 699 579 690 576 690ZM479 547 479 581 481 582 490 579 489 545 482 545ZM545 559 555 555 555 544 545 544ZM604 526 605 532 603 534 585 535 585 526ZM226 500 226 505 225 510 226 520 225 525 226 530 245 530 245 520 244 510 245 506 244 500ZM514 498 505 498 505 513 514 513ZM419 517 419 537 434 537 434 519 434 517 430 517ZM359 546 359 582 385 582 385 573 381 573 381 563 391 563 391 580 412 579 412 545ZM557 105 570 106 571 87 557 87ZM528 86 530 102 532 104 547 105 548 87ZM570 106 585 106 586 103 585 93 584 87 571 87ZM224 625 217 624 220 632 223 632 225 637 236 630 238 628 243 624 239 620 233 621 225 624Z","locales":[{"slug":"optica-2000","nombre":"Óptica 2000","categoria":"Salud","x":403.4,"y":-43.2,"w":106.8,"h":59.2},{"slug":"b-a-m-alfaship","nombre":"B A M Alfaship","categoria":"Alimentación","x":600.9,"y":118.9,"w":11.9,"h":23.2},{"slug":"buy-muscle-las-palmas","nombre":"Buy Muscle Las Palmas","categoria":"Deporte y ocio","x":612.8,"y":118.9,"w":11.9,"h":23.2},{"slug":"real-club-nautico","nombre":"Real Club Nautico","categoria":"Restaurantes","x":680.1,"y":139.6,"w":54.0,"h":38.9},{"slug":"la-trastienda-fabrica-de-sabores","nombre":"La Trastienda Fábrica de Sabores","categoria":"Alimentación","x":466.6,"y":383.6,"w":6.8,"h":7.9},{"slug":"cafeteria-nestor","nombre":"Cafetería Néstor","categoria":"Bares y cafés","x":294.1,"y":109.2,"w":11.2,"h":13.5},{"slug":"eurofiel","nombre":"Eurofiel","categoria":"Moda","x":521.5,"y":-19.2,"w":14.1,"h":25.5},{"slug":"styleform","nombre":"Styleform","categoria":"Belleza","x":535.7,"y":-19.2,"w":14.1,"h":25.5},{"slug":"bata","nombre":"Bata","categoria":"Moda","x":382.2,"y":-5.1,"w":12.6,"h":23.8},{"slug":"m-s-outlet","nombre":"M&S Outlet","categoria":"Bazares","x":394.8,"y":-5.1,"w":12.6,"h":23.8},{"slug":"intimissimi","nombre":"Intimissimi","categoria":"Moda","x":331.2,"y":-3.5,"w":16.7,"h":26.5},{"slug":"mango","nombre":"Mango","categoria":"Moda","x":347.9,"y":-3.5,"w":16.7,"h":26.5},{"slug":"stradivarius","nombre":"Stradivarius","categoria":"Moda","x":364.6,"y":-3.5,"w":16.7,"h":26.5},{"slug":"bbva-58","nombre":"BBVA","categoria":"Servicios","x":260.3,"y":-28.2,"w":19.6,"h":57.0},{"slug":"united-colors-of-benetton-21","nombre":"United Colors of Benetton","categoria":"Moda","x":238.9,"y":-26.5,"w":18.5,"h":56.2},{"slug":"gelateria-naturale-come-mi-gira","nombre":"Gelateria Naturale, Come Mi Gira?","categoria":"Bares y cafés","x":218.1,"y":-24.9,"w":18.7,"h":56.5},{"slug":"sunglass-hut","nombre":"Sunglass Hut","categoria":"Salud","x":222.9,"y":61.6,"w":19.2,"h":17.4},{"slug":"banana-computer","nombre":"Banana Computer","categoria":"Electrónica","x":193.9,"y":77.9,"w":31.9,"h":14.9},{"slug":"la-garriga","nombre":"La Garriga","categoria":"Alimentación","x":224.5,"y":78.5,"w":17.7,"h":14.9},{"slug":"maria-luisa-antunez-jimenez-cardiologa-pediatra","nombre":"María Luisa Antúnez Jiménez Cardióloga Pediatra","categoria":"Salud","x":242.0,"y":78.9,"w":9.4,"h":14.8},{"slug":"scooter-s-pizza-factory","nombre":"Scooter's Pizza Factory","categoria":"Restaurantes","x":251.4,"y":79.2,"w":9.4,"h":14.8},{"slug":"duerme-descansa","nombre":"Duerme & Descansa","categoria":"Hogar y reformas","x":260.7,"y":84.5,"w":6.0,"h":9.9},{"slug":"momenti","nombre":"Momenti","categoria":"Moda","x":266.7,"y":84.5,"w":6.0,"h":9.9},{"slug":"el-buen-sabor","nombre":"El Buen Sabor","categoria":"Bares y cafés","x":272.5,"y":80.8,"w":12.4,"h":15.3},{"slug":"caixabank","nombre":"Caixabank","categoria":"Servicios","x":285.0,"y":80.8,"w":12.4,"h":15.3},{"slug":"bankinter","nombre":"Bankinter","categoria":"Servicios","x":297.4,"y":80.8,"w":12.4,"h":15.3},{"slug":"francisco-sosa-santana","nombre":"Francisco Sosa Santana","categoria":"Alimentación","x":309.9,"y":80.8,"w":12.4,"h":15.3},{"slug":"piluca-valeron","nombre":"Piluca Valerón","categoria":"Belleza","x":333.7,"y":50.6,"w":21.0,"h":29.3},{"slug":"jose-m-fernandez-valencia","nombre":"José Mª Fernández Valencia","categoria":"Salud","x":334.0,"y":79.4,"w":16.1,"h":9.7},{"slug":"yves-rocher","nombre":"Yves Rocher","categoria":"Belleza","x":334.0,"y":89.2,"w":16.1,"h":9.7},{"slug":"zipi-y-zape","nombre":"Zipi y Zape","categoria":"Deporte y ocio","x":349.9,"y":79.7,"w":14.5,"h":19.7},{"slug":"zara","nombre":"Zara","categoria":"Moda","x":378.5,"y":43.9,"w":62.7,"h":37.6},{"slug":"banco-santander-35","nombre":"Banco Santander","categoria":"Servicios","x":364.1,"y":80.0,"w":26.6,"h":20.3},{"slug":"caixabank-61","nombre":"Caixabank","categoria":"Servicios","x":390.6,"y":80.5,"w":14.7,"h":20.2},{"slug":"desvan-de-nestor","nombre":"Desván de Néstor","categoria":"Hogar y reformas","x":405.1,"y":80.8,"w":15.4,"h":10.2},{"slug":"rotensystem","nombre":"Rotensystem","categoria":"Moda","x":405.1,"y":91.1,"w":15.4,"h":10.2},{"slug":"la-faune","nombre":"La Faune","categoria":"Moda","x":420.2,"y":81.1,"w":15.4,"h":10.3},{"slug":"comercial-quintana-sanchez","nombre":"Comercial Quintana Sánchez","categoria":"Alimentación","x":420.2,"y":91.5,"w":15.4,"h":10.3},{"slug":"galeria-eduardo-santana","nombre":"Galería Eduardo Santana","categoria":"Deporte y ocio","x":435.4,"y":81.4,"w":11.8,"h":10.4},{"slug":"tintoreria-avenida","nombre":"Tintorería Avenida","categoria":"Servicios","x":435.4,"y":91.8,"w":11.8,"h":10.4},{"slug":"zen-by-mijin","nombre":"Zen By Mijin","categoria":"Belleza","x":447.0,"y":81.6,"w":13.5,"h":21.0},{"slug":"inkcrea-centro-de-impresion","nombre":"Inkcrea Centro de impresión","categoria":"Servicios","x":527.2,"y":70.1,"w":27.9,"h":9.3},{"slug":"zona-skate-shop","nombre":"Zona Skate Shop","categoria":"Deporte y ocio","x":555.1,"y":70.1,"w":27.9,"h":9.3},{"slug":"uniformes-maurice-larache","nombre":"Uniformes Maurice Larache","categoria":"Moda","x":526.5,"y":60.9,"w":12.1,"h":9.5},{"slug":"intermeco","nombre":"Intermeco","categoria":"Moda","x":538.6,"y":60.9,"w":12.1,"h":9.5},{"slug":"el-kilo-de-san-bernardo","nombre":"El Kilo de San Bernardo","categoria":"Moda","x":525.7,"y":48.5,"w":55.3,"h":13.4},{"slug":"jugueterias-nikki","nombre":"Jugueterías Nikki","categoria":"Deporte y ocio","x":525.3,"y":36.5,"w":27.1,"h":13.1},{"slug":"casa","nombre":"CASA","categoria":"Hogar y reformas","x":552.4,"y":36.5,"w":27.1,"h":13.1},{"slug":"central-uniformes","nombre":"Central Uniformes","categoria":"Moda","x":528.1,"y":79.4,"w":28.0,"h":8.0},{"slug":"aleli-perfumeria-mesa-y-lopez","nombre":"Alelí Perfumería Mesa y López","categoria":"Belleza","x":556.2,"y":79.4,"w":28.0,"h":8.0},{"slug":"pronovias","nombre":"Pronovias","categoria":"Moda","x":590.5,"y":26.3,"w":11.3,"h":21.4},{"slug":"ing","nombre":"ING","categoria":"Servicios","x":601.8,"y":26.3,"w":11.3,"h":21.4},{"slug":"cabali","nombre":"Cabali","categoria":"Bares y cafés","x":613.1,"y":26.3,"w":11.3,"h":21.4},{"slug":"natural-burguer","nombre":"Natural Burguer","categoria":"Restaurantes","x":624.4,"y":26.3,"w":11.3,"h":21.4},{"slug":"cafeteria-012","nombre":"Cafetería 012","categoria":"Bares y cafés","x":635.6,"y":26.3,"w":11.3,"h":21.4},{"slug":"monoculo","nombre":"Monóculo","categoria":"Restaurantes","x":646.9,"y":26.3,"w":11.3,"h":21.4},{"slug":"bahia-playa","nombre":"Bahía Playa","categoria":"Bares y cafés","x":596.6,"y":87.1,"w":10.5,"h":19.8},{"slug":"vcanto-cosmetica","nombre":"VCanto Cosmética","categoria":"Belleza","x":606.2,"y":87.1,"w":30.4,"h":20.1},{"slug":"martinez-canteli","nombre":"Martínez Canteli","categoria":"Bares y cafés","x":593.3,"y":60.5,"w":24.1,"h":26.9},{"slug":"farmacia-alicia-artiles-betancort","nombre":"Farmacia Alicia Artiles Betancort","categoria":"Salud","x":617.4,"y":60.5,"w":24.1,"h":26.9},{"slug":"farmacia-militar","nombre":"Farmacia Militar","categoria":"Salud","x":750.2,"y":18.4,"w":12.2,"h":5.2},{"slug":"restaurante-casa-suerte","nombre":"Restaurante Casa Suerte","categoria":"Restaurantes","x":422.6,"y":144.2,"w":14.7,"h":22.0},{"slug":"autoescuela-los-alisios","nombre":"Autoescuela Los Alisios","categoria":"Servicios","x":105.9,"y":-19.4,"w":11.1,"h":43.9},{"slug":"drugstore-3","nombre":"Drugstore 3","categoria":"Servicios","x":117.0,"y":-19.4,"w":11.1,"h":43.9},{"slug":"enzo","nombre":"Enzo","categoria":"Belleza","x":128.1,"y":-19.4,"w":11.1,"h":43.9},{"slug":"equivalenza","nombre":"Equivalenza","categoria":"Belleza","x":139.2,"y":-19.4,"w":11.1,"h":43.9},{"slug":"gaes-instituto-auditivo-integral","nombre":"Gaes, Instituto Auditivo Integral","categoria":"Salud","x":150.3,"y":-19.4,"w":11.1,"h":43.9},{"slug":"panaria","nombre":"Panaria","categoria":"Alimentación","x":161.4,"y":-19.4,"w":11.1,"h":43.9},{"slug":"bbva","nombre":"BBVA","categoria":"Servicios","x":77.6,"y":35.9,"w":15.9,"h":42.6},{"slug":"banco-santander-55","nombre":"Banco Santander","categoria":"Servicios","x":93.5,"y":35.9,"w":15.9,"h":42.6},{"slug":"select","nombre":"Select","categoria":"Moda","x":109.5,"y":35.9,"w":15.9,"h":42.6},{"slug":"carroussel","nombre":"Carroussel","categoria":"Belleza","x":61.5,"y":12.8,"w":21.6,"h":24.3},{"slug":"dania-peluqueria","nombre":"Dania Peluquería","categoria":"Belleza","x":83.0,"y":12.8,"w":21.6,"h":24.3},{"slug":"plaza-s-ferreteria","nombre":"Plaza's Ferretería","categoria":"Hogar y reformas","x":104.6,"y":12.8,"w":21.6,"h":24.3},{"slug":"buy-sell","nombre":"Buy & Sell","categoria":"Bazares","x":81.0,"y":64.8,"w":16.8,"h":24.0},{"slug":"terraza-amira","nombre":"Terraza Amira","categoria":"Bares y cafés","x":97.8,"y":64.8,"w":16.8,"h":24.0},{"slug":"game","nombre":"Game","categoria":"Electrónica","x":149.1,"y":134.1,"w":14.0,"h":18.8},{"slug":"clinica-dental-infantil-inmaculada-vinuela","nombre":"Clínica Dental Infantil Inmaculada Viñuela","categoria":"Salud","x":119.3,"y":134.4,"w":30.0,"h":18.8},{"slug":"bar-cafeteria-la-parada","nombre":"Bar Cafetería La Parada","categoria":"Bares y cafés","x":146.5,"y":184.0,"w":9.2,"h":9.3},{"slug":"cj-s-cafe","nombre":"Cj's Café","categoria":"Bares y cafés","x":155.8,"y":184.0,"w":9.2,"h":9.3},{"slug":"pizzeria-vino-e-cappuccino","nombre":"Pizzería Vino e Cappuccino","categoria":"Restaurantes","x":115.7,"y":91.7,"w":5.8,"h":43.5},{"slug":"autoescuela-eco","nombre":"Autoescuela Eco","categoria":"Servicios","x":121.5,"y":91.7,"w":5.8,"h":43.5},{"slug":"caixabank-143","nombre":"Caixabank","categoria":"Servicios","x":127.3,"y":91.7,"w":5.8,"h":43.5},{"slug":"biondi-elite-peluqueria","nombre":"Biondi Elite Peluquería","categoria":"Belleza","x":133.1,"y":91.7,"w":5.8,"h":43.5},{"slug":"mundo-iberico","nombre":"Mundo Ibérico","categoria":"Restaurantes","x":138.9,"y":91.7,"w":5.8,"h":43.5},{"slug":"visionlab","nombre":"Visionlab","categoria":"Salud","x":144.7,"y":91.7,"w":5.8,"h":43.5},{"slug":"world-tattoo-zone","nombre":"World Tattoo Zone","categoria":"Belleza","x":150.5,"y":91.7,"w":5.8,"h":43.5},{"slug":"caredent","nombre":"CareDent","categoria":"Salud","x":156.3,"y":91.7,"w":5.8,"h":43.5},{"slug":"bazar-oriental","nombre":"Bazar Oriental","categoria":"Bazares","x":191.8,"y":133.1,"w":35.9,"h":45.0},{"slug":"hiper-rastro-remar","nombre":"Hiper Rastro Remar","categoria":"Hogar y reformas","x":226.7,"y":137.0,"w":27.2,"h":13.8},{"slug":"panaderia-el-triguero","nombre":"Panadería El Triguero","categoria":"Alimentación","x":226.7,"y":150.7,"w":27.2,"h":13.8},{"slug":"entaban-belleza-integral","nombre":"Entaban Belleza Integral","categoria":"Belleza","x":226.7,"y":164.5,"w":27.2,"h":13.8},{"slug":"la-zanahoria-bioglobal","nombre":"La Zanahoria Bioglobal","categoria":"Alimentación","x":298.4,"y":135.6,"w":28.0,"h":11.5},{"slug":"albert-joyeros","nombre":"Albert Joyeros","categoria":"Moda","x":304.6,"y":109.6,"w":21.0,"h":26.3},{"slug":"bazar-kirin","nombre":"Bazar Kirin","categoria":"Alimentación","x":300.0,"y":163.1,"w":18.6,"h":17.8},{"slug":"centro-de-bronceado-la-playa","nombre":"Centro de Bronceado La Playa","categoria":"Belleza","x":267.2,"y":108.7,"w":16.4,"h":8.9},{"slug":"las-tablas-taberna-urbana","nombre":"Las Tablas Taberna Urbana","categoria":"Restaurantes","x":267.2,"y":117.6,"w":16.4,"h":8.9},{"slug":"rockabilly-burger-bar","nombre":"Rockabilly Burger Bar","categoria":"Restaurantes","x":267.2,"y":126.5,"w":16.4,"h":8.9},{"slug":"nestor-de-la-torre","nombre":"Néstor de la Torre","categoria":"Restaurantes","x":422.6,"y":113.6,"w":17.8,"h":25.5},{"slug":"optica-hermanas-jaen-martinez","nombre":"Óptica Hermanas Jaén Martínez","categoria":"Salud","x":440.4,"y":113.6,"w":17.8,"h":25.5},{"slug":"dulceria-parrilla","nombre":"Dulcería Parrilla","categoria":"Alimentación","x":431.6,"y":171.3,"w":6.8,"h":12.4},{"slug":"farmacia-maria-luisa-osborne-verdugo","nombre":"Farmacia María Luisa Osborne Verdugo","categoria":"Salud","x":438.4,"y":171.3,"w":6.8,"h":12.4},{"slug":"peluqueria-victor-santana","nombre":"Peluquería Victor Santana","categoria":"Belleza","x":438.5,"y":149.8,"w":11.3,"h":16.9},{"slug":"the-black-blood-tattoo","nombre":"The Black Blood Tattoo","categoria":"Belleza","x":449.8,"y":149.8,"w":11.3,"h":16.9},{"slug":"el-taller-de-allende","nombre":"El Taller de Allende","categoria":"Restaurantes","x":458.8,"y":130.4,"w":16.1,"h":8.8},{"slug":"cosmeticos-paquita-ors","nombre":"Cosméticos Paquita Ors","categoria":"Belleza","x":458.2,"y":114.6,"w":25.2,"h":16.6},{"slug":"centro-de-formacion-vial-las-palmas","nombre":"Centro de Formación Vial Las Palmas","categoria":"Servicios","x":422.4,"y":174.3,"w":4.7,"h":9.2},{"slug":"peluqueria-shenmei","nombre":"Peluquería Shenmei","categoria":"Belleza","x":427.1,"y":174.3,"w":4.7,"h":9.2},{"slug":"b-the-travel-brand","nombre":"B The Travel Brand","categoria":"Servicios","x":453.7,"y":176.1,"w":5.1,"h":8.2},{"slug":"peluqueria-mijin-jung","nombre":"Peluquería Mijin Jung","categoria":"Belleza","x":458.8,"y":176.1,"w":5.1,"h":8.2},{"slug":"tienda-avon","nombre":"Tienda Avon","categoria":"Belleza","x":464.0,"y":155.6,"w":10.8,"h":13.1},{"slug":"centrobell-cosmetica","nombre":"CentroBell Cosmética","categoria":"Belleza","x":458.2,"y":168.2,"w":16.6,"h":8.3},{"slug":"banak-importa-gran-canaria","nombre":"Banak Importa Gran Canaria","categoria":"Hogar y reformas","x":482.0,"y":158.4,"w":25.8,"h":8.2},{"slug":"viajes-paralelo-28","nombre":"Viajes Paralelo 28","categoria":"Servicios","x":481.8,"y":166.1,"w":5.8,"h":18.8},{"slug":"veterinario-clinica-can","nombre":"Veterinario Clinica Can","categoria":"Salud","x":487.6,"y":166.2,"w":6.1,"h":18.8},{"slug":"bacoterapia","nombre":"Bacoterapia","categoria":"Restaurantes","x":484.6,"y":124.9,"w":32.6,"h":15.5},{"slug":"neurovitalia-las-palmas","nombre":"NeuroVitalia Las Palmas","categoria":"Salud","x":523.8,"y":116.6,"w":13.4,"h":12.0},{"slug":"centro-de-bienestar-nestor-de-la-torre","nombre":"Centro De Bienestar Nestor de la Torre","categoria":"Belleza","x":523.8,"y":128.5,"w":13.4,"h":12.0},{"slug":"boutique-del-fumador","nombre":"Boutique del Fumador","categoria":"Servicios","x":197.5,"y":190.7,"w":6.3,"h":5.3},{"slug":"restaurante-el-coto-libanes","nombre":"Restaurante El Coto Libanés","categoria":"Restaurantes","x":243.7,"y":223.5,"w":15.1,"h":8.0},{"slug":"vitacool-peluqueros","nombre":"Vitacool peluqueros","categoria":"Belleza","x":243.7,"y":231.5,"w":15.1,"h":8.0},{"slug":"asahi","nombre":"Asahi","categoria":"Restaurantes","x":237.2,"y":223.4,"w":6.6,"h":15.8},{"slug":"reelca","nombre":"Reelca","categoria":"Electrónica","x":211.5,"y":191.0,"w":7.7,"h":11.3},{"slug":"la-comida-de-katia","nombre":"La comida de Katia","categoria":"Alimentación","x":203.8,"y":190.8,"w":8.0,"h":11.3},{"slug":"acuario-pura-vida","nombre":"Acuario Pura Vida","categoria":"Mascotas","x":321.2,"y":204.5,"w":10.2,"h":7.0},{"slug":"halcon-viajes","nombre":"Halcón Viajes","categoria":"Servicios","x":320.9,"y":192.8,"w":9.9,"h":11.7},{"slug":"clinica-veterinaria-atlantico","nombre":"Clínica Veterinaria Atlántico","categoria":"Salud","x":309.4,"y":225.3,"w":9.0,"h":15.8},{"slug":"restaurante-rong-cheng","nombre":"Restaurante Rong Cheng","categoria":"Restaurantes","x":315.7,"y":192.8,"w":5.6,"h":18.6},{"slug":"enhebrate","nombre":"Enhébrate","categoria":"Moda","x":286.5,"y":192.4,"w":8.5,"h":9.2},{"slug":"pescaderia-sargo","nombre":"Pescadería Sargo","categoria":"Alimentación","x":286.5,"y":201.6,"w":8.5,"h":9.2},{"slug":"opticas-herrera-cerpa-mercado-central","nombre":"Ópticas Herrera Cerpa Mercado Central","categoria":"Salud","x":344.2,"y":194.4,"w":9.6,"h":10.3},{"slug":"tiki-taco","nombre":"TIKI TACO","categoria":"Restaurantes","x":346.4,"y":226.0,"w":13.4,"h":7.9},{"slug":"tko","nombre":"TKO","categoria":"Restaurantes","x":346.4,"y":233.9,"w":13.4,"h":7.9},{"slug":"benitez-menaje","nombre":"Benítez Menaje","categoria":"Hogar y reformas","x":392.6,"y":195.2,"w":7.0,"h":17.8},{"slug":"colorin-tienda-de-costura","nombre":"Colorín Tienda de Costura","categoria":"Moda","x":399.6,"y":195.2,"w":7.0,"h":17.8},{"slug":"creativa-merceria-y-labores","nombre":"Creativa Mercería y Labores","categoria":"Moda","x":406.6,"y":195.2,"w":7.0,"h":17.8},{"slug":"papeleria-jost","nombre":"Papelería Jost","categoria":"Deporte y ocio","x":381.7,"y":195.0,"w":11.1,"h":8.9},{"slug":"supermercado-oriental","nombre":"Supermercado Oriental","categoria":"Alimentación","x":381.7,"y":203.9,"w":11.1,"h":8.9},{"slug":"supermercado-yong-xin","nombre":"Supermercado Yong Xin","categoria":"Alimentación","x":370.7,"y":194.8,"w":5.8,"h":17.8},{"slug":"restaurante-japones-osaka","nombre":"Restaurante Japonés Osaka","categoria":"Restaurantes","x":364.9,"y":194.7,"w":6.2,"h":17.8},{"slug":"bodeguita-central","nombre":"Bodeguita Central","categoria":"Restaurantes","x":358.7,"y":194.6,"w":6.5,"h":17.9},{"slug":"eskina-10","nombre":"Eskina 10","categoria":"Restaurantes","x":466.4,"y":236.5,"w":7.9,"h":7.9},{"slug":"comercial-yu-fong","nombre":"Comercial Yu Fong","categoria":"Bazares","x":426.1,"y":214.6,"w":27.0,"h":6.9},{"slug":"beauty-shop-s-a-u","nombre":"Beauty Shop S A U","categoria":"Belleza","x":459.9,"y":198.1,"w":14.6,"h":12.3},{"slug":"lino","nombre":"Lino","categoria":"Hogar y reformas","x":452.8,"y":198.0,"w":7.2,"h":12.1},{"slug":"restaurante-japones-kyoto","nombre":"Restaurante Japonés Kyoto","categoria":"Restaurantes","x":494.6,"y":198.2,"w":7.2,"h":17.0},{"slug":"spar","nombre":"Spar","categoria":"Alimentación","x":481.4,"y":221.2,"w":11.3,"h":23.7},{"slug":"dipesa","nombre":"Dipesa","categoria":"Alimentación","x":492.7,"y":221.2,"w":11.3,"h":23.7},{"slug":"personal-computer-sistem-canarias","nombre":"Personal Computer Sistem Canarias","categoria":"Electrónica","x":504.0,"y":221.2,"w":11.3,"h":23.7},{"slug":"pelaez-ceramicas","nombre":"Peláez Cerámicas","categoria":"Hogar y reformas","x":507.8,"y":198.2,"w":8.6,"h":23.2},{"slug":"bar-restaurante-alemania","nombre":"Bar Restaurante Alemania","categoria":"Restaurantes","x":481.7,"y":198.1,"w":13.2,"h":10.8},{"slug":"spar-234","nombre":"Spar","categoria":"Alimentación","x":252.4,"y":273.7,"w":9.5,"h":20.3},{"slug":"televes-las-palmas","nombre":"Televés Las Palmas","categoria":"Electrónica","x":276.0,"y":260.7,"w":22.0,"h":11.6},{"slug":"fruteria","nombre":"Frutería","categoria":"Alimentación","x":275.4,"y":248.9,"w":11.5,"h":12.0},{"slug":"garvi","nombre":"Garvi","categoria":"Moda","x":325.9,"y":249.6,"w":9.6,"h":6.1},{"slug":"todo-unas-desde-europa","nombre":"Todo uñas desde Europa","categoria":"Belleza","x":325.9,"y":255.7,"w":9.6,"h":6.1},{"slug":"la-taberna-del-viejo","nombre":"La Taberna del Viejo","categoria":"Restaurantes","x":319.7,"y":249.6,"w":6.4,"h":12.1},{"slug":"batch-pc","nombre":"Batch-PC","categoria":"Electrónica","x":276.7,"y":272.1,"w":10.6,"h":10.8},{"slug":"floristeria-la-pagoda","nombre":"Floristería La Pagoda","categoria":"Deporte y ocio","x":276.7,"y":283.0,"w":10.6,"h":10.8},{"slug":"jumesti","nombre":"Jumesti","categoria":"Moda","x":304.6,"y":249.3,"w":8.6,"h":12.1},{"slug":"cncsystem","nombre":"CNCSystem","categoria":"Electrónica","x":348.6,"y":262.0,"w":6.7,"h":4.7},{"slug":"la-sereta","nombre":"La Sereta","categoria":"Bares y cafés","x":355.3,"y":262.0,"w":6.7,"h":4.7},{"slug":"peluqueria-y-estetica-grissel-santana","nombre":"Peluquería y Estética Grissel Santana","categoria":"Belleza","x":370.0,"y":250.8,"w":4.7,"h":12.0},{"slug":"peluqueria-y-estetica-ruiz","nombre":"Peluquería y Estética Ruiz","categoria":"Belleza","x":349.7,"y":276.5,"w":8.9,"h":5.8},{"slug":"monyui-heras","nombre":"Monyui Heras","categoria":"Belleza","x":365.7,"y":250.7,"w":4.6,"h":11.9},{"slug":"la-piccola-italia","nombre":"La Piccola Italia","categoria":"Restaurantes","x":358.6,"y":270.7,"w":13.7,"h":5.8},{"slug":"online-tours-viajes-a-cuba","nombre":"Online Tours Viajes a Cuba","categoria":"Servicios","x":349.3,"y":271.0,"w":9.3,"h":5.8},{"slug":"enrique-schamann","nombre":"Enrique Schamann","categoria":"Hogar y reformas","x":393.0,"y":251.6,"w":20.3,"h":11.5},{"slug":"exclusivas-cardenes-y-caballero","nombre":"Exclusivas Cárdenes y Caballero","categoria":"Bazares","x":393.0,"y":263.1,"w":20.3,"h":11.5},{"slug":"dulceria-colomar","nombre":"Dulcería Colomar","categoria":"Alimentación","x":386.8,"y":265.2,"w":6.3,"h":28.0},{"slug":"bike-gran-canaria","nombre":"Bike Gran Canaria","categoria":"Hogar y reformas","x":455.8,"y":273.0,"w":18.2,"h":19.4},{"slug":"el-rincon-libanes","nombre":"El Rincón Libanés","categoria":"Restaurantes","x":456.1,"y":252.8,"w":18.0,"h":12.1},{"slug":"samoa","nombre":"Samoa","categoria":"Restaurantes","x":420.3,"y":278.2,"w":5.8,"h":14.6},{"slug":"padron-lenceria","nombre":"Padrón Lencería","categoria":"Moda","x":420.4,"y":252.0,"w":9.0,"h":12.1},{"slug":"antonio-acosta-enriquez","nombre":"Antonio Acosta Enríquez","categoria":"Motor","x":527.4,"y":254.1,"w":6.7,"h":12.0},{"slug":"lopacan-electronica","nombre":"Lopacan Electrónica","categoria":"Electrónica","x":481.0,"y":253.3,"w":15.0,"h":11.5},{"slug":"bazar-alcaravaneras","nombre":"Bazar Alcaravaneras","categoria":"Alimentación","x":534.9,"y":284.4,"w":17.3,"h":7.2},{"slug":"frutas-agustin-dominguez","nombre":"Frutas Agustín Domínguez","categoria":"Alimentación","x":540.1,"y":254.3,"w":5.6,"h":12.0},{"slug":"v-v-v-garcia-machin","nombre":"V.V.V. García Machín","categoria":"Hogar y reformas","x":589.7,"y":282.4,"w":13.7,"h":8.7},{"slug":"bar-sam","nombre":"Bar Sam","categoria":"Restaurantes","x":581.9,"y":255.4,"w":10.9,"h":12.4},{"slug":"comercial-naranjo-maquinaria-hosteleria-y-alimentacion","nombre":"Comercial Naranjo Maquinaria Hostelería y Alimentación","categoria":"Electrónica","x":592.8,"y":255.4,"w":10.9,"h":12.4},{"slug":"cainser-servicio-tecnico","nombre":"Cainser Servicio Técnico","categoria":"Electrónica","x":279.7,"y":319.3,"w":9.8,"h":15.5},{"slug":"center-gematel","nombre":"Center Gematel","categoria":"Electrónica","x":289.5,"y":319.3,"w":9.8,"h":15.5},{"slug":"gregorio-rodriguez-centro-ortopedico","nombre":"Gregorio Rodríguez Centro Ortopédico","categoria":"Salud","x":299.3,"y":319.3,"w":9.8,"h":15.5},{"slug":"farmacia-lantigua-usar","nombre":"Farmacia Lantigua Usar","categoria":"Salud","x":279.0,"y":304.1,"w":10.5,"h":15.3},{"slug":"copysuar","nombre":"CopySuAr","categoria":"Servicios","x":309.0,"y":319.0,"w":16.2,"h":15.8},{"slug":"la-tisana","nombre":"La Tisana","categoria":"Salud","x":325.2,"y":319.0,"w":16.2,"h":15.8},{"slug":"bazar-pio-xii","nombre":"Bazar Pío XII","categoria":"Bazares","x":321.5,"y":303.7,"w":9.4,"h":15.4},{"slug":"baza-minimercado","nombre":"Baza - Minimercado","categoria":"Alimentación","x":330.9,"y":303.7,"w":9.4,"h":15.4},{"slug":"bazar-galicia","nombre":"Bazar Galicia","categoria":"Servicios","x":359.9,"y":302.2,"w":9.2,"h":5.2},{"slug":"tapicerias-noroeste","nombre":"Tapicerías Noroeste","categoria":"Moda","x":359.9,"y":307.4,"w":9.2,"h":5.2},{"slug":"zapateria-infantil-100-pies","nombre":"Zapatería Infantil 100 pies","categoria":"Moda","x":359.8,"y":318.7,"w":6.6,"h":16.5},{"slug":"tomas-gil-izquierdo","nombre":"Tomás Gil Izquierdo","categoria":"Moda","x":450.3,"y":369.1,"w":7.2,"h":22.5},{"slug":"riegotec","nombre":"Riegotec","categoria":"Hogar y reformas","x":436.2,"y":344.0,"w":7.1,"h":23.7},{"slug":"bar-la-sacristia","nombre":"Bar La Sacristía","categoria":"Bares y cafés","x":404.1,"y":385.2,"w":8.7,"h":6.4},{"slug":"d-guijuelo","nombre":"D'Guijuelo","categoria":"Alimentación","x":359.7,"y":374.7,"w":10.3,"h":8.5},{"slug":"bazar-minimercado","nombre":"Bazar - Minimercado","categoria":"Alimentación","x":359.7,"y":362.0,"w":15.1,"h":5.7},{"slug":"asadero-el-puente","nombre":"Asadero El Puente","categoria":"Restaurantes","x":359.7,"y":344.0,"w":6.9,"h":9.2},{"slug":"levain-masa-madre","nombre":"Levain Masa Madre","categoria":"Alimentación","x":359.7,"y":353.2,"w":6.9,"h":9.2},{"slug":"ferreteria-mas-de-gaminde","nombre":"Ferretería Mas de Gaminde","categoria":"Hogar y reformas","x":251.0,"y":367.6,"w":8.3,"h":11.1},{"slug":"juveca","nombre":"Juveca","categoria":"Moda","x":259.3,"y":367.6,"w":8.3,"h":11.1},{"slug":"laveintitres","nombre":"Laveintitres","categoria":"Bares y cafés","x":250.8,"y":357.1,"w":16.1,"h":10.8},{"slug":"cin-pinturas-y-barnices","nombre":"Cin pinturas y barnices","categoria":"Hogar y reformas","x":250.5,"y":345.5,"w":15.8,"h":11.9},{"slug":"pecan-maquinaria-hosteleria","nombre":"Pecan Maquinaria Hostelería","categoria":"Electrónica","x":238.1,"y":345.6,"w":6.6,"h":22.5},{"slug":"free-motion-bike-center","nombre":"Free Motion Bike Center","categoria":"Motor","x":583.7,"y":400.2,"w":19.4,"h":13.5},{"slug":"running-proyect-canarias","nombre":"Running Proyect Canarias","categoria":"Deporte y ocio","x":589.0,"y":420.9,"w":14.2,"h":15.5},{"slug":"grapascan-maquinaria","nombre":"Grapascan Maquinaria","categoria":"Hogar y reformas","x":498.4,"y":418.3,"w":9.9,"h":17.7},{"slug":"imagen-y-sonido","nombre":"Imagen y Sonido","categoria":"Electrónica","x":480.1,"y":426.9,"w":10.9,"h":9.2},{"slug":"manhattan-computer","nombre":"Manhattan Computer","categoria":"Electrónica","x":480.3,"y":411.1,"w":18.1,"h":8.7},{"slug":"bazar-ainomar","nombre":"Bazar Ainomar","categoria":"Alimentación","x":544.9,"y":425.4,"w":8.7,"h":10.4},{"slug":"salon-fatima","nombre":"Salón Fátima","categoria":"Belleza","x":543.7,"y":400.3,"w":9.7,"h":7.2},{"slug":"panaderia-y-pasteleria-del-pino","nombre":"Panadería y Pastelería Del Pino","categoria":"Alimentación","x":396.6,"y":414.8,"w":15.7,"h":7.1},{"slug":"joyeria-sonia","nombre":"Joyería Sonia","categoria":"Moda","x":462.5,"y":425.2,"w":10.7,"h":10.9},{"slug":"eduardo-monzon-fotografo","nombre":"Eduardo Monzón Fotógrafo","categoria":"Servicios","x":442.8,"y":400.4,"w":7.4,"h":17.8},{"slug":"maria-del-carmen-hernandez-galvan","nombre":"María Del Carmen Hernández Galván","categoria":"Belleza","x":396.6,"y":427.3,"w":7.9,"h":9.0},{"slug":"renato-tatuajes","nombre":"Renato Tatuajes","categoria":"Belleza","x":381.7,"y":400.5,"w":8.1,"h":18.1},{"slug":"trigal","nombre":"Trigal","categoria":"Alimentación","x":371.8,"y":418.4,"w":9.8,"h":17.8},{"slug":"farmacia-pedro-liminana-jorge","nombre":"Farmacia Pedro Limiñana Jorge","categoria":"Salud","x":359.5,"y":400.4,"w":8.2,"h":18.0},{"slug":"pagasarri","nombre":"Pagasarri","categoria":"Restaurantes","x":285.5,"y":412.7,"w":17.4,"h":10.6},{"slug":"hermanos-diaz","nombre":"Hermanos Díaz","categoria":"Restaurantes","x":285.2,"y":401.3,"w":6.7,"h":12.0},{"slug":"las-cazuelas-de-antonio","nombre":"Las Cazuelas de Antonio","categoria":"Bares y cafés","x":291.9,"y":401.3,"w":6.7,"h":12.0},{"slug":"my-dream","nombre":"My dream","categoria":"Belleza","x":298.6,"y":401.3,"w":6.7,"h":12.0},{"slug":"k-marisu","nombre":"K´Marisu","categoria":"Restaurantes","x":317.4,"y":401.3,"w":5.5,"h":17.2},{"slug":"servicio-tecnico-guillermo-palmero","nombre":"Servicio Técnico Guillermo Palmero","categoria":"Electrónica","x":302.0,"y":418.6,"w":10.9,"h":17.3},{"slug":"salon-peluqueria-mercy","nombre":"Salón Peluquería Mercy","categoria":"Belleza","x":285.9,"y":423.0,"w":16.3,"h":13.1},{"slug":"pizza-real","nombre":"Pizza Real","categoria":"Restaurantes","x":254.6,"y":423.0,"w":16.3,"h":12.8},{"slug":"bar-tatono","nombre":"Bar Tatono","categoria":"Bares y cafés","x":254.5,"y":417.6,"w":15.8,"h":6.0},{"slug":"xerach-peluqueria","nombre":"Xerach Peluquería","categoria":"Belleza","x":214.6,"y":412.7,"w":18.4,"h":11.5},{"slug":"tienda-colchones-outlet-espanola-del-descanso","nombre":"Tienda Colchones Outlet Española del Descanso","categoria":"Hogar y reformas","x":254.3,"y":401.4,"w":15.4,"h":11.1},{"slug":"la-encina-de-zimmermann-alonso","nombre":"La Encina de Zimmermann Alonso","categoria":"Alimentación","x":231.8,"y":418.2,"w":11.9,"h":17.7},{"slug":"pizzeria-michelangelo","nombre":"Pizzeria Michelangelo","categoria":"Restaurantes","x":540.8,"y":456.0,"w":13.5,"h":5.2},{"slug":"meson-sabor-andaluz","nombre":"Mesón Sabor Andaluz","categoria":"Restaurantes","x":540.8,"y":444.9,"w":13.4,"h":11.1},{"slug":"restaurante-huifeng-yuan","nombre":"Restaurante Huifeng Yuan","categoria":"Restaurantes","x":586.0,"y":460.2,"w":17.7,"h":20.4},{"slug":"bar-el-cubi","nombre":"Bar El Cubi","categoria":"Bares y cafés","x":595.4,"y":444.8,"w":8.0,"h":10.5},{"slug":"senedrac-venta-y-servicio-tecnico","nombre":"Senedrac Venta y Servicio Técnico","categoria":"Electrónica","x":462.5,"y":459.9,"w":10.4,"h":7.4},{"slug":"drogueria-perfumeria-italia","nombre":"Droguería Perfumeria Italia","categoria":"Belleza","x":462.5,"y":453.9,"w":10.4,"h":6.1},{"slug":"velas-linton","nombre":"Velas Linton","categoria":"Hogar y reformas","x":450.0,"y":445.0,"w":6.4,"h":22.2},{"slug":"comercial-nolasco","nombre":"Comercial Nolasco","categoria":"Hogar y reformas","x":419.4,"y":472.4,"w":24.2,"h":17.3},{"slug":"febeda-bazar","nombre":"Febeda Bazar","categoria":"Servicios","x":359.5,"y":444.9,"w":8.1,"h":10.2},{"slug":"optica-pio-xii-70","nombre":"Óptica Pío XII 70","categoria":"Salud","x":359.5,"y":455.1,"w":8.1,"h":10.2},{"slug":"cegrisa","nombre":"Cegrisa","categoria":"Hogar y reformas","x":288.0,"y":446.2,"w":58.3,"h":19.8},{"slug":"tintoreria-isis","nombre":"Tintorería Isis","categoria":"Servicios","x":298.5,"y":471.9,"w":8.9,"h":8.6},{"slug":"alfonso-serrano-distribuciones-deportivas","nombre":"Alfonso Serrano Distribuciones Deportivas","categoria":"Deporte y ocio","x":298.5,"y":480.5,"w":8.9,"h":8.6},{"slug":"todo-estetica","nombre":"Todo Estética","categoria":"Belleza","x":289.3,"y":471.8,"w":10.1,"h":17.4},{"slug":"las-rejas-y-ole","nombre":"Las Rejas Y Olé","categoria":"Restaurantes","x":261.1,"y":446.4,"w":11.7,"h":10.4},{"slug":"tavio","nombre":"Tavio","categoria":"Servicios","x":235.3,"y":446.4,"w":8.2,"h":20.5},{"slug":"vinos-y-quesos","nombre":"Vinos y Quesos","categoria":"Bares y cafés","x":228.9,"y":446.4,"w":7.8,"h":20.5},{"slug":"central-de-representaciones-canarias","nombre":"Central de Representaciones Canarias","categoria":"Hogar y reformas","x":217.5,"y":446.4,"w":12.8,"h":20.6},{"slug":"taller-electrico-electroauto-canarias","nombre":"Taller Eléctrico Electroauto Canarias","categoria":"Motor","x":218.8,"y":467.0,"w":7.2,"h":22.5},{"slug":"cubo-producciones","nombre":"Cubo Producciones","categoria":"Bares y cafés","x":409.0,"y":698.7,"w":20.8,"h":21.5},{"slug":"velvet-hogar","nombre":"Velvet Hogar","categoria":"Hogar y reformas","x":582.1,"y":722.8,"w":20.6,"h":22.8},{"slug":"new-elise","nombre":"New Elise","categoria":"Belleza","x":576.1,"y":684.8,"w":26.1,"h":15.4},{"slug":"animal-lab-laboratorio","nombre":"Animal Lab Laboratorio","categoria":"Salud","x":479.2,"y":544.6,"w":11.0,"h":37.5},{"slug":"alarmas-prosegur","nombre":"Alarmas Prosegur","categoria":"Electrónica","x":544.7,"y":543.8,"w":10.4,"h":15.2},{"slug":"triodos-bank","nombre":"Triodos Bank","categoria":"Servicios","x":585.2,"y":525.7,"w":19.3,"h":8.9},{"slug":"peluqueria-de-mascotas-trufa","nombre":"Peluquería de Mascotas Trufa","categoria":"Mascotas","x":225.0,"y":500.1,"w":19.7,"h":29.7},{"slug":"el-equilibrista","nombre":"El Equilibrista","categoria":"Restaurantes","x":504.9,"y":498.4,"w":9.3,"h":14.2},{"slug":"hermanos-rogelio","nombre":"Hermanos Rogelio","categoria":"Restaurantes","x":419.2,"y":516.6,"w":14.5,"h":20.0},{"slug":"merca-oriental","nombre":"Merca Oriental","categoria":"Bazares","x":359.0,"y":545.5,"w":13.3,"h":36.6},{"slug":"acfi-press-agencia-de-fotografia","nombre":"Acfi Press Agencia de Fotografía","categoria":"Servicios","x":372.3,"y":545.5,"w":13.3,"h":36.6},{"slug":"carolan-fiestas","nombre":"Carolan Fiestas","categoria":"Bazares","x":385.6,"y":545.5,"w":13.3,"h":36.6},{"slug":"supermercado-mak","nombre":"Supermercado Mak","categoria":"Alimentación","x":398.9,"y":545.5,"w":13.3,"h":36.6},{"slug":"salon-alhambra","nombre":"Salón Alhambra","categoria":"Belleza","x":557.5,"y":87.0,"w":13.3,"h":18.6},{"slug":"i-parioli-pizzeria","nombre":"I. Parioli Pizzeria","categoria":"Restaurantes","x":528.5,"y":86.4,"w":19.7,"h":18.3},{"slug":"proteinacanaria-com","nombre":"ProteínaCanaria.com","categoria":"Salud","x":569.8,"y":87.2,"w":16.6,"h":9.5},{"slug":"son-8","nombre":"Son 8","categoria":"Bares y cafés","x":569.8,"y":96.7,"w":16.6,"h":9.5},{"slug":"cafeteria-estadio-insular","nombre":"Cafeteria Estadio Insular","categoria":"Bares y cafés","x":217.2,"y":619.9,"w":26.0,"h":17.3},{"slug":"pasteleria-don-pan","nombre":"Pastelería Don Pan","categoria":"Alimentación","x":509.4,"y":74.5,"w":6,"h":6},{"slug":"monte-carlo","nombre":"Monte Carlo","categoria":"Restaurantes","x":510.0,"y":58.3,"w":6,"h":6},{"slug":"el-buho","nombre":"El Buho","categoria":"Bares y cafés","x":590.2,"y":231.4,"w":6,"h":6},{"slug":"cafeteria-coki","nombre":"Cafetería Cokí","categoria":"Bares y cafés","x":208.9,"y":-2.3,"w":6,"h":6},{"slug":"20conmigo","nombre":"20conmigo","categoria":"Restaurantes","x":508.8,"y":537.0,"w":6,"h":6},{"slug":"el-corte-ingles","nombre":"El Corte Inglés","categoria":"Bazares","x":478.3,"y":48.8,"w":6,"h":6},{"slug":"united-colors-of-benetton","nombre":"United Colors of Benetton","categoria":"Moda","x":566.4,"y":-2.5,"w":6,"h":6},{"slug":"terraza-plaza","nombre":"Terraza Plaza","categoria":"Bares y cafés","x":188.5,"y":12.7,"w":6,"h":6},{"slug":"muselina","nombre":"Muselina","categoria":"Moda","x":234.7,"y":11.2,"w":6,"h":6},{"slug":"zara-home","nombre":"Zara Home","categoria":"Hogar y reformas","x":302.8,"y":20.1,"w":6,"h":6},{"slug":"pull-bear","nombre":"Pull & Bear","categoria":"Moda","x":287.0,"y":11.7,"w":6,"h":6},{"slug":"massimo-dutti","nombre":"Massimo Dutti","categoria":"Moda","x":312.3,"y":13.0,"w":6,"h":6},{"slug":"mcdonald-s","nombre":"McDonald's","categoria":"Restaurantes","x":206.5,"y":66.1,"w":6,"h":6},{"slug":"foot-locker","nombre":"Foot Locker","categoria":"Moda","x":278.3,"y":55.9,"w":6,"h":6},{"slug":"banco-santander","nombre":"Banco Santander","categoria":"Servicios","x":301.3,"y":54.8,"w":6,"h":6},{"slug":"restaurante-la-sama","nombre":"Restaurante La Sama","categoria":"Restaurantes","x":408.2,"y":107.9,"w":6,"h":6},{"slug":"hesperia","nombre":"Hesperia","categoria":"Deporte y ocio","x":364.7,"y":532.2,"w":6,"h":6},{"slug":"superdino","nombre":"SuperDino","categoria":"Alimentación","x":383.8,"y":527.8,"w":6,"h":6},{"slug":"atmaram-veena","nombre":"Atmaram, Veena","categoria":"Belleza","x":464.7,"y":99.0,"w":6,"h":6},{"slug":"carlin","nombre":"Carlin","categoria":"Deporte y ocio","x":205.3,"y":24.4,"w":6,"h":6},{"slug":"dimikelo-milano","nombre":"Dimikelo Milano","categoria":"Moda","x":560.6,"y":31.0,"w":6,"h":6},{"slug":"eurekakids","nombre":"Eurekakids","categoria":"Moda","x":267.8,"y":57.6,"w":6,"h":6},{"slug":"granier","nombre":"Granier","categoria":"Alimentación","x":290.0,"y":17.7,"w":6,"h":6},{"slug":"peluqueria-unisex-sunao","nombre":"Peluquería Unisex Sunao","categoria":"Belleza","x":205.5,"y":7.8,"w":6,"h":6},{"slug":"rieber-andrea","nombre":"Rieber Andrea","categoria":"Moda","x":531.3,"y":33.0,"w":6,"h":6},{"slug":"rocasa-nestor-de-la-torre","nombre":"Rocasa Néstor de la Torre","categoria":"Hogar y reformas","x":478.2,"y":99.3,"w":6,"h":6},{"slug":"sakura-i","nombre":"Sakura I","categoria":"Restaurantes","x":219.0,"y":106.2,"w":6,"h":6},{"slug":"starbucks","nombre":"Starbucks","categoria":"Bares y cafés","x":456.0,"y":42.0,"w":6,"h":6},{"slug":"stil-canarias-cocinas","nombre":"Stil Canarias Cocinas","categoria":"Hogar y reformas","x":231.7,"y":106.5,"w":6,"h":6},{"slug":"2000-autoescuelas","nombre":"2000 Autoescuelas","categoria":"Servicios","x":306.9,"y":54.9,"w":6,"h":6},{"slug":"bar-cafeteria-churreria-mercado-central","nombre":"Bar Cafetería Churrería Mercado Central","categoria":"Bares y cafés","x":406.2,"y":138.1,"w":6,"h":6},{"slug":"cash-converters-las-palmas","nombre":"Cash Converters Las Palmas","categoria":"Bazares","x":268.6,"y":146.5,"w":6,"h":6},{"slug":"europan-2012","nombre":"Europan 2012","categoria":"Alimentación","x":268.7,"y":156.3,"w":6,"h":6},{"slug":"peluqueria-mh","nombre":"Peluquería MH","categoria":"Belleza","x":203.7,"y":105.8,"w":6,"h":6},{"slug":"superdino-133","nombre":"SuperDino","categoria":"Alimentación","x":269.7,"y":172.4,"w":6,"h":6},{"slug":"24-horas-vip-noche-y-dia","nombre":"24 Horas Vip noche y día","categoria":"Alimentación","x":245.7,"y":109.0,"w":6,"h":6},{"slug":"cristal","nombre":"Cristal","categoria":"Restaurantes","x":227.9,"y":189.3,"w":6,"h":6},{"slug":"hoock-las-palmas","nombre":"Hoock Las Palmas","categoria":"Bares y cafés","x":253.7,"y":209.2,"w":6,"h":6},{"slug":"la-palmita-bar-y-tapas","nombre":"La Palmita Bar y Tapas","categoria":"Bares y cafés","x":589.6,"y":205.4,"w":6,"h":6},{"slug":"savialud","nombre":"Savialud","categoria":"Alimentación","x":305.7,"y":190.4,"w":6,"h":6},{"slug":"bar-restaurante-villa-de-madrid","nombre":"Bar Restaurante Villa de Madrid","categoria":"Bares y cafés","x":269.5,"y":467.8,"w":6,"h":6},{"slug":"distamaran","nombre":"Distamaran","categoria":"Belleza","x":271.3,"y":504.0,"w":6,"h":6},{"slug":"la-garriga-mas-de-gaminde","nombre":"La Garriga Mas de Gaminde","categoria":"Alimentación","x":269.2,"y":457.2,"w":6,"h":6},{"slug":"nueva-imagen","nombre":"Nueva Imagen","categoria":"Belleza","x":260.5,"y":485.1,"w":6,"h":6},{"slug":"sebastian-peluqueros","nombre":"Sebastián peluqueros","categoria":"Belleza","x":289.3,"y":519.3,"w":6,"h":6},{"slug":"caixabank-283","nombre":"Caixabank","categoria":"Servicios","x":356.5,"y":503.3,"w":6,"h":6},{"slug":"croissanteria-hermanos-rogelio","nombre":"Croissantería Hermanos Rogelio","categoria":"Bares y cafés","x":408.8,"y":530.7,"w":6,"h":6},{"slug":"el-fenix","nombre":"El Fénix","categoria":"Bares y cafés","x":287.6,"y":533.5,"w":6,"h":6},{"slug":"gubra-las-palmas","nombre":"Gubra Las Palmas","categoria":"Motor","x":332.7,"y":523.1,"w":6,"h":6},{"slug":"mandala-climb","nombre":"Mandala Climb","categoria":"Deporte y ocio","x":518.9,"y":531.7,"w":6,"h":6},{"slug":"motoaxial","nombre":"Motoaxial","categoria":"Motor","x":333.1,"y":526.8,"w":6,"h":6},{"slug":"pega-creaciones","nombre":"Pega Creaciones","categoria":"Deporte y ocio","x":512.3,"y":542.2,"w":6,"h":6},{"slug":"rotulos-samper","nombre":"Rótulos Samper","categoria":"Servicios","x":291.1,"y":525.2,"w":6,"h":6},{"slug":"palcanarias","nombre":"Palcanarias","categoria":"Hogar y reformas","x":443.1,"y":590.8,"w":6,"h":6},{"slug":"hoock","nombre":"Hoock","categoria":"Bares y cafés","x":255.2,"y":222.1,"w":6,"h":6},{"slug":"tourismat","nombre":"Tourismat","categoria":"Servicios","x":588.5,"y":212.9,"w":6,"h":6},{"slug":"malvon","nombre":"Malvón","categoria":"Restaurantes","x":290.8,"y":57.4,"w":6,"h":6},{"slug":"granier-324","nombre":"Granier","categoria":"Bares y cafés","x":195.0,"y":17.0,"w":6,"h":6},{"slug":"11","nombre":"11","categoria":"Bazares","x":474.9,"y":57.7,"w":6,"h":6},{"slug":"mercado-central","nombre":"Mercado Central","categoria":"Alimentación","x":376.6,"y":143.9,"w":6,"h":6}],"infantiles":[{"x":663.8,"y":259.9,"nombre":"Parque infantil"},{"x":381.4,"y":176.4,"nombre":"Parque infantil"},{"x":413.2,"y":642.0,"nombre":"Parque infantil en la plaza gabriel mejias pombo"},{"x":450.0,"y":608.2,"nombre":"Parque infantil"},{"x":223.0,"y":644.2,"nombre":"Parque infantil"}]}
+{
+  "ancho": 1000,
+  "alto": 789,
+  "contornos": "M407 16 473 10 503 8 510 1 508 -40 505 -40 505 -43 403 -36 405 -11 406 -5ZM601 121 603 119 614 119 623 120 625 121 621 134 619 142 603 142 602 132ZM692 140 690 149 685 148 682 147 680 156 683 157 687 158 685 164 692 166 691 169 727 179 734 151 720 147ZM473 391 467 392 467 387 467 384 471 384 473 385ZM305 110 305 123 294 123 294 109ZM522 -18 523 1 531 6 550 5 549 -12 543 -12 543 -19ZM407 16 385 19 382 -3 406 -5ZM331 1 333 19 332 21 334 23 340 23 343 22 349 22 374 19 381 19 381 17 379 -4ZM260 -27 265 28 280 28 275 -28ZM239 -25 244 30 257 29 254 -26 245 -26ZM218 -24 223 32 237 30 232 -25ZM240 62 223 63 224 78 242 79ZM204 78 194 92 226 93 224 78ZM226 93 242 93 242 79 224 78ZM242 93 251 94 251 79 242 79ZM251 94 261 94 261 84 261 79 251 79ZM261 94 273 94 273 85 261 84ZM273 94 322 96 321 81 311 81 311 87 273 85ZM334 52 334 79 350 80 355 80 354 51ZM334 79 334 98 350 99 350 80ZM350 99 364 99 364 80 355 80 350 80ZM378 49 380 80 391 81 405 81 420 81 436 81 441 82 438 44ZM364 99 391 100 391 81 380 80 371 80 364 80ZM391 100 405 101 405 81 391 81ZM405 81 420 81 420 101 405 101ZM420 81 436 81 435 102 420 101ZM436 81 441 82 447 82 447 102 435 102ZM447 82 461 82 460 103 447 102ZM527 70 528 79 583 79 582 75 582 71ZM527 70 527 61 551 61 551 70ZM527 61 526 48 579 50 580 55 581 62 560 61 551 61ZM526 48 525 43 530 39 573 36 578 40 579 50ZM528 79 528 86 548 87 557 87 571 87 584 87 584 84 583 81ZM638 41 611 44 611 47 592 47 591 42 591 38 596 32 598 31 607 30 640 27 649 27 652 26 658 34 652 48 638 47ZM597 87 597 94 599 104 602 107 604 107 606 107 607 87ZM617 87 607 87 606 107 618 107 626 107 630 105 633 97 637 87ZM642 75 625 74 612 74 612 61 593 61 595 74 596 83 597 87 607 87 617 87 637 87 639 80ZM750 19 750 24 754 23 762 23 762 18ZM423 144 423 165 432 166 437 166 437 150 437 144ZM132 25 106 10 106 0 133 -15 138 -17 167 -19 172 -14 168 8 166 8 164 8 161 8 159 8 157 9 155 9 153 10 151 11 147 12 144 14 142 15 140 16 138 18 136 20 133 23ZM78 59 81 65 88 65 88 67 94 67 94 65 100 65 100 69 103 69 103 76 115 78 122 72 122 70 125 69 124 66 122 59 122 50 123 45 125 37 113 36 113 40 108 40 108 36 101 36 101 41 101 59ZM65 35 61 29 63 25 84 13 87 13 126 36 113 36 108 36 101 36 95 36 95 34 92 33 86 30 80 34 77 34ZM81 65 92 85 95 88 103 89 115 78 103 76 103 78 99 78 99 69 100 65 94 65 94 67 88 67 88 65ZM149 134 153 134 152 137 155 137 155 134 162 134 163 153 156 153 156 150 153 150 153 153 149 153 149 150ZM119 135 129 153 147 153 147 150 149 150 149 134ZM147 184 152 193 165 189 165 184 157 184 153 184ZM117 118 145 92 160 97 162 134 155 134 153 134 149 134 119 135 116 129ZM228 178 198 178 195 175 192 138 194 138 194 133 226 134 227 141 221 141 221 144 227 144 227 154 227 156 222 156 222 172 228 172ZM229 137 229 154 227 154 227 156 227 160 232 160 232 178 235 177 240 178 240 176 244 176 244 178 249 178 251 177 253 178 253 161 254 155 250 155 250 137 249 139 247 139 247 137 242 137 242 139 238 139 238 137 233 137 231 138ZM326 147 326 136 305 136 298 136 299 147 304 147ZM326 136 324 113 320 110 305 110 305 123 305 136ZM301 181 319 181 318 174 318 171 315 170 315 167 318 167 318 163 300 163 300 168 304 168 304 171 300 171ZM267 113 271 109 284 109 283 135 268 135ZM423 135 423 117 426 114 458 115 458 130 451 130 451 139 437 139 437 135ZM445 172 438 182 435 184 432 184 432 175 432 171ZM461 150 449 167 439 166 439 150 446 150 446 153 449 153 449 150ZM475 131 469 139 459 139 459 130ZM458 115 481 115 483 120 475 131 459 130ZM423 174 422 183 432 184 432 175ZM458 176 454 182 454 184 464 184 464 176ZM475 169 475 156 473 156 464 168ZM475 176 475 169 464 168 458 176 464 176ZM482 158 482 166 488 166 491 166 494 166 497 166 500 166 503 166 508 167 508 159 506 159 504 159ZM482 166 482 183 483 185 488 185 488 166ZM488 185 494 185 494 175 491 175 491 166 488 166ZM495 125 485 140 508 140 510 140 517 140 517 135 517 125ZM524 140 524 135 524 117 537 117 537 128 537 140 530 140ZM198 196 198 194 200 191 204 191 204 196ZM244 239 256 240 259 237 258 224 252 224 252 228 244 228ZM237 239 244 239 244 228 240 227 240 223 237 223 237 227 237 231 240 231 240 234 237 234ZM212 191 219 191 219 202 211 202ZM204 191 212 191 211 202 209 202 209 199 206 199 206 202 204 202 204 196ZM331 204 331 212 327 211 324 210 322 211 321 205ZM321 193 328 193 330 197 331 204 321 205ZM318 225 309 225 310 241 318 241ZM316 193 321 193 321 205 321 211 316 211ZM286 211 292 211 292 208 295 208 295 193 287 192ZM344 205 344 197 347 194 354 195 354 205 351 205ZM360 242 350 242 347 238 346 226 350 226 354 226 354 228 356 229 356 226 360 226 360 232 360 235ZM393 195 411 196 413 198 414 213 393 213 393 206 395 206 395 203 393 203ZM382 195 393 195 393 203 393 206 393 213 388 213 385 213 382 213ZM371 195 377 195 376 213 371 213ZM365 195 371 195 371 213 365 212ZM359 195 365 195 365 212 359 212 359 208 359 205ZM474 236 474 244 466 244 466 239 469 239 469 236ZM426 221 431 215 447 215 450 215 453 215 453 222ZM460 198 471 198 475 200 474 210 460 210ZM453 198 460 198 460 210 453 210ZM495 198 502 198 502 204 499 204 499 207 502 207 502 215 500 215 495 215 495 210 497 210 497 207 495 207ZM515 245 484 244 481 242 482 222 488 222 495 222 500 222 508 222 515 221ZM508 198 516 198 516 210 513 210 513 212 516 212 516 216 514 216 514 218 515 221 509 221 509 218 508 215 510 215 510 211 508 211 508 207 508 204ZM482 209 482 200 484 198 495 198 495 207 495 209ZM261 274 262 292 260 294 253 294 252 287 254 287 254 280 252 280 252 274 254 274ZM276 261 277 272 287 272 289 272 292 272 298 272 297 261 287 261ZM287 249 279 249 275 252 276 261 287 261 287 258 284 257 284 255 287 255ZM336 262 335 252 332 250 326 250 326 262 329 262ZM326 262 320 262 320 258 320 256 320 250 326 250ZM277 272 278 290 282 294 287 294 287 275 287 272ZM313 249 305 249 305 257 307 257 307 259 305 259 305 261 307 261 313 261 313 259 310 258 310 255 313 255ZM349 267 349 262 355 262 360 262 362 262 362 266ZM370 251 375 251 374 263 370 263ZM350 282 350 277 359 277 359 282ZM366 251 370 251 370 263 366 262 366 260 366 258ZM372 271 368 276 359 277 359 271 362 271 364 271 366 271ZM350 277 349 271 355 271 358 271 359 277ZM413 275 413 254 411 252 405 252 402 254 393 265 393 275ZM387 274 393 265 393 275 393 293 387 293 387 288 387 286ZM474 290 471 292 456 292 456 284 459 284 459 281 456 281 456 274 459 273 463 273 463 277 474 277ZM463 253 473 253 474 255 474 265 471 265 472 263 469 263 469 265 456 265 456 261 462 261 466 261 466 259 463 258ZM426 293 420 293 420 278 424 278 426 278ZM420 264 427 264 427 261 429 261 429 259 429 252 424 252 420 254ZM534 254 528 254 528 260 527 266 534 266 534 263 534 260ZM481 265 481 256 484 253 496 254 496 262 493 263 493 265 489 265ZM535 292 552 291 552 284 544 285 544 287 539 287 539 285 537 285 537 287 535 287ZM546 254 540 254 540 261 540 264 540 266 542 266 545 266ZM603 291 603 283 594 282 594 286 593 282 590 282 590 284 590 291ZM604 268 604 259 601 256 582 255 582 267ZM280 319 281 332 284 335 309 335 309 324 300 325 301 327 295 327 294 324 289 324 289 319ZM280 319 279 307 282 304 289 304 289 319ZM309 335 339 335 341 332 340 319 323 319 316 319 310 319 309 324ZM340 319 339 307 335 304 321 304 323 319ZM369 302 366 302 360 310 360 313 369 313ZM360 319 360 335 366 335 366 321 366 319ZM450 392 457 392 457 386 455 386 455 383 457 383 457 381 457 375 454 374 454 372 453 369 450 369ZM443 344 436 344 436 352 436 355 436 358 436 365 436 368 443 368 443 359ZM413 385 413 392 407 392 407 388 404 388 404 385 406 385ZM360 383 360 375 370 375 370 383ZM360 368 360 362 367 362 367 364 369 364 369 362 372 362 375 362 375 368 369 368 369 365 366 365 366 368ZM360 362 360 344 367 344 367 362ZM268 378 267 368 251 368 251 370 251 379ZM267 368 266 357 251 357 251 365 251 368ZM266 357 266 349 263 345 251 346 251 357ZM244 346 238 346 239 368 245 368 245 365 244 358 244 355ZM584 400 601 400 603 403 603 414 589 414 584 414ZM603 421 603 433 600 436 589 436 589 421ZM508 436 499 436 498 427 498 420 498 418 501 418 502 421 505 421 505 418 508 418ZM491 436 482 436 480 434 480 427 491 427ZM480 420 480 411 486 411 490 412 495 411 495 413 498 412 498 416 498 418 495 419 491 420 489 420 489 418 485 419ZM554 425 554 436 545 436 545 425ZM544 400 544 407 553 407 553 402 552 400ZM412 415 412 422 406 422 403 421 397 422 397 419 397 415ZM473 425 473 436 462 436 463 425ZM443 400 450 400 450 418 446 418 444 418ZM404 436 397 436 397 427 399 427 403 427ZM382 400 390 400 390 408 390 410 390 416 388 416 388 419 385 419 385 416 382 416ZM382 436 372 436 372 430 372 418 376 418 376 422 378 422 378 418 382 418 382 430ZM360 400 360 418 368 418 368 409 366 409 366 405 368 405 368 400ZM285 413 286 423 302 423 302 419 303 413ZM285 413 285 406 290 401 305 401 305 413 303 413ZM323 401 317 401 318 419 323 418 323 408ZM302 436 313 436 313 419 303 419 302 423ZM286 423 286 436 302 436 302 423ZM270 423 271 432 269 436 255 436 255 429 257 429 257 427 255 427 255 424 257 424ZM270 418 270 423 257 424 257 421 255 421 254 418 257 418ZM215 424 215 414 233 413 233 418 232 423 225 424 221 424ZM254 401 267 401 269 403 270 412 254 412 254 409 256 409 256 407 254 407ZM244 436 232 436 232 429 232 426 232 423 232 418 237 418 237 421 239 421 239 418 244 418ZM554 456 554 461 541 461 541 456ZM541 445 554 445 554 456 541 456ZM604 475 604 460 586 460 586 465 586 472 586 475 586 480 591 481 591 475 597 475ZM603 455 603 445 595 445 596 451 598 452 598 454 596 454ZM473 467 473 460 462 460 462 467 469 467ZM473 460 473 454 467 454 467 456 466 454 463 454 462 460ZM456 445 450 445 450 463 450 467 456 467 456 459 454 459 454 457 456 457 456 451 454 451 454 449 456 449ZM419 481 419 487 422 490 444 490 444 472 439 472 439 475 436 475 436 472 431 472 431 479 431 481 429 481ZM359 463 360 448 362 448 362 445 368 445 367 465 365 465 365 463ZM289 466 289 462 289 459 288 454 288 451 288 449 290 447 298 447 303 447 316 446 333 446 344 446 346 449 346 466 330 466 326 466 315 466 306 466 304 466 296 466ZM299 489 307 489 306 472 298 472ZM289 472 290 487 293 489 299 489 298 472ZM261 446 269 446 273 449 273 457 262 457ZM235 446 242 446 243 467 237 467 237 464 236 458 236 454ZM229 446 235 446 236 454 235 458 237 464 234 464 234 467 230 467ZM219 467 218 449 219 446 229 446 230 467 225 467 223 467ZM226 489 222 489 220 488 219 467 223 467 223 469 225 469 225 471 223 471 223 474 225 474ZM414 699 413 709 425 710 426 704 430 705 428 720 423 720 416 718 412 718 413 713 409 712 410 702 411 699ZM585 723 582 742 603 746 602 723ZM576 686 582 686 586 685 594 685 602 685 602 691 599 691 585 691 585 694 599 694 602 695 602 700 583 700 579 699 579 690 576 690ZM479 547 479 581 481 582 490 579 489 545 482 545ZM545 559 555 555 555 544 545 544ZM604 526 605 532 603 534 585 535 585 526ZM226 500 226 505 225 510 226 520 225 525 226 530 245 530 245 520 244 510 245 506 244 500ZM514 498 505 498 505 513 514 513ZM419 517 419 537 434 537 434 519 434 517 430 517ZM359 546 359 582 385 582 385 573 381 573 381 563 391 563 391 580 412 579 412 545ZM557 105 570 106 571 87 557 87ZM528 86 530 102 532 104 547 105 548 87ZM570 106 585 106 586 103 585 93 584 87 571 87ZM224 625 217 624 220 632 223 632 225 637 236 630 238 628 243 624 239 620 233 621 225 624Z",
+  "locales": [
+    {
+      "slug": "optica-2000",
+      "nombre": "Óptica 2000",
+      "categoria": "Salud",
+      "x": 403.4,
+      "y": -43.2,
+      "w": 106.8,
+      "h": 59.2
+    },
+    {
+      "slug": "b-a-m-alfaship",
+      "nombre": "B A M Alfaship",
+      "categoria": "Alimentación",
+      "x": 600.9,
+      "y": 118.9,
+      "w": 11.9,
+      "h": 23.2
+    },
+    {
+      "slug": "buy-muscle-las-palmas",
+      "nombre": "Buy Muscle Las Palmas",
+      "categoria": "Deporte y ocio",
+      "x": 612.8,
+      "y": 118.9,
+      "w": 11.9,
+      "h": 23.2
+    },
+    {
+      "slug": "real-club-nautico",
+      "nombre": "Real Club Nautico",
+      "categoria": "Restaurantes",
+      "x": 680.1,
+      "y": 139.6,
+      "w": 54.0,
+      "h": 38.9
+    },
+    {
+      "slug": "la-trastienda-fabrica-de-sabores",
+      "nombre": "La Trastienda Fábrica de Sabores",
+      "categoria": "Alimentación",
+      "x": 466.6,
+      "y": 383.6,
+      "w": 6.8,
+      "h": 7.9
+    },
+    {
+      "slug": "cafeteria-nestor",
+      "nombre": "Cafetería Néstor",
+      "categoria": "Bares y cafés",
+      "x": 294.1,
+      "y": 109.2,
+      "w": 11.2,
+      "h": 13.5
+    },
+    {
+      "slug": "eurofiel",
+      "nombre": "Eurofiel",
+      "categoria": "Moda",
+      "x": 521.5,
+      "y": -19.2,
+      "w": 14.1,
+      "h": 25.5
+    },
+    {
+      "slug": "styleform",
+      "nombre": "Styleform",
+      "categoria": "Belleza",
+      "x": 535.7,
+      "y": -19.2,
+      "w": 14.1,
+      "h": 25.5
+    },
+    {
+      "slug": "bata",
+      "nombre": "Bata",
+      "categoria": "Moda",
+      "x": 382.2,
+      "y": -5.1,
+      "w": 12.6,
+      "h": 23.8
+    },
+    {
+      "slug": "m-s-outlet",
+      "nombre": "M&S Outlet",
+      "categoria": "Bazares",
+      "x": 394.8,
+      "y": -5.1,
+      "w": 12.6,
+      "h": 23.8
+    },
+    {
+      "slug": "intimissimi",
+      "nombre": "Intimissimi",
+      "categoria": "Moda",
+      "x": 331.2,
+      "y": -3.5,
+      "w": 16.7,
+      "h": 26.5
+    },
+    {
+      "slug": "mango",
+      "nombre": "Mango",
+      "categoria": "Moda",
+      "x": 347.9,
+      "y": -3.5,
+      "w": 16.7,
+      "h": 26.5
+    },
+    {
+      "slug": "stradivarius",
+      "nombre": "Stradivarius",
+      "categoria": "Moda",
+      "x": 364.6,
+      "y": -3.5,
+      "w": 16.7,
+      "h": 26.5
+    },
+    {
+      "slug": "bbva-58",
+      "nombre": "BBVA",
+      "categoria": "Servicios",
+      "x": 260.3,
+      "y": -28.2,
+      "w": 19.6,
+      "h": 57.0
+    },
+    {
+      "slug": "united-colors-of-benetton-21",
+      "nombre": "United Colors of Benetton",
+      "categoria": "Moda",
+      "x": 238.9,
+      "y": -26.5,
+      "w": 18.5,
+      "h": 56.2
+    },
+    {
+      "slug": "gelateria-naturale-come-mi-gira",
+      "nombre": "Gelateria Naturale, Come Mi Gira?",
+      "categoria": "Bares y cafés",
+      "x": 218.1,
+      "y": -24.9,
+      "w": 18.7,
+      "h": 56.5
+    },
+    {
+      "slug": "sunglass-hut",
+      "nombre": "Sunglass Hut",
+      "categoria": "Salud",
+      "x": 222.9,
+      "y": 61.6,
+      "w": 19.2,
+      "h": 17.4
+    },
+    {
+      "slug": "banana-computer",
+      "nombre": "Banana Computer",
+      "categoria": "Electrónica",
+      "x": 193.9,
+      "y": 77.9,
+      "w": 31.9,
+      "h": 14.9
+    },
+    {
+      "slug": "la-garriga",
+      "nombre": "La Garriga",
+      "categoria": "Alimentación",
+      "x": 224.5,
+      "y": 78.5,
+      "w": 17.7,
+      "h": 14.9
+    },
+    {
+      "slug": "maria-luisa-antunez-jimenez-cardiologa-pediatra",
+      "nombre": "María Luisa Antúnez Jiménez Cardióloga Pediatra",
+      "categoria": "Salud",
+      "x": 242.0,
+      "y": 78.9,
+      "w": 9.4,
+      "h": 14.8
+    },
+    {
+      "slug": "scooter-s-pizza-factory",
+      "nombre": "Scooter's Pizza Factory",
+      "categoria": "Restaurantes",
+      "x": 251.4,
+      "y": 79.2,
+      "w": 9.4,
+      "h": 14.8
+    },
+    {
+      "slug": "duerme-descansa",
+      "nombre": "Duerme & Descansa",
+      "categoria": "Hogar y reformas",
+      "x": 260.7,
+      "y": 84.5,
+      "w": 6.0,
+      "h": 9.9
+    },
+    {
+      "slug": "momenti",
+      "nombre": "Momenti",
+      "categoria": "Moda",
+      "x": 266.7,
+      "y": 84.5,
+      "w": 6.0,
+      "h": 9.9
+    },
+    {
+      "slug": "el-buen-sabor",
+      "nombre": "El Buen Sabor",
+      "categoria": "Bares y cafés",
+      "x": 272.5,
+      "y": 80.8,
+      "w": 12.4,
+      "h": 15.3
+    },
+    {
+      "slug": "caixabank",
+      "nombre": "Caixabank",
+      "categoria": "Servicios",
+      "x": 285.0,
+      "y": 80.8,
+      "w": 12.4,
+      "h": 15.3
+    },
+    {
+      "slug": "bankinter",
+      "nombre": "Bankinter",
+      "categoria": "Servicios",
+      "x": 297.4,
+      "y": 80.8,
+      "w": 12.4,
+      "h": 15.3
+    },
+    {
+      "slug": "francisco-sosa-santana",
+      "nombre": "Francisco Sosa Santana",
+      "categoria": "Alimentación",
+      "x": 309.9,
+      "y": 80.8,
+      "w": 12.4,
+      "h": 15.3
+    },
+    {
+      "slug": "piluca-valeron",
+      "nombre": "Piluca Valerón",
+      "categoria": "Belleza",
+      "x": 333.7,
+      "y": 50.6,
+      "w": 21.0,
+      "h": 29.3
+    },
+    {
+      "slug": "jose-m-fernandez-valencia",
+      "nombre": "José Mª Fernández Valencia",
+      "categoria": "Salud",
+      "x": 334.0,
+      "y": 79.4,
+      "w": 16.1,
+      "h": 9.7
+    },
+    {
+      "slug": "yves-rocher",
+      "nombre": "Yves Rocher",
+      "categoria": "Belleza",
+      "x": 334.0,
+      "y": 89.2,
+      "w": 16.1,
+      "h": 9.7
+    },
+    {
+      "slug": "zipi-y-zape",
+      "nombre": "Zipi y Zape",
+      "categoria": "Deporte y ocio",
+      "x": 349.9,
+      "y": 79.7,
+      "w": 14.5,
+      "h": 19.7
+    },
+    {
+      "slug": "zara",
+      "nombre": "Zara",
+      "categoria": "Moda",
+      "x": 378.5,
+      "y": 43.9,
+      "w": 62.7,
+      "h": 37.6
+    },
+    {
+      "slug": "banco-santander-35",
+      "nombre": "Banco Santander",
+      "categoria": "Servicios",
+      "x": 364.1,
+      "y": 80.0,
+      "w": 26.6,
+      "h": 20.3
+    },
+    {
+      "slug": "caixabank-61",
+      "nombre": "Caixabank",
+      "categoria": "Servicios",
+      "x": 390.6,
+      "y": 80.5,
+      "w": 14.7,
+      "h": 20.2
+    },
+    {
+      "slug": "desvan-de-nestor",
+      "nombre": "Desván de Néstor",
+      "categoria": "Hogar y reformas",
+      "x": 405.1,
+      "y": 80.8,
+      "w": 15.4,
+      "h": 10.2
+    },
+    {
+      "slug": "rotensystem",
+      "nombre": "Rotensystem",
+      "categoria": "Moda",
+      "x": 405.1,
+      "y": 91.1,
+      "w": 15.4,
+      "h": 10.2
+    },
+    {
+      "slug": "la-faune",
+      "nombre": "La Faune",
+      "categoria": "Moda",
+      "x": 420.2,
+      "y": 81.1,
+      "w": 15.4,
+      "h": 10.3
+    },
+    {
+      "slug": "comercial-quintana-sanchez",
+      "nombre": "Comercial Quintana Sánchez",
+      "categoria": "Alimentación",
+      "x": 420.2,
+      "y": 91.5,
+      "w": 15.4,
+      "h": 10.3
+    },
+    {
+      "slug": "galeria-eduardo-santana",
+      "nombre": "Galería Eduardo Santana",
+      "categoria": "Deporte y ocio",
+      "x": 435.4,
+      "y": 81.4,
+      "w": 11.8,
+      "h": 10.4
+    },
+    {
+      "slug": "tintoreria-avenida",
+      "nombre": "Tintorería Avenida",
+      "categoria": "Servicios",
+      "x": 435.4,
+      "y": 91.8,
+      "w": 11.8,
+      "h": 10.4
+    },
+    {
+      "slug": "zen-by-mijin",
+      "nombre": "Zen By Mijin",
+      "categoria": "Belleza",
+      "x": 447.0,
+      "y": 81.6,
+      "w": 13.5,
+      "h": 21.0
+    },
+    {
+      "slug": "inkcrea-centro-de-impresion",
+      "nombre": "Inkcrea Centro de impresión",
+      "categoria": "Servicios",
+      "x": 527.2,
+      "y": 70.1,
+      "w": 27.9,
+      "h": 9.3
+    },
+    {
+      "slug": "zona-skate-shop",
+      "nombre": "Zona Skate Shop",
+      "categoria": "Deporte y ocio",
+      "x": 555.1,
+      "y": 70.1,
+      "w": 27.9,
+      "h": 9.3
+    },
+    {
+      "slug": "uniformes-maurice-larache",
+      "nombre": "Uniformes Maurice Larache",
+      "categoria": "Moda",
+      "x": 526.5,
+      "y": 60.9,
+      "w": 12.1,
+      "h": 9.5
+    },
+    {
+      "slug": "intermeco",
+      "nombre": "Intermeco",
+      "categoria": "Moda",
+      "x": 538.6,
+      "y": 60.9,
+      "w": 12.1,
+      "h": 9.5
+    },
+    {
+      "slug": "el-kilo-de-san-bernardo",
+      "nombre": "El Kilo de San Bernardo",
+      "categoria": "Moda",
+      "x": 525.7,
+      "y": 48.5,
+      "w": 55.3,
+      "h": 13.4
+    },
+    {
+      "slug": "jugueterias-nikki",
+      "nombre": "Jugueterías Nikki",
+      "categoria": "Deporte y ocio",
+      "x": 525.3,
+      "y": 36.5,
+      "w": 27.1,
+      "h": 13.1
+    },
+    {
+      "slug": "casa",
+      "nombre": "CASA",
+      "categoria": "Hogar y reformas",
+      "x": 552.4,
+      "y": 36.5,
+      "w": 27.1,
+      "h": 13.1
+    },
+    {
+      "slug": "central-uniformes",
+      "nombre": "Central Uniformes",
+      "categoria": "Moda",
+      "x": 528.1,
+      "y": 79.4,
+      "w": 28.0,
+      "h": 8.0
+    },
+    {
+      "slug": "aleli-perfumeria-mesa-y-lopez",
+      "nombre": "Alelí Perfumería Mesa y López",
+      "categoria": "Belleza",
+      "x": 556.2,
+      "y": 79.4,
+      "w": 28.0,
+      "h": 8.0
+    },
+    {
+      "slug": "pronovias",
+      "nombre": "Pronovias",
+      "categoria": "Moda",
+      "x": 590.5,
+      "y": 26.3,
+      "w": 11.3,
+      "h": 21.4
+    },
+    {
+      "slug": "ing",
+      "nombre": "ING",
+      "categoria": "Servicios",
+      "x": 601.8,
+      "y": 26.3,
+      "w": 11.3,
+      "h": 21.4
+    },
+    {
+      "slug": "cabali",
+      "nombre": "Cabali",
+      "categoria": "Bares y cafés",
+      "x": 613.1,
+      "y": 26.3,
+      "w": 11.3,
+      "h": 21.4
+    },
+    {
+      "slug": "natural-burguer",
+      "nombre": "Natural Burguer",
+      "categoria": "Restaurantes",
+      "x": 624.4,
+      "y": 26.3,
+      "w": 11.3,
+      "h": 21.4
+    },
+    {
+      "slug": "cafeteria-012",
+      "nombre": "Cafetería 012",
+      "categoria": "Bares y cafés",
+      "x": 635.6,
+      "y": 26.3,
+      "w": 11.3,
+      "h": 21.4
+    },
+    {
+      "slug": "monoculo",
+      "nombre": "Monóculo",
+      "categoria": "Restaurantes",
+      "x": 646.9,
+      "y": 26.3,
+      "w": 11.3,
+      "h": 21.4
+    },
+    {
+      "slug": "bahia-playa",
+      "nombre": "Bahía Playa",
+      "categoria": "Bares y cafés",
+      "x": 596.6,
+      "y": 87.1,
+      "w": 10.5,
+      "h": 19.8
+    },
+    {
+      "slug": "vcanto-cosmetica",
+      "nombre": "VCanto Cosmética",
+      "categoria": "Belleza",
+      "x": 606.2,
+      "y": 87.1,
+      "w": 30.4,
+      "h": 20.1
+    },
+    {
+      "slug": "martinez-canteli",
+      "nombre": "Martínez Canteli",
+      "categoria": "Bares y cafés",
+      "x": 593.3,
+      "y": 60.5,
+      "w": 24.1,
+      "h": 26.9
+    },
+    {
+      "slug": "farmacia-alicia-artiles-betancort",
+      "nombre": "Farmacia Alicia Artiles Betancort",
+      "categoria": "Salud",
+      "x": 617.4,
+      "y": 60.5,
+      "w": 24.1,
+      "h": 26.9
+    },
+    {
+      "slug": "farmacia-militar",
+      "nombre": "Farmacia Militar",
+      "categoria": "Salud",
+      "x": 750.2,
+      "y": 18.4,
+      "w": 12.2,
+      "h": 5.2
+    },
+    {
+      "slug": "restaurante-casa-suerte",
+      "nombre": "Restaurante Casa Suerte",
+      "categoria": "Restaurantes",
+      "x": 422.6,
+      "y": 144.2,
+      "w": 14.7,
+      "h": 22.0
+    },
+    {
+      "slug": "autoescuela-los-alisios",
+      "nombre": "Autoescuela Los Alisios",
+      "categoria": "Servicios",
+      "x": 105.9,
+      "y": -19.4,
+      "w": 11.1,
+      "h": 43.9
+    },
+    {
+      "slug": "drugstore-3",
+      "nombre": "Drugstore 3",
+      "categoria": "Servicios",
+      "x": 117.0,
+      "y": -19.4,
+      "w": 11.1,
+      "h": 43.9
+    },
+    {
+      "slug": "enzo",
+      "nombre": "Enzo",
+      "categoria": "Belleza",
+      "x": 128.1,
+      "y": -19.4,
+      "w": 11.1,
+      "h": 43.9
+    },
+    {
+      "slug": "equivalenza",
+      "nombre": "Equivalenza",
+      "categoria": "Belleza",
+      "x": 139.2,
+      "y": -19.4,
+      "w": 11.1,
+      "h": 43.9
+    },
+    {
+      "slug": "gaes-instituto-auditivo-integral",
+      "nombre": "Gaes, Instituto Auditivo Integral",
+      "categoria": "Salud",
+      "x": 150.3,
+      "y": -19.4,
+      "w": 11.1,
+      "h": 43.9
+    },
+    {
+      "slug": "panaria",
+      "nombre": "Panaria",
+      "categoria": "Alimentación",
+      "x": 161.4,
+      "y": -19.4,
+      "w": 11.1,
+      "h": 43.9
+    },
+    {
+      "slug": "bbva",
+      "nombre": "BBVA",
+      "categoria": "Servicios",
+      "x": 77.6,
+      "y": 35.9,
+      "w": 15.9,
+      "h": 42.6
+    },
+    {
+      "slug": "banco-santander-55",
+      "nombre": "Banco Santander",
+      "categoria": "Servicios",
+      "x": 93.5,
+      "y": 35.9,
+      "w": 15.9,
+      "h": 42.6
+    },
+    {
+      "slug": "select",
+      "nombre": "Select",
+      "categoria": "Moda",
+      "x": 109.5,
+      "y": 35.9,
+      "w": 15.9,
+      "h": 42.6
+    },
+    {
+      "slug": "carroussel",
+      "nombre": "Carroussel",
+      "categoria": "Belleza",
+      "x": 61.5,
+      "y": 12.8,
+      "w": 21.6,
+      "h": 24.3
+    },
+    {
+      "slug": "dania-peluqueria",
+      "nombre": "Dania Peluquería",
+      "categoria": "Belleza",
+      "x": 83.0,
+      "y": 12.8,
+      "w": 21.6,
+      "h": 24.3
+    },
+    {
+      "slug": "plaza-s-ferreteria",
+      "nombre": "Plaza's Ferretería",
+      "categoria": "Hogar y reformas",
+      "x": 104.6,
+      "y": 12.8,
+      "w": 21.6,
+      "h": 24.3
+    },
+    {
+      "slug": "buy-sell",
+      "nombre": "Buy & Sell",
+      "categoria": "Bazares",
+      "x": 81.0,
+      "y": 64.8,
+      "w": 16.8,
+      "h": 24.0
+    },
+    {
+      "slug": "terraza-amira",
+      "nombre": "Terraza Amira",
+      "categoria": "Bares y cafés",
+      "x": 97.8,
+      "y": 64.8,
+      "w": 16.8,
+      "h": 24.0
+    },
+    {
+      "slug": "game",
+      "nombre": "Game",
+      "categoria": "Electrónica",
+      "x": 149.1,
+      "y": 134.1,
+      "w": 14.0,
+      "h": 18.8
+    },
+    {
+      "slug": "clinica-dental-infantil-inmaculada-vinuela",
+      "nombre": "Clínica Dental Infantil Inmaculada Viñuela",
+      "categoria": "Salud",
+      "x": 119.3,
+      "y": 134.4,
+      "w": 30.0,
+      "h": 18.8
+    },
+    {
+      "slug": "bar-cafeteria-la-parada",
+      "nombre": "Bar Cafetería La Parada",
+      "categoria": "Bares y cafés",
+      "x": 146.5,
+      "y": 184.0,
+      "w": 9.2,
+      "h": 9.3
+    },
+    {
+      "slug": "cj-s-cafe",
+      "nombre": "Cj's Café",
+      "categoria": "Bares y cafés",
+      "x": 155.8,
+      "y": 184.0,
+      "w": 9.2,
+      "h": 9.3
+    },
+    {
+      "slug": "pizzeria-vino-e-cappuccino",
+      "nombre": "Pizzería Vino e Cappuccino",
+      "categoria": "Restaurantes",
+      "x": 115.7,
+      "y": 91.7,
+      "w": 5.8,
+      "h": 43.5
+    },
+    {
+      "slug": "autoescuela-eco",
+      "nombre": "Autoescuela Eco",
+      "categoria": "Servicios",
+      "x": 121.5,
+      "y": 91.7,
+      "w": 5.8,
+      "h": 43.5
+    },
+    {
+      "slug": "caixabank-143",
+      "nombre": "Caixabank",
+      "categoria": "Servicios",
+      "x": 127.3,
+      "y": 91.7,
+      "w": 5.8,
+      "h": 43.5
+    },
+    {
+      "slug": "biondi-elite-peluqueria",
+      "nombre": "Biondi Elite Peluquería",
+      "categoria": "Belleza",
+      "x": 133.1,
+      "y": 91.7,
+      "w": 5.8,
+      "h": 43.5
+    },
+    {
+      "slug": "mundo-iberico",
+      "nombre": "Mundo Ibérico",
+      "categoria": "Restaurantes",
+      "x": 138.9,
+      "y": 91.7,
+      "w": 5.8,
+      "h": 43.5
+    },
+    {
+      "slug": "visionlab",
+      "nombre": "Visionlab",
+      "categoria": "Salud",
+      "x": 144.7,
+      "y": 91.7,
+      "w": 5.8,
+      "h": 43.5
+    },
+    {
+      "slug": "world-tattoo-zone",
+      "nombre": "World Tattoo Zone",
+      "categoria": "Belleza",
+      "x": 150.5,
+      "y": 91.7,
+      "w": 5.8,
+      "h": 43.5
+    },
+    {
+      "slug": "caredent",
+      "nombre": "CareDent",
+      "categoria": "Salud",
+      "x": 156.3,
+      "y": 91.7,
+      "w": 5.8,
+      "h": 43.5
+    },
+    {
+      "slug": "bazar-oriental",
+      "nombre": "Bazar Oriental",
+      "categoria": "Bazares",
+      "x": 191.8,
+      "y": 133.1,
+      "w": 35.9,
+      "h": 45.0
+    },
+    {
+      "slug": "hiper-rastro-remar",
+      "nombre": "Hiper Rastro Remar",
+      "categoria": "Hogar y reformas",
+      "x": 226.7,
+      "y": 137.0,
+      "w": 27.2,
+      "h": 13.8
+    },
+    {
+      "slug": "panaderia-el-triguero",
+      "nombre": "Panadería El Triguero",
+      "categoria": "Alimentación",
+      "x": 226.7,
+      "y": 150.7,
+      "w": 27.2,
+      "h": 13.8
+    },
+    {
+      "slug": "entaban-belleza-integral",
+      "nombre": "Entaban Belleza Integral",
+      "categoria": "Belleza",
+      "x": 226.7,
+      "y": 164.5,
+      "w": 27.2,
+      "h": 13.8
+    },
+    {
+      "slug": "la-zanahoria-bioglobal",
+      "nombre": "La Zanahoria Bioglobal",
+      "categoria": "Alimentación",
+      "x": 298.4,
+      "y": 135.6,
+      "w": 28.0,
+      "h": 11.5
+    },
+    {
+      "slug": "albert-joyeros",
+      "nombre": "Albert Joyeros",
+      "categoria": "Moda",
+      "x": 304.6,
+      "y": 109.6,
+      "w": 21.0,
+      "h": 26.3
+    },
+    {
+      "slug": "bazar-kirin",
+      "nombre": "Bazar Kirin",
+      "categoria": "Alimentación",
+      "x": 300.0,
+      "y": 163.1,
+      "w": 18.6,
+      "h": 17.8
+    },
+    {
+      "slug": "centro-de-bronceado-la-playa",
+      "nombre": "Centro de Bronceado La Playa",
+      "categoria": "Belleza",
+      "x": 267.2,
+      "y": 108.7,
+      "w": 16.4,
+      "h": 8.9
+    },
+    {
+      "slug": "las-tablas-taberna-urbana",
+      "nombre": "Las Tablas Taberna Urbana",
+      "categoria": "Restaurantes",
+      "x": 267.2,
+      "y": 117.6,
+      "w": 16.4,
+      "h": 8.9
+    },
+    {
+      "slug": "rockabilly-burger-bar",
+      "nombre": "Rockabilly Burger Bar",
+      "categoria": "Restaurantes",
+      "x": 267.2,
+      "y": 126.5,
+      "w": 16.4,
+      "h": 8.9
+    },
+    {
+      "slug": "nestor-de-la-torre",
+      "nombre": "Néstor de la Torre",
+      "categoria": "Restaurantes",
+      "x": 422.6,
+      "y": 113.6,
+      "w": 17.8,
+      "h": 25.5
+    },
+    {
+      "slug": "optica-hermanas-jaen-martinez",
+      "nombre": "Óptica Hermanas Jaén Martínez",
+      "categoria": "Salud",
+      "x": 440.4,
+      "y": 113.6,
+      "w": 17.8,
+      "h": 25.5
+    },
+    {
+      "slug": "dulceria-parrilla",
+      "nombre": "Dulcería Parrilla",
+      "categoria": "Alimentación",
+      "x": 431.6,
+      "y": 171.3,
+      "w": 6.8,
+      "h": 12.4
+    },
+    {
+      "slug": "farmacia-maria-luisa-osborne-verdugo",
+      "nombre": "Farmacia María Luisa Osborne Verdugo",
+      "categoria": "Salud",
+      "x": 438.4,
+      "y": 171.3,
+      "w": 6.8,
+      "h": 12.4
+    },
+    {
+      "slug": "peluqueria-victor-santana",
+      "nombre": "Peluquería Victor Santana",
+      "categoria": "Belleza",
+      "x": 438.5,
+      "y": 149.8,
+      "w": 11.3,
+      "h": 16.9
+    },
+    {
+      "slug": "the-black-blood-tattoo",
+      "nombre": "The Black Blood Tattoo",
+      "categoria": "Belleza",
+      "x": 449.8,
+      "y": 149.8,
+      "w": 11.3,
+      "h": 16.9
+    },
+    {
+      "slug": "el-taller-de-allende",
+      "nombre": "El Taller de Allende",
+      "categoria": "Restaurantes",
+      "x": 458.8,
+      "y": 130.4,
+      "w": 16.1,
+      "h": 8.8
+    },
+    {
+      "slug": "cosmeticos-paquita-ors",
+      "nombre": "Cosméticos Paquita Ors",
+      "categoria": "Belleza",
+      "x": 458.2,
+      "y": 114.6,
+      "w": 25.2,
+      "h": 16.6
+    },
+    {
+      "slug": "centro-de-formacion-vial-las-palmas",
+      "nombre": "Centro de Formación Vial Las Palmas",
+      "categoria": "Servicios",
+      "x": 422.4,
+      "y": 174.3,
+      "w": 4.7,
+      "h": 9.2
+    },
+    {
+      "slug": "peluqueria-shenmei",
+      "nombre": "Peluquería Shenmei",
+      "categoria": "Belleza",
+      "x": 427.1,
+      "y": 174.3,
+      "w": 4.7,
+      "h": 9.2
+    },
+    {
+      "slug": "b-the-travel-brand",
+      "nombre": "B The Travel Brand",
+      "categoria": "Servicios",
+      "x": 453.7,
+      "y": 176.1,
+      "w": 5.1,
+      "h": 8.2
+    },
+    {
+      "slug": "peluqueria-mijin-jung",
+      "nombre": "Peluquería Mijin Jung",
+      "categoria": "Belleza",
+      "x": 458.8,
+      "y": 176.1,
+      "w": 5.1,
+      "h": 8.2
+    },
+    {
+      "slug": "tienda-avon",
+      "nombre": "Tienda Avon",
+      "categoria": "Belleza",
+      "x": 464.0,
+      "y": 155.6,
+      "w": 10.8,
+      "h": 13.1
+    },
+    {
+      "slug": "centrobell-cosmetica",
+      "nombre": "CentroBell Cosmética",
+      "categoria": "Belleza",
+      "x": 458.2,
+      "y": 168.2,
+      "w": 16.6,
+      "h": 8.3
+    },
+    {
+      "slug": "banak-importa-gran-canaria",
+      "nombre": "Banak Importa Gran Canaria",
+      "categoria": "Hogar y reformas",
+      "x": 482.0,
+      "y": 158.4,
+      "w": 25.8,
+      "h": 8.2
+    },
+    {
+      "slug": "viajes-paralelo-28",
+      "nombre": "Viajes Paralelo 28",
+      "categoria": "Servicios",
+      "x": 481.8,
+      "y": 166.1,
+      "w": 5.8,
+      "h": 18.8
+    },
+    {
+      "slug": "veterinario-clinica-can",
+      "nombre": "Veterinario Clinica Can",
+      "categoria": "Salud",
+      "x": 487.6,
+      "y": 166.2,
+      "w": 6.1,
+      "h": 18.8
+    },
+    {
+      "slug": "bacoterapia",
+      "nombre": "Bacoterapia",
+      "categoria": "Restaurantes",
+      "x": 484.6,
+      "y": 124.9,
+      "w": 32.6,
+      "h": 15.5
+    },
+    {
+      "slug": "neurovitalia-las-palmas",
+      "nombre": "NeuroVitalia Las Palmas",
+      "categoria": "Salud",
+      "x": 523.8,
+      "y": 116.6,
+      "w": 13.4,
+      "h": 12.0
+    },
+    {
+      "slug": "centro-de-bienestar-nestor-de-la-torre",
+      "nombre": "Centro De Bienestar Nestor de la Torre",
+      "categoria": "Belleza",
+      "x": 523.8,
+      "y": 128.5,
+      "w": 13.4,
+      "h": 12.0
+    },
+    {
+      "slug": "boutique-del-fumador",
+      "nombre": "Boutique del Fumador",
+      "categoria": "Servicios",
+      "x": 197.5,
+      "y": 190.7,
+      "w": 6.3,
+      "h": 5.3
+    },
+    {
+      "slug": "restaurante-el-coto-libanes",
+      "nombre": "Restaurante El Coto Libanés",
+      "categoria": "Restaurantes",
+      "x": 243.7,
+      "y": 223.5,
+      "w": 15.1,
+      "h": 8.0
+    },
+    {
+      "slug": "vitacool-peluqueros",
+      "nombre": "Vitacool peluqueros",
+      "categoria": "Belleza",
+      "x": 243.7,
+      "y": 231.5,
+      "w": 15.1,
+      "h": 8.0
+    },
+    {
+      "slug": "asahi",
+      "nombre": "Asahi",
+      "categoria": "Restaurantes",
+      "x": 237.2,
+      "y": 223.4,
+      "w": 6.6,
+      "h": 15.8
+    },
+    {
+      "slug": "reelca",
+      "nombre": "Reelca",
+      "categoria": "Electrónica",
+      "x": 211.5,
+      "y": 191.0,
+      "w": 7.7,
+      "h": 11.3
+    },
+    {
+      "slug": "la-comida-de-katia",
+      "nombre": "La comida de Katia",
+      "categoria": "Alimentación",
+      "x": 203.8,
+      "y": 190.8,
+      "w": 8.0,
+      "h": 11.3
+    },
+    {
+      "slug": "acuario-pura-vida",
+      "nombre": "Acuario Pura Vida",
+      "categoria": "Mascotas",
+      "x": 321.2,
+      "y": 204.5,
+      "w": 10.2,
+      "h": 7.0
+    },
+    {
+      "slug": "halcon-viajes",
+      "nombre": "Halcón Viajes",
+      "categoria": "Servicios",
+      "x": 320.9,
+      "y": 192.8,
+      "w": 9.9,
+      "h": 11.7
+    },
+    {
+      "slug": "clinica-veterinaria-atlantico",
+      "nombre": "Clínica Veterinaria Atlántico",
+      "categoria": "Salud",
+      "x": 309.4,
+      "y": 225.3,
+      "w": 9.0,
+      "h": 15.8
+    },
+    {
+      "slug": "restaurante-rong-cheng",
+      "nombre": "Restaurante Rong Cheng",
+      "categoria": "Restaurantes",
+      "x": 315.7,
+      "y": 192.8,
+      "w": 5.6,
+      "h": 18.6
+    },
+    {
+      "slug": "enhebrate",
+      "nombre": "Enhébrate",
+      "categoria": "Moda",
+      "x": 286.5,
+      "y": 192.4,
+      "w": 8.5,
+      "h": 9.2
+    },
+    {
+      "slug": "pescaderia-sargo",
+      "nombre": "Pescadería Sargo",
+      "categoria": "Alimentación",
+      "x": 286.5,
+      "y": 201.6,
+      "w": 8.5,
+      "h": 9.2
+    },
+    {
+      "slug": "opticas-herrera-cerpa-mercado-central",
+      "nombre": "Ópticas Herrera Cerpa Mercado Central",
+      "categoria": "Salud",
+      "x": 344.2,
+      "y": 194.4,
+      "w": 9.6,
+      "h": 10.3
+    },
+    {
+      "slug": "tiki-taco",
+      "nombre": "TIKI TACO",
+      "categoria": "Restaurantes",
+      "x": 346.4,
+      "y": 226.0,
+      "w": 13.4,
+      "h": 7.9
+    },
+    {
+      "slug": "tko",
+      "nombre": "TKO",
+      "categoria": "Restaurantes",
+      "x": 346.4,
+      "y": 233.9,
+      "w": 13.4,
+      "h": 7.9
+    },
+    {
+      "slug": "benitez-menaje",
+      "nombre": "Benítez Menaje",
+      "categoria": "Hogar y reformas",
+      "x": 392.6,
+      "y": 195.2,
+      "w": 7.0,
+      "h": 17.8
+    },
+    {
+      "slug": "colorin-tienda-de-costura",
+      "nombre": "Colorín Tienda de Costura",
+      "categoria": "Moda",
+      "x": 399.6,
+      "y": 195.2,
+      "w": 7.0,
+      "h": 17.8
+    },
+    {
+      "slug": "creativa-merceria-y-labores",
+      "nombre": "Creativa Mercería y Labores",
+      "categoria": "Moda",
+      "x": 406.6,
+      "y": 195.2,
+      "w": 7.0,
+      "h": 17.8
+    },
+    {
+      "slug": "papeleria-jost",
+      "nombre": "Papelería Jost",
+      "categoria": "Deporte y ocio",
+      "x": 381.7,
+      "y": 195.0,
+      "w": 11.1,
+      "h": 8.9
+    },
+    {
+      "slug": "supermercado-oriental",
+      "nombre": "Supermercado Oriental",
+      "categoria": "Alimentación",
+      "x": 381.7,
+      "y": 203.9,
+      "w": 11.1,
+      "h": 8.9
+    },
+    {
+      "slug": "supermercado-yong-xin",
+      "nombre": "Supermercado Yong Xin",
+      "categoria": "Alimentación",
+      "x": 370.7,
+      "y": 194.8,
+      "w": 5.8,
+      "h": 17.8
+    },
+    {
+      "slug": "restaurante-japones-osaka",
+      "nombre": "Restaurante Japonés Osaka",
+      "categoria": "Restaurantes",
+      "x": 364.9,
+      "y": 194.7,
+      "w": 6.2,
+      "h": 17.8
+    },
+    {
+      "slug": "bodeguita-central",
+      "nombre": "Bodeguita Central",
+      "categoria": "Restaurantes",
+      "x": 358.7,
+      "y": 194.6,
+      "w": 6.5,
+      "h": 17.9
+    },
+    {
+      "slug": "eskina-10",
+      "nombre": "Eskina 10",
+      "categoria": "Restaurantes",
+      "x": 466.4,
+      "y": 236.5,
+      "w": 7.9,
+      "h": 7.9
+    },
+    {
+      "slug": "comercial-yu-fong",
+      "nombre": "Comercial Yu Fong",
+      "categoria": "Bazares",
+      "x": 426.1,
+      "y": 214.6,
+      "w": 27.0,
+      "h": 6.9
+    },
+    {
+      "slug": "beauty-shop-s-a-u",
+      "nombre": "Beauty Shop S A U",
+      "categoria": "Belleza",
+      "x": 459.9,
+      "y": 198.1,
+      "w": 14.6,
+      "h": 12.3
+    },
+    {
+      "slug": "lino",
+      "nombre": "Lino",
+      "categoria": "Hogar y reformas",
+      "x": 452.8,
+      "y": 198.0,
+      "w": 7.2,
+      "h": 12.1
+    },
+    {
+      "slug": "restaurante-japones-kyoto",
+      "nombre": "Restaurante Japonés Kyoto",
+      "categoria": "Restaurantes",
+      "x": 494.6,
+      "y": 198.2,
+      "w": 7.2,
+      "h": 17.0
+    },
+    {
+      "slug": "spar",
+      "nombre": "Spar",
+      "categoria": "Alimentación",
+      "x": 481.4,
+      "y": 221.2,
+      "w": 11.3,
+      "h": 23.7
+    },
+    {
+      "slug": "dipesa",
+      "nombre": "Dipesa",
+      "categoria": "Alimentación",
+      "x": 492.7,
+      "y": 221.2,
+      "w": 11.3,
+      "h": 23.7
+    },
+    {
+      "slug": "personal-computer-sistem-canarias",
+      "nombre": "Personal Computer Sistem Canarias",
+      "categoria": "Electrónica",
+      "x": 504.0,
+      "y": 221.2,
+      "w": 11.3,
+      "h": 23.7
+    },
+    {
+      "slug": "pelaez-ceramicas",
+      "nombre": "Peláez Cerámicas",
+      "categoria": "Hogar y reformas",
+      "x": 507.8,
+      "y": 198.2,
+      "w": 8.6,
+      "h": 23.2
+    },
+    {
+      "slug": "bar-restaurante-alemania",
+      "nombre": "Bar Restaurante Alemania",
+      "categoria": "Restaurantes",
+      "x": 481.7,
+      "y": 198.1,
+      "w": 13.2,
+      "h": 10.8
+    },
+    {
+      "slug": "spar-234",
+      "nombre": "Spar",
+      "categoria": "Alimentación",
+      "x": 252.4,
+      "y": 273.7,
+      "w": 9.5,
+      "h": 20.3
+    },
+    {
+      "slug": "televes-las-palmas",
+      "nombre": "Televés Las Palmas",
+      "categoria": "Electrónica",
+      "x": 276.0,
+      "y": 260.7,
+      "w": 22.0,
+      "h": 11.6
+    },
+    {
+      "slug": "fruteria",
+      "nombre": "Frutería",
+      "categoria": "Alimentación",
+      "x": 275.4,
+      "y": 248.9,
+      "w": 11.5,
+      "h": 12.0
+    },
+    {
+      "slug": "garvi",
+      "nombre": "Garvi",
+      "categoria": "Moda",
+      "x": 325.9,
+      "y": 249.6,
+      "w": 9.6,
+      "h": 6.1
+    },
+    {
+      "slug": "todo-unas-desde-europa",
+      "nombre": "Todo uñas desde Europa",
+      "categoria": "Belleza",
+      "x": 325.9,
+      "y": 255.7,
+      "w": 9.6,
+      "h": 6.1
+    },
+    {
+      "slug": "la-taberna-del-viejo",
+      "nombre": "La Taberna del Viejo",
+      "categoria": "Restaurantes",
+      "x": 319.7,
+      "y": 249.6,
+      "w": 6.4,
+      "h": 12.1
+    },
+    {
+      "slug": "batch-pc",
+      "nombre": "Batch-PC",
+      "categoria": "Electrónica",
+      "x": 276.7,
+      "y": 272.1,
+      "w": 10.6,
+      "h": 10.8
+    },
+    {
+      "slug": "floristeria-la-pagoda",
+      "nombre": "Floristería La Pagoda",
+      "categoria": "Deporte y ocio",
+      "x": 276.7,
+      "y": 283.0,
+      "w": 10.6,
+      "h": 10.8
+    },
+    {
+      "slug": "jumesti",
+      "nombre": "Jumesti",
+      "categoria": "Moda",
+      "x": 304.6,
+      "y": 249.3,
+      "w": 8.6,
+      "h": 12.1
+    },
+    {
+      "slug": "cncsystem",
+      "nombre": "CNCSystem",
+      "categoria": "Electrónica",
+      "x": 348.6,
+      "y": 262.0,
+      "w": 6.7,
+      "h": 4.7
+    },
+    {
+      "slug": "la-sereta",
+      "nombre": "La Sereta",
+      "categoria": "Bares y cafés",
+      "x": 355.3,
+      "y": 262.0,
+      "w": 6.7,
+      "h": 4.7
+    },
+    {
+      "slug": "peluqueria-y-estetica-grissel-santana",
+      "nombre": "Peluquería y Estética Grissel Santana",
+      "categoria": "Belleza",
+      "x": 370.0,
+      "y": 250.8,
+      "w": 4.7,
+      "h": 12.0
+    },
+    {
+      "slug": "peluqueria-y-estetica-ruiz",
+      "nombre": "Peluquería y Estética Ruiz",
+      "categoria": "Belleza",
+      "x": 349.7,
+      "y": 276.5,
+      "w": 8.9,
+      "h": 5.8
+    },
+    {
+      "slug": "monyui-heras",
+      "nombre": "Monyui Heras",
+      "categoria": "Belleza",
+      "x": 365.7,
+      "y": 250.7,
+      "w": 4.6,
+      "h": 11.9
+    },
+    {
+      "slug": "la-piccola-italia",
+      "nombre": "La Piccola Italia",
+      "categoria": "Restaurantes",
+      "x": 358.6,
+      "y": 270.7,
+      "w": 13.7,
+      "h": 5.8
+    },
+    {
+      "slug": "online-tours-viajes-a-cuba",
+      "nombre": "Online Tours Viajes a Cuba",
+      "categoria": "Servicios",
+      "x": 349.3,
+      "y": 271.0,
+      "w": 9.3,
+      "h": 5.8
+    },
+    {
+      "slug": "enrique-schamann",
+      "nombre": "Enrique Schamann",
+      "categoria": "Hogar y reformas",
+      "x": 393.0,
+      "y": 251.6,
+      "w": 20.3,
+      "h": 11.5
+    },
+    {
+      "slug": "exclusivas-cardenes-y-caballero",
+      "nombre": "Exclusivas Cárdenes y Caballero",
+      "categoria": "Bazares",
+      "x": 393.0,
+      "y": 263.1,
+      "w": 20.3,
+      "h": 11.5
+    },
+    {
+      "slug": "dulceria-colomar",
+      "nombre": "Dulcería Colomar",
+      "categoria": "Alimentación",
+      "x": 386.8,
+      "y": 265.2,
+      "w": 6.3,
+      "h": 28.0
+    },
+    {
+      "slug": "bike-gran-canaria",
+      "nombre": "Bike Gran Canaria",
+      "categoria": "Hogar y reformas",
+      "x": 455.8,
+      "y": 273.0,
+      "w": 18.2,
+      "h": 19.4
+    },
+    {
+      "slug": "el-rincon-libanes",
+      "nombre": "El Rincón Libanés",
+      "categoria": "Restaurantes",
+      "x": 456.1,
+      "y": 252.8,
+      "w": 18.0,
+      "h": 12.1
+    },
+    {
+      "slug": "samoa",
+      "nombre": "Samoa",
+      "categoria": "Restaurantes",
+      "x": 420.3,
+      "y": 278.2,
+      "w": 5.8,
+      "h": 14.6
+    },
+    {
+      "slug": "padron-lenceria",
+      "nombre": "Padrón Lencería",
+      "categoria": "Moda",
+      "x": 420.4,
+      "y": 252.0,
+      "w": 9.0,
+      "h": 12.1
+    },
+    {
+      "slug": "antonio-acosta-enriquez",
+      "nombre": "Antonio Acosta Enríquez",
+      "categoria": "Motor",
+      "x": 527.4,
+      "y": 254.1,
+      "w": 6.7,
+      "h": 12.0
+    },
+    {
+      "slug": "lopacan-electronica",
+      "nombre": "Lopacan Electrónica",
+      "categoria": "Electrónica",
+      "x": 481.0,
+      "y": 253.3,
+      "w": 15.0,
+      "h": 11.5
+    },
+    {
+      "slug": "bazar-alcaravaneras",
+      "nombre": "Bazar Alcaravaneras",
+      "categoria": "Alimentación",
+      "x": 534.9,
+      "y": 284.4,
+      "w": 17.3,
+      "h": 7.2
+    },
+    {
+      "slug": "frutas-agustin-dominguez",
+      "nombre": "Frutas Agustín Domínguez",
+      "categoria": "Alimentación",
+      "x": 540.1,
+      "y": 254.3,
+      "w": 5.6,
+      "h": 12.0
+    },
+    {
+      "slug": "v-v-v-garcia-machin",
+      "nombre": "V.V.V. García Machín",
+      "categoria": "Hogar y reformas",
+      "x": 589.7,
+      "y": 282.4,
+      "w": 13.7,
+      "h": 8.7
+    },
+    {
+      "slug": "bar-sam",
+      "nombre": "Bar Sam",
+      "categoria": "Restaurantes",
+      "x": 581.9,
+      "y": 255.4,
+      "w": 10.9,
+      "h": 12.4
+    },
+    {
+      "slug": "comercial-naranjo-maquinaria-hosteleria-y-alimentacion",
+      "nombre": "Comercial Naranjo Maquinaria Hostelería y Alimentación",
+      "categoria": "Electrónica",
+      "x": 592.8,
+      "y": 255.4,
+      "w": 10.9,
+      "h": 12.4
+    },
+    {
+      "slug": "cainser-servicio-tecnico",
+      "nombre": "Cainser Servicio Técnico",
+      "categoria": "Electrónica",
+      "x": 279.7,
+      "y": 319.3,
+      "w": 9.8,
+      "h": 15.5
+    },
+    {
+      "slug": "center-gematel",
+      "nombre": "Center Gematel",
+      "categoria": "Electrónica",
+      "x": 289.5,
+      "y": 319.3,
+      "w": 9.8,
+      "h": 15.5
+    },
+    {
+      "slug": "gregorio-rodriguez-centro-ortopedico",
+      "nombre": "Gregorio Rodríguez Centro Ortopédico",
+      "categoria": "Salud",
+      "x": 299.3,
+      "y": 319.3,
+      "w": 9.8,
+      "h": 15.5
+    },
+    {
+      "slug": "farmacia-lantigua-usar",
+      "nombre": "Farmacia Lantigua Usar",
+      "categoria": "Salud",
+      "x": 279.0,
+      "y": 304.1,
+      "w": 10.5,
+      "h": 15.3
+    },
+    {
+      "slug": "copysuar",
+      "nombre": "CopySuAr",
+      "categoria": "Servicios",
+      "x": 309.0,
+      "y": 319.0,
+      "w": 16.2,
+      "h": 15.8
+    },
+    {
+      "slug": "la-tisana",
+      "nombre": "La Tisana",
+      "categoria": "Salud",
+      "x": 325.2,
+      "y": 319.0,
+      "w": 16.2,
+      "h": 15.8
+    },
+    {
+      "slug": "bazar-pio-xii",
+      "nombre": "Bazar Pío XII",
+      "categoria": "Bazares",
+      "x": 321.5,
+      "y": 303.7,
+      "w": 9.4,
+      "h": 15.4
+    },
+    {
+      "slug": "baza-minimercado",
+      "nombre": "Baza - Minimercado",
+      "categoria": "Alimentación",
+      "x": 330.9,
+      "y": 303.7,
+      "w": 9.4,
+      "h": 15.4
+    },
+    {
+      "slug": "bazar-galicia",
+      "nombre": "Bazar Galicia",
+      "categoria": "Servicios",
+      "x": 359.9,
+      "y": 302.2,
+      "w": 9.2,
+      "h": 5.2
+    },
+    {
+      "slug": "tapicerias-noroeste",
+      "nombre": "Tapicerías Noroeste",
+      "categoria": "Moda",
+      "x": 359.9,
+      "y": 307.4,
+      "w": 9.2,
+      "h": 5.2
+    },
+    {
+      "slug": "zapateria-infantil-100-pies",
+      "nombre": "Zapatería Infantil 100 pies",
+      "categoria": "Moda",
+      "x": 359.8,
+      "y": 318.7,
+      "w": 6.6,
+      "h": 16.5
+    },
+    {
+      "slug": "tomas-gil-izquierdo",
+      "nombre": "Tomás Gil Izquierdo",
+      "categoria": "Moda",
+      "x": 450.3,
+      "y": 369.1,
+      "w": 7.2,
+      "h": 22.5
+    },
+    {
+      "slug": "riegotec",
+      "nombre": "Riegotec",
+      "categoria": "Hogar y reformas",
+      "x": 436.2,
+      "y": 344.0,
+      "w": 7.1,
+      "h": 23.7
+    },
+    {
+      "slug": "bar-la-sacristia",
+      "nombre": "Bar La Sacristía",
+      "categoria": "Bares y cafés",
+      "x": 404.1,
+      "y": 385.2,
+      "w": 8.7,
+      "h": 6.4
+    },
+    {
+      "slug": "d-guijuelo",
+      "nombre": "D'Guijuelo",
+      "categoria": "Alimentación",
+      "x": 359.7,
+      "y": 374.7,
+      "w": 10.3,
+      "h": 8.5
+    },
+    {
+      "slug": "bazar-minimercado",
+      "nombre": "Bazar - Minimercado",
+      "categoria": "Alimentación",
+      "x": 359.7,
+      "y": 362.0,
+      "w": 15.1,
+      "h": 5.7
+    },
+    {
+      "slug": "asadero-el-puente",
+      "nombre": "Asadero El Puente",
+      "categoria": "Restaurantes",
+      "x": 359.7,
+      "y": 344.0,
+      "w": 6.9,
+      "h": 9.2
+    },
+    {
+      "slug": "levain-masa-madre",
+      "nombre": "Levain Masa Madre",
+      "categoria": "Alimentación",
+      "x": 359.7,
+      "y": 353.2,
+      "w": 6.9,
+      "h": 9.2
+    },
+    {
+      "slug": "ferreteria-mas-de-gaminde",
+      "nombre": "Ferretería Mas de Gaminde",
+      "categoria": "Hogar y reformas",
+      "x": 251.0,
+      "y": 367.6,
+      "w": 8.3,
+      "h": 11.1
+    },
+    {
+      "slug": "juveca",
+      "nombre": "Juveca",
+      "categoria": "Moda",
+      "x": 259.3,
+      "y": 367.6,
+      "w": 8.3,
+      "h": 11.1
+    },
+    {
+      "slug": "laveintitres",
+      "nombre": "Laveintitres",
+      "categoria": "Bares y cafés",
+      "x": 250.8,
+      "y": 357.1,
+      "w": 16.1,
+      "h": 10.8
+    },
+    {
+      "slug": "cin-pinturas-y-barnices",
+      "nombre": "Cin pinturas y barnices",
+      "categoria": "Hogar y reformas",
+      "x": 250.5,
+      "y": 345.5,
+      "w": 15.8,
+      "h": 11.9
+    },
+    {
+      "slug": "pecan-maquinaria-hosteleria",
+      "nombre": "Pecan Maquinaria Hostelería",
+      "categoria": "Electrónica",
+      "x": 238.1,
+      "y": 345.6,
+      "w": 6.6,
+      "h": 22.5
+    },
+    {
+      "slug": "free-motion-bike-center",
+      "nombre": "Free Motion Bike Center",
+      "categoria": "Motor",
+      "x": 583.7,
+      "y": 400.2,
+      "w": 19.4,
+      "h": 13.5
+    },
+    {
+      "slug": "running-proyect-canarias",
+      "nombre": "Running Proyect Canarias",
+      "categoria": "Deporte y ocio",
+      "x": 589.0,
+      "y": 420.9,
+      "w": 14.2,
+      "h": 15.5
+    },
+    {
+      "slug": "grapascan-maquinaria",
+      "nombre": "Grapascan Maquinaria",
+      "categoria": "Hogar y reformas",
+      "x": 498.4,
+      "y": 418.3,
+      "w": 9.9,
+      "h": 17.7
+    },
+    {
+      "slug": "imagen-y-sonido",
+      "nombre": "Imagen y Sonido",
+      "categoria": "Electrónica",
+      "x": 480.1,
+      "y": 426.9,
+      "w": 10.9,
+      "h": 9.2
+    },
+    {
+      "slug": "manhattan-computer",
+      "nombre": "Manhattan Computer",
+      "categoria": "Electrónica",
+      "x": 480.3,
+      "y": 411.1,
+      "w": 18.1,
+      "h": 8.7
+    },
+    {
+      "slug": "bazar-ainomar",
+      "nombre": "Bazar Ainomar",
+      "categoria": "Alimentación",
+      "x": 544.9,
+      "y": 425.4,
+      "w": 8.7,
+      "h": 10.4
+    },
+    {
+      "slug": "salon-fatima",
+      "nombre": "Salón Fátima",
+      "categoria": "Belleza",
+      "x": 543.7,
+      "y": 400.3,
+      "w": 9.7,
+      "h": 7.2
+    },
+    {
+      "slug": "panaderia-y-pasteleria-del-pino",
+      "nombre": "Panadería y Pastelería Del Pino",
+      "categoria": "Alimentación",
+      "x": 396.6,
+      "y": 414.8,
+      "w": 15.7,
+      "h": 7.1
+    },
+    {
+      "slug": "joyeria-sonia",
+      "nombre": "Joyería Sonia",
+      "categoria": "Moda",
+      "x": 462.5,
+      "y": 425.2,
+      "w": 10.7,
+      "h": 10.9
+    },
+    {
+      "slug": "eduardo-monzon-fotografo",
+      "nombre": "Eduardo Monzón Fotógrafo",
+      "categoria": "Servicios",
+      "x": 442.8,
+      "y": 400.4,
+      "w": 7.4,
+      "h": 17.8
+    },
+    {
+      "slug": "maria-del-carmen-hernandez-galvan",
+      "nombre": "María Del Carmen Hernández Galván",
+      "categoria": "Belleza",
+      "x": 396.6,
+      "y": 427.3,
+      "w": 7.9,
+      "h": 9.0
+    },
+    {
+      "slug": "renato-tatuajes",
+      "nombre": "Renato Tatuajes",
+      "categoria": "Belleza",
+      "x": 381.7,
+      "y": 400.5,
+      "w": 8.1,
+      "h": 18.1
+    },
+    {
+      "slug": "trigal",
+      "nombre": "Trigal",
+      "categoria": "Alimentación",
+      "x": 371.8,
+      "y": 418.4,
+      "w": 9.8,
+      "h": 17.8
+    },
+    {
+      "slug": "farmacia-pedro-liminana-jorge",
+      "nombre": "Farmacia Pedro Limiñana Jorge",
+      "categoria": "Salud",
+      "x": 359.5,
+      "y": 400.4,
+      "w": 8.2,
+      "h": 18.0
+    },
+    {
+      "slug": "pagasarri",
+      "nombre": "Pagasarri",
+      "categoria": "Restaurantes",
+      "x": 285.5,
+      "y": 412.7,
+      "w": 17.4,
+      "h": 10.6
+    },
+    {
+      "slug": "hermanos-diaz",
+      "nombre": "Hermanos Díaz",
+      "categoria": "Restaurantes",
+      "x": 285.2,
+      "y": 401.3,
+      "w": 6.7,
+      "h": 12.0
+    },
+    {
+      "slug": "las-cazuelas-de-antonio",
+      "nombre": "Las Cazuelas de Antonio",
+      "categoria": "Bares y cafés",
+      "x": 291.9,
+      "y": 401.3,
+      "w": 6.7,
+      "h": 12.0
+    },
+    {
+      "slug": "my-dream",
+      "nombre": "My dream",
+      "categoria": "Belleza",
+      "x": 298.6,
+      "y": 401.3,
+      "w": 6.7,
+      "h": 12.0
+    },
+    {
+      "slug": "k-marisu",
+      "nombre": "K´Marisu",
+      "categoria": "Restaurantes",
+      "x": 317.4,
+      "y": 401.3,
+      "w": 5.5,
+      "h": 17.2
+    },
+    {
+      "slug": "servicio-tecnico-guillermo-palmero",
+      "nombre": "Servicio Técnico Guillermo Palmero",
+      "categoria": "Electrónica",
+      "x": 302.0,
+      "y": 418.6,
+      "w": 10.9,
+      "h": 17.3
+    },
+    {
+      "slug": "salon-peluqueria-mercy",
+      "nombre": "Salón Peluquería Mercy",
+      "categoria": "Belleza",
+      "x": 285.9,
+      "y": 423.0,
+      "w": 16.3,
+      "h": 13.1
+    },
+    {
+      "slug": "pizza-real",
+      "nombre": "Pizza Real",
+      "categoria": "Restaurantes",
+      "x": 254.6,
+      "y": 423.0,
+      "w": 16.3,
+      "h": 12.8
+    },
+    {
+      "slug": "bar-tatono",
+      "nombre": "Bar Tatono",
+      "categoria": "Bares y cafés",
+      "x": 254.5,
+      "y": 417.6,
+      "w": 15.8,
+      "h": 6.0
+    },
+    {
+      "slug": "xerach-peluqueria",
+      "nombre": "Xerach Peluquería",
+      "categoria": "Belleza",
+      "x": 214.6,
+      "y": 412.7,
+      "w": 18.4,
+      "h": 11.5
+    },
+    {
+      "slug": "tienda-colchones-outlet-espanola-del-descanso",
+      "nombre": "Tienda Colchones Outlet Española del Descanso",
+      "categoria": "Hogar y reformas",
+      "x": 254.3,
+      "y": 401.4,
+      "w": 15.4,
+      "h": 11.1
+    },
+    {
+      "slug": "la-encina-de-zimmermann-alonso",
+      "nombre": "La Encina de Zimmermann Alonso",
+      "categoria": "Alimentación",
+      "x": 231.8,
+      "y": 418.2,
+      "w": 11.9,
+      "h": 17.7
+    },
+    {
+      "slug": "pizzeria-michelangelo",
+      "nombre": "Pizzeria Michelangelo",
+      "categoria": "Restaurantes",
+      "x": 540.8,
+      "y": 456.0,
+      "w": 13.5,
+      "h": 5.2
+    },
+    {
+      "slug": "meson-sabor-andaluz",
+      "nombre": "Mesón Sabor Andaluz",
+      "categoria": "Restaurantes",
+      "x": 540.8,
+      "y": 444.9,
+      "w": 13.4,
+      "h": 11.1
+    },
+    {
+      "slug": "restaurante-huifeng-yuan",
+      "nombre": "Restaurante Huifeng Yuan",
+      "categoria": "Restaurantes",
+      "x": 586.0,
+      "y": 460.2,
+      "w": 17.7,
+      "h": 20.4
+    },
+    {
+      "slug": "bar-el-cubi",
+      "nombre": "Bar El Cubi",
+      "categoria": "Bares y cafés",
+      "x": 595.4,
+      "y": 444.8,
+      "w": 8.0,
+      "h": 10.5
+    },
+    {
+      "slug": "senedrac-venta-y-servicio-tecnico",
+      "nombre": "Senedrac Venta y Servicio Técnico",
+      "categoria": "Electrónica",
+      "x": 462.5,
+      "y": 459.9,
+      "w": 10.4,
+      "h": 7.4
+    },
+    {
+      "slug": "drogueria-perfumeria-italia",
+      "nombre": "Droguería Perfumeria Italia",
+      "categoria": "Belleza",
+      "x": 462.5,
+      "y": 453.9,
+      "w": 10.4,
+      "h": 6.1
+    },
+    {
+      "slug": "velas-linton",
+      "nombre": "Velas Linton",
+      "categoria": "Hogar y reformas",
+      "x": 450.0,
+      "y": 445.0,
+      "w": 6.4,
+      "h": 22.2
+    },
+    {
+      "slug": "comercial-nolasco",
+      "nombre": "Comercial Nolasco",
+      "categoria": "Hogar y reformas",
+      "x": 419.4,
+      "y": 472.4,
+      "w": 24.2,
+      "h": 17.3
+    },
+    {
+      "slug": "febeda-bazar",
+      "nombre": "Febeda Bazar",
+      "categoria": "Servicios",
+      "x": 359.5,
+      "y": 444.9,
+      "w": 8.1,
+      "h": 10.2
+    },
+    {
+      "slug": "optica-pio-xii-70",
+      "nombre": "Óptica Pío XII 70",
+      "categoria": "Salud",
+      "x": 359.5,
+      "y": 455.1,
+      "w": 8.1,
+      "h": 10.2
+    },
+    {
+      "slug": "cegrisa",
+      "nombre": "Cegrisa",
+      "categoria": "Hogar y reformas",
+      "x": 288.0,
+      "y": 446.2,
+      "w": 58.3,
+      "h": 19.8
+    },
+    {
+      "slug": "tintoreria-isis",
+      "nombre": "Tintorería Isis",
+      "categoria": "Servicios",
+      "x": 298.5,
+      "y": 471.9,
+      "w": 8.9,
+      "h": 8.6
+    },
+    {
+      "slug": "alfonso-serrano-distribuciones-deportivas",
+      "nombre": "Alfonso Serrano Distribuciones Deportivas",
+      "categoria": "Deporte y ocio",
+      "x": 298.5,
+      "y": 480.5,
+      "w": 8.9,
+      "h": 8.6
+    },
+    {
+      "slug": "todo-estetica",
+      "nombre": "Todo Estética",
+      "categoria": "Belleza",
+      "x": 289.3,
+      "y": 471.8,
+      "w": 10.1,
+      "h": 17.4
+    },
+    {
+      "slug": "las-rejas-y-ole",
+      "nombre": "Las Rejas Y Olé",
+      "categoria": "Restaurantes",
+      "x": 261.1,
+      "y": 446.4,
+      "w": 11.7,
+      "h": 10.4
+    },
+    {
+      "slug": "tavio",
+      "nombre": "Tavio",
+      "categoria": "Servicios",
+      "x": 235.3,
+      "y": 446.4,
+      "w": 8.2,
+      "h": 20.5
+    },
+    {
+      "slug": "vinos-y-quesos",
+      "nombre": "Vinos y Quesos",
+      "categoria": "Bares y cafés",
+      "x": 228.9,
+      "y": 446.4,
+      "w": 7.8,
+      "h": 20.5
+    },
+    {
+      "slug": "central-de-representaciones-canarias",
+      "nombre": "Central de Representaciones Canarias",
+      "categoria": "Hogar y reformas",
+      "x": 217.5,
+      "y": 446.4,
+      "w": 12.8,
+      "h": 20.6
+    },
+    {
+      "slug": "taller-electrico-electroauto-canarias",
+      "nombre": "Taller Eléctrico Electroauto Canarias",
+      "categoria": "Motor",
+      "x": 218.8,
+      "y": 467.0,
+      "w": 7.2,
+      "h": 22.5
+    },
+    {
+      "slug": "cubo-producciones",
+      "nombre": "Cubo Producciones",
+      "categoria": "Bares y cafés",
+      "x": 409.0,
+      "y": 698.7,
+      "w": 20.8,
+      "h": 21.5
+    },
+    {
+      "slug": "velvet-hogar",
+      "nombre": "Velvet Hogar",
+      "categoria": "Hogar y reformas",
+      "x": 582.1,
+      "y": 722.8,
+      "w": 20.6,
+      "h": 22.8
+    },
+    {
+      "slug": "new-elise",
+      "nombre": "New Elise",
+      "categoria": "Belleza",
+      "x": 576.1,
+      "y": 684.8,
+      "w": 26.1,
+      "h": 15.4
+    },
+    {
+      "slug": "animal-lab-laboratorio",
+      "nombre": "Animal Lab Laboratorio",
+      "categoria": "Salud",
+      "x": 479.2,
+      "y": 544.6,
+      "w": 11.0,
+      "h": 37.5
+    },
+    {
+      "slug": "alarmas-prosegur",
+      "nombre": "Alarmas Prosegur",
+      "categoria": "Electrónica",
+      "x": 544.7,
+      "y": 543.8,
+      "w": 10.4,
+      "h": 15.2
+    },
+    {
+      "slug": "triodos-bank",
+      "nombre": "Triodos Bank",
+      "categoria": "Servicios",
+      "x": 585.2,
+      "y": 525.7,
+      "w": 19.3,
+      "h": 8.9
+    },
+    {
+      "slug": "peluqueria-de-mascotas-trufa",
+      "nombre": "Peluquería de Mascotas Trufa",
+      "categoria": "Mascotas",
+      "x": 225.0,
+      "y": 500.1,
+      "w": 19.7,
+      "h": 29.7
+    },
+    {
+      "slug": "el-equilibrista",
+      "nombre": "El Equilibrista",
+      "categoria": "Restaurantes",
+      "x": 504.9,
+      "y": 498.4,
+      "w": 9.3,
+      "h": 14.2
+    },
+    {
+      "slug": "hermanos-rogelio",
+      "nombre": "Hermanos Rogelio",
+      "categoria": "Restaurantes",
+      "x": 419.2,
+      "y": 516.6,
+      "w": 14.5,
+      "h": 20.0
+    },
+    {
+      "slug": "merca-oriental",
+      "nombre": "Merca Oriental",
+      "categoria": "Bazares",
+      "x": 359.0,
+      "y": 545.5,
+      "w": 13.3,
+      "h": 36.6
+    },
+    {
+      "slug": "acfi-press-agencia-de-fotografia",
+      "nombre": "Acfi Press Agencia de Fotografía",
+      "categoria": "Servicios",
+      "x": 372.3,
+      "y": 545.5,
+      "w": 13.3,
+      "h": 36.6
+    },
+    {
+      "slug": "carolan-fiestas",
+      "nombre": "Carolan Fiestas",
+      "categoria": "Bazares",
+      "x": 385.6,
+      "y": 545.5,
+      "w": 13.3,
+      "h": 36.6
+    },
+    {
+      "slug": "supermercado-mak",
+      "nombre": "Supermercado Mak",
+      "categoria": "Alimentación",
+      "x": 398.9,
+      "y": 545.5,
+      "w": 13.3,
+      "h": 36.6
+    },
+    {
+      "slug": "salon-alhambra",
+      "nombre": "Salón Alhambra",
+      "categoria": "Belleza",
+      "x": 557.5,
+      "y": 87.0,
+      "w": 13.3,
+      "h": 18.6
+    },
+    {
+      "slug": "i-parioli-pizzeria",
+      "nombre": "I. Parioli Pizzeria",
+      "categoria": "Restaurantes",
+      "x": 528.5,
+      "y": 86.4,
+      "w": 19.7,
+      "h": 18.3
+    },
+    {
+      "slug": "proteinacanaria-com",
+      "nombre": "ProteínaCanaria.com",
+      "categoria": "Salud",
+      "x": 569.8,
+      "y": 87.2,
+      "w": 16.6,
+      "h": 9.5
+    },
+    {
+      "slug": "son-8",
+      "nombre": "Son 8",
+      "categoria": "Bares y cafés",
+      "x": 569.8,
+      "y": 96.7,
+      "w": 16.6,
+      "h": 9.5
+    },
+    {
+      "slug": "pasteleria-don-pan",
+      "nombre": "Pastelería Don Pan",
+      "categoria": "Alimentación",
+      "x": 509.4,
+      "y": 74.5,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "monte-carlo",
+      "nombre": "Monte Carlo",
+      "categoria": "Restaurantes",
+      "x": 510.0,
+      "y": 58.3,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "el-buho",
+      "nombre": "El Buho",
+      "categoria": "Bares y cafés",
+      "x": 590.2,
+      "y": 231.4,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "cafeteria-coki",
+      "nombre": "Cafetería Cokí",
+      "categoria": "Bares y cafés",
+      "x": 208.9,
+      "y": -2.3,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "20conmigo",
+      "nombre": "20conmigo",
+      "categoria": "Restaurantes",
+      "x": 508.8,
+      "y": 537.0,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "el-corte-ingles",
+      "nombre": "El Corte Inglés",
+      "categoria": "Bazares",
+      "x": 478.3,
+      "y": 48.8,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "united-colors-of-benetton",
+      "nombre": "United Colors of Benetton",
+      "categoria": "Moda",
+      "x": 566.4,
+      "y": -2.5,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "terraza-plaza",
+      "nombre": "Terraza Plaza",
+      "categoria": "Bares y cafés",
+      "x": 188.5,
+      "y": 12.7,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "muselina",
+      "nombre": "Muselina",
+      "categoria": "Moda",
+      "x": 234.7,
+      "y": 11.2,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "zara-home",
+      "nombre": "Zara Home",
+      "categoria": "Hogar y reformas",
+      "x": 302.8,
+      "y": 20.1,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "pull-bear",
+      "nombre": "Pull & Bear",
+      "categoria": "Moda",
+      "x": 287.0,
+      "y": 11.7,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "massimo-dutti",
+      "nombre": "Massimo Dutti",
+      "categoria": "Moda",
+      "x": 312.3,
+      "y": 13.0,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "mcdonald-s",
+      "nombre": "McDonald's",
+      "categoria": "Restaurantes",
+      "x": 206.5,
+      "y": 66.1,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "foot-locker",
+      "nombre": "Foot Locker",
+      "categoria": "Moda",
+      "x": 278.3,
+      "y": 55.9,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "banco-santander",
+      "nombre": "Banco Santander",
+      "categoria": "Servicios",
+      "x": 301.3,
+      "y": 54.8,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "restaurante-la-sama",
+      "nombre": "Restaurante La Sama",
+      "categoria": "Restaurantes",
+      "x": 408.2,
+      "y": 107.9,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "hesperia",
+      "nombre": "Hesperia",
+      "categoria": "Deporte y ocio",
+      "x": 364.7,
+      "y": 532.2,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "superdino",
+      "nombre": "SuperDino",
+      "categoria": "Alimentación",
+      "x": 383.8,
+      "y": 527.8,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "atmaram-veena",
+      "nombre": "Atmaram, Veena",
+      "categoria": "Belleza",
+      "x": 464.7,
+      "y": 99.0,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "carlin",
+      "nombre": "Carlin",
+      "categoria": "Deporte y ocio",
+      "x": 205.3,
+      "y": 24.4,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "dimikelo-milano",
+      "nombre": "Dimikelo Milano",
+      "categoria": "Moda",
+      "x": 560.6,
+      "y": 31.0,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "eurekakids",
+      "nombre": "Eurekakids",
+      "categoria": "Moda",
+      "x": 267.8,
+      "y": 57.6,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "granier",
+      "nombre": "Granier",
+      "categoria": "Alimentación",
+      "x": 290.0,
+      "y": 17.7,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "peluqueria-unisex-sunao",
+      "nombre": "Peluquería Unisex Sunao",
+      "categoria": "Belleza",
+      "x": 205.5,
+      "y": 7.8,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "rieber-andrea",
+      "nombre": "Rieber Andrea",
+      "categoria": "Moda",
+      "x": 531.3,
+      "y": 33.0,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "rocasa-nestor-de-la-torre",
+      "nombre": "Rocasa Néstor de la Torre",
+      "categoria": "Hogar y reformas",
+      "x": 478.2,
+      "y": 99.3,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "sakura-i",
+      "nombre": "Sakura I",
+      "categoria": "Restaurantes",
+      "x": 219.0,
+      "y": 106.2,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "starbucks",
+      "nombre": "Starbucks",
+      "categoria": "Bares y cafés",
+      "x": 456.0,
+      "y": 42.0,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "stil-canarias-cocinas",
+      "nombre": "Stil Canarias Cocinas",
+      "categoria": "Hogar y reformas",
+      "x": 231.7,
+      "y": 106.5,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "2000-autoescuelas",
+      "nombre": "2000 Autoescuelas",
+      "categoria": "Servicios",
+      "x": 306.9,
+      "y": 54.9,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "bar-cafeteria-churreria-mercado-central",
+      "nombre": "Bar Cafetería Churrería Mercado Central",
+      "categoria": "Bares y cafés",
+      "x": 406.2,
+      "y": 138.1,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "cash-converters-las-palmas",
+      "nombre": "Cash Converters Las Palmas",
+      "categoria": "Bazares",
+      "x": 268.6,
+      "y": 146.5,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "europan-2012",
+      "nombre": "Europan 2012",
+      "categoria": "Alimentación",
+      "x": 268.7,
+      "y": 156.3,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "peluqueria-mh",
+      "nombre": "Peluquería MH",
+      "categoria": "Belleza",
+      "x": 203.7,
+      "y": 105.8,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "superdino-133",
+      "nombre": "SuperDino",
+      "categoria": "Alimentación",
+      "x": 269.7,
+      "y": 172.4,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "24-horas-vip-noche-y-dia",
+      "nombre": "24 Horas Vip noche y día",
+      "categoria": "Alimentación",
+      "x": 245.7,
+      "y": 109.0,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "cristal",
+      "nombre": "Cristal",
+      "categoria": "Restaurantes",
+      "x": 227.9,
+      "y": 189.3,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "hoock-las-palmas",
+      "nombre": "Hoock Las Palmas",
+      "categoria": "Bares y cafés",
+      "x": 253.7,
+      "y": 209.2,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "la-palmita-bar-y-tapas",
+      "nombre": "La Palmita Bar y Tapas",
+      "categoria": "Bares y cafés",
+      "x": 589.6,
+      "y": 205.4,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "savialud",
+      "nombre": "Savialud",
+      "categoria": "Alimentación",
+      "x": 305.7,
+      "y": 190.4,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "bar-restaurante-villa-de-madrid",
+      "nombre": "Bar Restaurante Villa de Madrid",
+      "categoria": "Bares y cafés",
+      "x": 269.5,
+      "y": 467.8,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "distamaran",
+      "nombre": "Distamaran",
+      "categoria": "Belleza",
+      "x": 271.3,
+      "y": 504.0,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "la-garriga-mas-de-gaminde",
+      "nombre": "La Garriga Mas de Gaminde",
+      "categoria": "Alimentación",
+      "x": 269.2,
+      "y": 457.2,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "nueva-imagen",
+      "nombre": "Nueva Imagen",
+      "categoria": "Belleza",
+      "x": 260.5,
+      "y": 485.1,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "sebastian-peluqueros",
+      "nombre": "Sebastián peluqueros",
+      "categoria": "Belleza",
+      "x": 289.3,
+      "y": 519.3,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "caixabank-283",
+      "nombre": "Caixabank",
+      "categoria": "Servicios",
+      "x": 356.5,
+      "y": 503.3,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "croissanteria-hermanos-rogelio",
+      "nombre": "Croissantería Hermanos Rogelio",
+      "categoria": "Bares y cafés",
+      "x": 408.8,
+      "y": 530.7,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "el-fenix",
+      "nombre": "El Fénix",
+      "categoria": "Bares y cafés",
+      "x": 287.6,
+      "y": 533.5,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "gubra-las-palmas",
+      "nombre": "Gubra Las Palmas",
+      "categoria": "Motor",
+      "x": 332.7,
+      "y": 523.1,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "mandala-climb",
+      "nombre": "Mandala Climb",
+      "categoria": "Deporte y ocio",
+      "x": 518.9,
+      "y": 531.7,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "motoaxial",
+      "nombre": "Motoaxial",
+      "categoria": "Motor",
+      "x": 333.1,
+      "y": 526.8,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "pega-creaciones",
+      "nombre": "Pega Creaciones",
+      "categoria": "Deporte y ocio",
+      "x": 512.3,
+      "y": 542.2,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "rotulos-samper",
+      "nombre": "Rótulos Samper",
+      "categoria": "Servicios",
+      "x": 291.1,
+      "y": 525.2,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "palcanarias",
+      "nombre": "Palcanarias",
+      "categoria": "Hogar y reformas",
+      "x": 443.1,
+      "y": 590.8,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "hoock",
+      "nombre": "Hoock",
+      "categoria": "Bares y cafés",
+      "x": 255.2,
+      "y": 222.1,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "tourismat",
+      "nombre": "Tourismat",
+      "categoria": "Servicios",
+      "x": 588.5,
+      "y": 212.9,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "malvon",
+      "nombre": "Malvón",
+      "categoria": "Restaurantes",
+      "x": 290.8,
+      "y": 57.4,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "11",
+      "nombre": "11",
+      "categoria": "Bazares",
+      "x": 474.9,
+      "y": 57.7,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "slug": "mercado-central",
+      "nombre": "Mercado Central",
+      "categoria": "Alimentación",
+      "x": 376.6,
+      "y": 143.9,
+      "w": 6,
+      "h": 6
+    }
+  ],
+  "infantiles": [
+    {
+      "x": 663.8,
+      "y": 259.9,
+      "nombre": "Parque infantil"
+    },
+    {
+      "x": 381.4,
+      "y": 176.4,
+      "nombre": "Parque infantil"
+    },
+    {
+      "x": 413.2,
+      "y": 642.0,
+      "nombre": "Parque infantil en la plaza gabriel mejias pombo"
+    },
+    {
+      "x": 450.0,
+      "y": 608.2,
+      "nombre": "Parque infantil"
+    },
+    {
+      "x": 223.0,
+      "y": 644.2,
+      "nombre": "Parque infantil"
+    }
+  ]
+}

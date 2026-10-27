@@ -111,6 +111,9 @@ for e in negocios:
     if not (nombre and lat and cat and dentro(lon, lat)):
         continue
     slug = slugificar(nombre)
+    # Nombres en alfabetos no latinos pueden quedarse sin slug: les damos uno propio
+    if not slug:
+        slug = f'comercio-{len(vistos) + 1}'
     if slug in vistos:
         slug = f'{slug}-{len(vistos)}'
     vistos.add(slug)

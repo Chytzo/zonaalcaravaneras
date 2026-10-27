@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img">
+  <defs>
+    <linearGradient id="fondo" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#fff2ec"/>
+      <stop offset="1" stop-color="#ffe0d2"/>
+    </linearGradient>
+    <radialGradient id="luz" cx="0.32" cy="0.22" r="0.85">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grano" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+    <filter id="difumina" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+  </defs>
+  <rect width="800" height="500" fill="url(#fondo)"/>
+  <rect width="800" height="500" fill="url(#luz)"/>
+  <ellipse cx="474.3" cy="396" rx="196" ry="26" fill="#073b4f" opacity="0.16" filter="url(#difumina)"/>
+  <circle cx="392" cy="300" r="134" fill="#faf6ee"/>
+  <circle cx="392" cy="300" r="134" fill="none" stroke="#dcf0f6" stroke-width="3"/>
+  <circle cx="392" cy="300" r="98" fill="#e2683f" opacity="0.14"/>
+  <circle cx="392" cy="300" r="68" fill="#fbe6de"/>
+  <circle cx="392" cy="300" r="68" fill="none" stroke="#e2683f" stroke-width="4" opacity="0.5"/>
+  <!-- tenedor -->
+  <g fill="#16232a">
+    <rect x="196" y="256" width="18" height="112" rx="9"/>
+    <rect x="196" y="206" width="6" height="46" rx="3"/>
+    <rect x="207" y="206" width="6" height="46" rx="3"/>
+    <rect x="218" y="206" width="6" height="46" rx="3"/>
+    <rect x="196" y="244" width="28" height="16" rx="8"/>
+  </g>
+  <!-- cuchillo -->
+  <g fill="#16232a">
+    <rect x="566" y="256" width="18" height="112" rx="9"/>
+    <path d="M566 206c22 0 30 18 30 34v16h-30z"/>
+  </g>
+  <!-- copa -->
+  <g>
+    <path d="M392 196h56l-8 54a20 20 0 0 1-40 0z" fill="#1b7f9e"/>
+    <path d="M394 236h52l-6 34a20 20 0 0 1-40 0z" fill="#073b4f" opacity="0.45"/>
+    <rect x="414" y="288" width="12" height="46" rx="6" fill="#1b7f9e" opacity="0.7"/>
+    <rect x="396" y="330" width="48" height="10" rx="5" fill="#1b7f9e" opacity="0.7"/>
+  </g>
+  <circle cx="238" cy="404" r="18" fill="#d4a017" opacity="0.7"/>
+  <circle cx="556" cy="408" r="12" fill="#e2683f" opacity="0.55"/>
+  <rect width="800" height="500" filter="url(#grano)" opacity="0.055" style="mix-blend-mode:multiply"/>
+</svg>
